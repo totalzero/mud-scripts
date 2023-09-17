@@ -264,10 +264,9 @@ end
 function doTylu()
     if licznik >= 0 then
 licznik -= 1
-wyjscie = sciezka[licznik]
-odwrotny = kierunki[wyjscie]
-Note("idziesz na "..odwrotny)
-Send(odwrotny)
+wyjscie = kierunki[sciezka[licznik]]
+Note("idziesz na ")..wyjscie)
+Send(wyjscie)
 end
 end
 
