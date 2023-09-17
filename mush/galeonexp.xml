@@ -249,7 +249,7 @@ koleczko = false
 
 function doPrzodu()
     if licznik <= iloscKrokow then
-        Note("krok numer: " ..licznik)
+        Note("krok numer: "..licznik)
 Send(sciezka[licznik])
 licznik += 1
     else 
