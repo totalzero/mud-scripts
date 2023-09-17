@@ -265,7 +265,7 @@ function doTylu()
     if licznik >= 0 then
 licznik = licznik -1
 wyjscie = kierunki[sciezka[licznik]]
-Note("idziesz na ")..wyjscie)
+Note("idziesz na "..wyjscie)
 Send(wyjscie)
 end
 end
