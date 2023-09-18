@@ -326,6 +326,7 @@ end
 function powrot()
 if licznik <= iloscKrokow then
 Send(sciezka[licznik])
+licznik = licznik +1
 else
     EnableGroup("powrot", false)
 end
