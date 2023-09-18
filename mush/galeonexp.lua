@@ -150,6 +150,7 @@ end
 
 function koniecRegeneracji()
     EnableGroup("regen", false)
+    ResetTimers()
     nastepnaSekwencja()
 Note("zakonczylem regeneracje, ide dalej")
 end

@@ -36,7 +36,7 @@
   <trigger
    enabled="n"
    group="sekwencja"
-   match="Nie widzisz zadnej takiej osoby."
+   match="*Nie widzisz zadnej takiej osoby*"
    send_to="12"
    sequence="100"
   >
@@ -45,7 +45,7 @@
   <trigger
    enabled="n"
    group="sekwencja"
-   match="Zabiles *"
+   match="*Zabiles *"
    send_to="12"
    sequence="100"
   >
@@ -63,7 +63,7 @@
   <trigger
    enabled="n"
    group="regen"
-   match="*wpisz tutaj poziom do regenu many *"
+   match="Jestes mentalnie wyczerpany."
    send_to="12"
    sequence="100"
   >
@@ -281,6 +281,7 @@ end
 
 function koniecRegeneracji()
     EnableGroup("regen", false)
+    ResetTimers()
     nastepnaSekwencja()
 Note("zakonczylem regeneracje, ide dalej")
 end
