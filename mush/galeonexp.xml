@@ -119,7 +119,7 @@ group="regen_czujnik" >
   <send>nastepnaSekwencja()</send>
 
   </timer>
-<timer second="0.50" offset_second="0.00"    send_to="12"
+<timer second="1.0" offset_second="0.00"    send_to="12"
 group="powrot" >
   <send>powrot()</send>
 
