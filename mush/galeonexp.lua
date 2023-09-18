@@ -142,8 +142,10 @@ function regeneruj()
     Note("rozpoczynam regeneracje")
 doTylu()
 doTylu()
-    AddTimer("regeneracja-many", 0, 0, 11.0, "mwypowiedz odnowienie mocy z ksiegi wskazujac siebie", timer_flag.Enabled + timer_flag.OneShot, "")
-    EnableGroup("regen", true)
+
+AddTimer ("regen_czar", 0, 0, 10.5, "mwypowiedz odnowienie mocy z ksiegi wskazujac siebie", 
+          timer_flag.Enabled + timer_flag.OneShot, "")
+        EnableGroup("regen", true)
 end
 
 function koniecRegeneracji()
