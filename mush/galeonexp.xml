@@ -62,6 +62,25 @@
   </trigger>
   <trigger
    enabled="n"
+   group="sekwencja"
+   match="* zabil *"
+   send_to="12"
+   sequence="100"
+  >
+  <send>bij()</send>
+  </trigger>
+  <trigger
+   enabled="n"
+   group="sekwencja"
+   match="* zabiles *"
+   send_to="12"
+   sequence="100"
+  >
+  <send>bij()</send>
+  </trigger>
+  
+  <trigger
+   enabled="n"
    group="regen"
    match="Jestes mentalnie wyczerpany."
    send_to="12"
