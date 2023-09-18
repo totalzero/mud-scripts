@@ -111,7 +111,7 @@ kierunki = {
 ["nw"] = "se"
 }
 
-licznik = 0
+licznik = 1
 koleczko = false
 
 function doPrzodu()
