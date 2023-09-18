@@ -127,8 +127,6 @@ group="powrot" >
   
 </timers>
 <!--  Script  -->
-
-
 <script>
 <![CDATA[
 sciezka = {
@@ -260,6 +258,7 @@ doPrzodu()
         end
 end
 end
+end
 
 function doTylu()
     if licznik >= 0 then
@@ -269,7 +268,7 @@ Note("idziesz na "..wyjscie)
 Send(wyjscie)
 end
 end
-
+end
 
 function regeneruj()
     Note("rozpoczynam regeneracje")
@@ -288,7 +287,6 @@ end
 function nastepnaSekwencja()
 doPrzodu()
 Send(cel)
-end
 end
 
 function koleczkoOn()
