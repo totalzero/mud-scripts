@@ -129,7 +129,7 @@ end
 end
 
 function doTylu()
-    if licznik >= 0 then
+    if licznik >= 1 then
 licznik = licznik -1
 wyjscie = sciezka[licznik]
 odwrotny = kierunki[wyjscie]
