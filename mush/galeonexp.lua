@@ -137,7 +137,6 @@ Note("idziesz na "..odwrotny)
 Send(odwrotny)
 end
 end
-end
 
 function regeneruj()
     Note("rozpoczynam regeneracje")
@@ -200,4 +199,5 @@ end
 
 function bij()
 Send(cel)
+end
 end
