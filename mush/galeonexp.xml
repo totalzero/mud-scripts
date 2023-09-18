@@ -69,6 +69,141 @@
   >
   <send>regeneruj()</send>
   </trigger>
+  <trigger
+   enabled="n"
+   group="sekwencja"
+   match="Jestes w zlym stanie.*"
+   send_to="12"
+   sequence="100"
+  >
+  <send>uciekaj()</send>
+  </trigger>
+  <trigger
+   enabled="n"
+   group="sekwencja"
+      match="Jestes ciezko ranny.*"
+   send_to="12"
+   sequence="100"
+  >
+  <send>uciekaj()</send>
+  </trigger>
+  <trigger
+   enabled="n"
+   group="sekwencja"
+      match="Jestes zmasakrowany.*"
+   send_to="12"
+   sequence="100"
+  >
+  <send>uciekaj()</send>
+  </trigger>
+  <trigger
+   enabled="n"
+   group="sekwencja"
+      match="Jestes ledwo zywy.*"
+   send_to="12"
+   sequence="100"
+  >
+  <send>uciekaj()</send>
+  </trigger>
+  <trigger
+   enabled="n"
+   group="sekwencja"
+      match="Jestes na  skraju smierci.*"
+   send_to="12"
+   sequence="100"
+  >
+  <send>uciekaj()</send>
+  </trigger>
+  <trigger
+   enabled="n"
+   group="sekwencja"
+      match="Belsertoplak jest w zlym stanie.*"
+   send_to="12"
+   sequence="100"
+  >
+  <send>uciekaj()</send>
+  </trigger>
+  <trigger
+   enabled="n"
+   group="sekwencja"
+      match="Belsertoplak jest ciezko ranny.*"
+   send_to="12"
+   sequence="100"
+  >
+  <send>uciekaj()</send>
+  </trigger>
+  <trigger
+   enabled="n"
+   group="sekwencja"
+      match="Belsertoplak jest zmasakrowany.*"
+   send_to="12"
+   sequence="100"
+  >
+  <send>uciekaj()</send>
+  </trigger>
+  <trigger
+   enabled="n"
+   group="sekwencja"
+      match="Belsertoplak jest ledwo zywy.*"
+   send_to="12"
+   sequence="100"
+  >
+  <send>uciekaj()</send>
+  </trigger>
+  <trigger
+   enabled="n"
+   group="sekwencja"
+      match="belsertoplak jest na  skraju smierci.*"
+   send_to="12"
+   sequence="100"
+  >
+  <send>uciekaj()</send>
+  </trigger>
+  <trigger
+   enabled="n"
+   group="sekwencja"
+      match="Dwan jest w zlym stanie.*"
+   send_to="12"
+   sequence="100"
+  >
+  <send>uciekaj()</send>
+  </trigger>
+  <trigger
+   enabled="n"
+   group="sekwencja"
+      match="Dwan jest ciezko ranny.*"
+   send_to="12"
+   sequence="100"
+  >
+  <send>uciekaj()</send>
+  </trigger>
+  <trigger
+   enabled="n"
+   group="sekwencja"
+      match="Dwan jest zmasakrowany.*"
+   send_to="12"
+   sequence="100"
+  >
+  <send>uciekaj()</send>
+  </trigger>
+  <trigger
+   enabled="n"
+   group="sekwencja"
+      match="Dwan jest ledwo zywy.*"
+   send_to="12"
+   sequence="100"
+  >
+  <send>uciekaj()</send>
+  </trigger>
+  <trigger
+   enabled="n"
+   group="sekwencja"
+      match="Dwan jest na  skraju smierci.*"
+   send_to="12"
+   sequence="100"
+  >
+  <send>uciekaj()</send>
+  </trigger>
 
 
 </triggers>
@@ -111,6 +246,23 @@
   >
   <send>koniec()</send>
   </alias>
+  <alias
+   match="galeon wstrzymaj"
+   enabled="y"
+   send_to="12"
+   sequence="100"
+  >
+  <send>wstrzymaj()</send>
+  </alias>
+  <alias
+   match="galeon wznow"
+   enabled="y"
+   send_to="12"
+   sequence="100"
+  >
+  <send>wznow()</send>
+  </alias>
+
 
 </aliases>
 <timers>
@@ -122,6 +274,11 @@ group="regen_czujnik" >
 <timer second="1.0" offset_second="0.00"    send_to="12"
 group="powrot" >
   <send>powrot()</send>
+
+  </timer>
+<timer second="1.0" offset_second="0.00"    send_to="12"
+group="ucieczka" >
+  <send>ucieczka()</send>
 
   </timer>
   
@@ -334,6 +491,31 @@ end
 
 function bij()
 Send(cel)
+end
+
+function wstrzymaj()
+    EnableGroup("sekwencja", false)
+    Note("wstrzymuje expa")
+end
+
+function wznow()
+    EnableGroup("sekwencja", true)
+    Send(cel)
+    Note("wznawiam expa")
+end
+
+function uciekaj()
+        EnableGroup("ucieczka", true)
+        Note("o kurwa!!! S P I E R D A A A A L A M Y")
+end
+
+function ucieczka()
+if licznik >= 1 then
+    doTylu()
+else
+    EnableGroup("ucieczka", false) 
+    Note("bylo blisko")
+end
 end
 ]]>
 </script> 

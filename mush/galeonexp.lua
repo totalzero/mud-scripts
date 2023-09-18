@@ -204,3 +204,28 @@ end
 function bij()
 Send(cel)
 end
+
+function wstrzymaj()
+    EnableGroup("sekwencja", false)
+    Note("wstrzymuje expa")
+end
+
+function wznow()
+    EnableGroup("sekwencja", true)
+    Send(cel)
+    Note("wznawiam expa")
+end
+
+function uciekaj()
+        EnableGroup("ucieczka", true)
+        Note("o kurwa!!! S P I E R D A A A A L A M Y")
+end
+
+function ucieczka()
+if licznik >= 1 then
+    doTylu()
+else
+    EnableGroup("ucieczka", false) 
+    Note("bylo blisko")
+end
+end
