@@ -200,4 +200,3 @@ end
 function bij()
 Send(cel)
 end
-end
