@@ -116,9 +116,9 @@ koleczko = false
 
 function doPrzodu()
     if licznik <= iloscKrokow then
-        Note("krok numer: " ..licznik)
+        Note("krok numer: "..licznik)
 Send(sciezka[licznik])
-licznik += 1
+licznik = licznik +1
     else 
         if koleczko == true then
 Note("kolejne koleczko")
@@ -130,10 +130,10 @@ end
 
 function doTylu()
     if licznik >= 0 then
-licznik -= 1
+licznik = licznik -1
 wyjscie = sciezka[licznik]
 odwrotny = kierunki[wyjscie]
-Note("idziesz na " ..odwrotny)
+Note("idziesz na "..odwrotny)
 Send(odwrotny)
 end
 end
@@ -178,11 +178,14 @@ EnableGroup("regen_czujnik", false)
 end
 
 function start()
-EnableGroup("")
+Note("rozpoczynam expy")
+EnableGroup("sekwencja", true)
+Send(cel)
 end
 
 function koniec()
 Note("koniec expa, biegne do konca sciezki")
+EnableGroup("sekwencja", false)
     EnableGroup("powrot", true)
 end
 
@@ -192,4 +195,8 @@ Send(sciezka[licznik])
 else
     EnableGroup("powrot", false)
 end
+end
+
+function bij()
+Send(cel)
 end
