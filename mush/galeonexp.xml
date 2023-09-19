@@ -82,7 +82,7 @@
   <trigger
    enabled="n"
    group="regen"
-   match="Jestes mentalnie wyczerpany."
+   match="*Jestes mentalnie wyczerpany*"
    send_to="12"
    sequence="100"
   >
@@ -280,6 +280,22 @@
    sequence="100"
   >
   <send>wznow()</send>
+  </alias>
+  <alias
+   match="koleczko on"
+   enabled="y"
+   send_to="12"
+   sequence="100"
+  >
+  <send>koleczkoOn()</send>
+  </alias>
+  <alias
+   match="koleczko off"
+   enabled="y"
+   send_to="12"
+   sequence="100"
+  >
+  <send>koleczkoOff()</send>
   </alias>
 
 
