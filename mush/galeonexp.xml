@@ -301,7 +301,7 @@
 
 </aliases>
 <timers>
-  </timer>
+  
 <timer second="1.0" offset_second="0.00"    send_to="12"
 group="powrot" >
   <send>powrot()</send>
