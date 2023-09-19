@@ -77,7 +77,7 @@
 
 </aliases>
 <timers>
-<timer minutes="1" offset_second="0.00"    send_to="12"
+<timer minute="1" second="0.00" offset_second="0.00"    send_to="12"
 group="fanty" >
   <send>sprawdzPostepy()</send>
 
