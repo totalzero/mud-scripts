@@ -26,6 +26,10 @@ function fantyOn()
 end
 
 function fantyOff()
+    fanty = 0
+minuty = 0
+czasNaFant = 0
+
     EnableGroup("fanty", false)
     Note("wylaczam licznik fantow")
 end
