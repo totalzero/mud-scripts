@@ -122,8 +122,8 @@ licznik = licznik +1
     else 
         if koleczko == true then
 Note("kolejne koleczko")
-licznik = 0
-doPrzodu()
+licznik = 1
+bij()
         end
 end
 end
