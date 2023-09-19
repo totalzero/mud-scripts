@@ -145,12 +145,11 @@ doTylu()
 
 AddTimer ("regen_czar", 0, 0, 10.5, "mwypowiedz odnowienie mocy z ksiegi wskazujac siebie", 
           timer_flag.Enabled + timer_flag.OneShot, "")
-          AddTimer ("regen_dalej", 0, 6, 0, "zabij marynarza", 
-          timer_flag.Enabled + timer_flag.OneShot, "")        
+          AddTimer ("regen_dalej", 0, 6, 0, "", 
+          timer_flag.Enabled + timer_flag.OneShot, "koniecRegeneracji")        
 end
 
-function koniecRegeneracji()
-        ResetTimers()
+function koniecRegeneracji(name)
     nastepnaSekwencja()
 Note("zakonczylem regeneracje, ide dalej")
 end
