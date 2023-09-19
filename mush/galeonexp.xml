@@ -462,7 +462,7 @@ function regeneruj()
 doTylu()
 doTylu()
           AddTimer ("regen_dalej", 0, 6, 0, "", 
-          timer_flag.Enabled + timer_flag.OneShot, "koniecRegeneracji")        
+          timer_flag.Enabled + timer_flag.OneShot, "koniecRegeneracji()")        
 AddTimer ("regen_czar", 0, 0, 10.5, "mwypowiedz odnowienie mocy z ksiegi wskazujac siebie", 
           timer_flag.Enabled + timer_flag.OneShot, "")
         EnableGroup("regen", true)
