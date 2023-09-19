@@ -81,7 +81,7 @@
   
   <trigger
    enabled="n"
-   group="regen"
+   group="regen_czujnik"
    match="*Jestes mentalnie wyczerpany*"
    send_to="12"
    sequence="100"
