@@ -18,6 +18,10 @@ end
 function fantyInfo()
 Note("ilosc fantastycznych postepow: "..fanty)
 Note("zajelo ci to: "..czasNaFant.." minut ")
+if czasNaFant > 0 then
+    postepNaMinute = czasNaFant /17
+    Note("czas na postep: "..postepNaMinute.." minut")
+end
 end
 
 function fantyOn()

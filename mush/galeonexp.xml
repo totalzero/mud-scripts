@@ -498,6 +498,9 @@ end
 
 function start()
 Note("rozpoczynam expy")
+licznik = 1
+koleczko = false
+
 EnableGroup("sekwencja", true)
 Send(cel)
 end
