@@ -442,7 +442,7 @@ licznik = licznik +1
         if koleczko == true then
 Note("kolejne koleczko")
 licznik = 1
-bij()
+DoAfter(10, cel)
         end
 end
 end
