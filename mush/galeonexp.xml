@@ -230,6 +230,25 @@
 <!--  Aliases  -->
 
 <aliases>
+
+  <alias
+   match="koniecexpa on"
+   enabled="y"
+   send_to="12"
+   sequence="100"
+  >
+  <send>koniecExpaOn()</send>
+  </alias>
+
+  <alias
+   match="koniecexpa off"
+   enabled="y"
+   send_to="12"
+   sequence="100"
+  >
+  <send>koniecExpaOff()</send>
+  </alias>
+
   <alias
    match="regen on"
    enabled="y"
@@ -313,6 +332,11 @@ group="ucieczka" >
 
   </timer>
   
+  <timer hour="6" minute="0" second="0.00" offset_second="0.00" at_time="y" 
+  send_to="12"
+  group="koniecexpa" >
+ <send>konczymy()</send>
+
 </timers>
 <!--  Script  -->
 <script>
@@ -547,6 +571,22 @@ else
     EnableGroup("ucieczka", false) 
     Note("bylo blisko")
 end
+end
+
+function koniecExpaOn()
+enableGroup("koniecexpa", true)
+Note("uruchomiono odliczanie do konca expa, godzina wylogowania: 6:00")
+end
+
+function koniecExpaOff()
+enableGroup("koniecexpa", false)
+Note("wstrzymano odliczanie czasu do konca expa")
+end
+
+function konczymy()
+koniec()
+DoAfter(305, "zakoncz")
+Note("uwaga!!! za 300 sekund nastapi wylogowanie")
 end
 ]]>
 </script> 
