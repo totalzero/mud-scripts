@@ -9,7 +9,7 @@
 <plugin
    name="arkadia_prowadzenie"
    author="totalzero"
-   id="ddg2a0e1c6c33ce7a3c3288a"
+   id="ddf2a0e1c6c33ce7a3c3288a"
    language="Lua"
    purpose="arkadia_prowadzenie 1.0"
    save_state="y"
