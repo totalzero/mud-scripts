@@ -7,11 +7,11 @@
 
 <muclient>
 <plugin
-   name="szablon"
+   name="arkadia_prowadzenie"
    author="totalzero"
-   id="ddd2a0e1c6c33ce7a3c3288a"
+   id="ddg2a0e1c6c33ce7a3c3288a"
    language="Lua"
-   purpose="szablon 1.0"
+   purpose="arkadia_prowadzenie 1.0"
    save_state="y"
    date_written="2020-08-12 16:38:33"
    requires="4.84"
@@ -19,7 +19,7 @@
    >
 <description trim="y">
 <![CDATA[
-"to jest szablon wtyczki na bazie wyczyszczonej innej wtyczki z przykladowymi timerami trigami i aliasami"
+"skrypt arkadia prowadzenie na zlecenie kr" 
 ]]>
 </description>
 
@@ -72,12 +72,6 @@ group="powracanie" >
 
 <script>
 <![CDATA[
-cel = ""
-
-function ustawCel(n)
-cel = n
-Note("ustawiono cel:"..cel)
-end
 
 function testowy(arg)
 Note(arg)
