@@ -336,7 +336,7 @@ group="ucieczka" >
   send_to="12"
   group="koniecexpa" >
  <send>konczymy()</send>
-
+</timer>
 </timers>
 <!--  Script  -->
 <script>
