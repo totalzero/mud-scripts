@@ -51,6 +51,16 @@
   >
   <send>bij()</send>
   </trigger>
+    <trigger
+   enabled="n"
+   group="sekwencja"
+   match="* Zabila *"
+   send_to="12"
+   sequence="100"
+  >
+  <send>bij()</send>
+  </trigger>
+
   <trigger
    enabled="n"
    group="sekwencja"
