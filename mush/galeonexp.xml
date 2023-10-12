@@ -54,7 +54,7 @@
     <trigger
    enabled="n"
    group="sekwencja"
-   match="* Zabila *"
+   match="* zabila *"
    send_to="12"
    sequence="100"
   >
