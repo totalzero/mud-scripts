@@ -9,9 +9,9 @@
 <plugin
    name="arkadia_prowadzenie"
    author="totalzero"
-   id="ddf2a0e1c6c33ce7a3c3288a"
+   id="ddd2d0e1c6c33ce7a3c3288a"
    language="Lua"
-   purpose="arkadia_prowadzenie 1.0"
+   purpose= "arkadia_prowadzenie"
    save_state="y"
    date_written="2020-08-12 16:38:33"
    requires="4.84"
@@ -19,7 +19,7 @@
    >
 <description trim="y">
 <![CDATA[
-"skrypt arkadia prowadzenie na zlecenie kr" 
+"skrypt arkadia_prowadzenie na prosbe k"
 ]]>
 </description>
 
@@ -33,15 +33,6 @@
 <!--  Triggers  -->
 
 <triggers>
-  <trigger
-   enabled="y"
-   group="sciezki_kroktyl"
-   match="*Jestes tak zmeczony, ze nie mozesz dalej podazac w tym kierunku"
-   send_to="12"
-   sequence="100"
-  >
-  <send>cofka_kroktyl()</send>
-  </trigger>
   
 </triggers>
 
@@ -49,22 +40,16 @@
 
 <aliases>
   <alias
-   match="celuj *"
+   match="me *"
    enabled="y"
    send_to="12"
    sequence="100"
   >
-  <send>testowy(%0)</send>
+  <send>pokazWiadomosc()</send>
   </alias>
-
 
 </aliases>
 <timers>
-<timer second="10.00" offset_second="0.00"    send_to="12"
-group="powracanie" >
-  <send>wracam()</send>
-
-  </timer>
   
 </timers>
 <!--  Script  -->
@@ -72,8 +57,8 @@ group="powracanie" >
 
 <script>
 <![CDATA[
-function testowy(arg)
-Note(arg)
+function pokazWiadomosc()
+Note("daj znac temu debilowi ze dziala")
 end
 ]]>
 </script> 
