@@ -584,18 +584,19 @@ end
 end
 
 function koniecExpaOn()
-enableGroup("koniecexpa", true)
-Note("uruchomiono odliczanie do konca expa, godzina wylogowania: 6:00")
+EnableGroup("koniecexpa", true)
+Note("uruchomiono odliczanie do konca expa")
 end
 
 function koniecExpaOff()
-enableGroup("koniecexpa", false)
+EnableGroup("koniecexpa", false)
 Note("wstrzymano odliczanie czasu do konca expa")
 end
 
 function konczymy()
 koniec()
 DoAfter(305, "zakoncz")
+EnableGroup("koniecexpa", false)
 Note("uwaga!!! za 300 sekund nastapi wylogowanie")
 end
 ]]>

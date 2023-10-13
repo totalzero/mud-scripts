@@ -54,7 +54,7 @@
    send_to="12"
    sequence="100"
   >
-  <send>testowy</send>
+  <send>testowy()</send>
   </alias>
 
 
@@ -72,7 +72,6 @@ group="powracanie" >
 
 <script>
 <![CDATA[
-
 function testowy(arg)
 Note(arg)
 end
