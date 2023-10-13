@@ -57,8 +57,10 @@
 
 <script>
 <![CDATA[
+cel = ""
 function pokazWiadomosc(arg)
-Note(arg)
+cel = arg
+Note(cel)
 end
 ]]>
 </script> 
