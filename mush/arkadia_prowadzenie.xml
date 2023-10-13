@@ -49,12 +49,12 @@
 
 <aliases>
   <alias
-   match="cel *"
+   match="celuj *"
    enabled="y"
    send_to="12"
    sequence="100"
   >
-  <send>testowy()</send>
+  <send>testowy(%0)</send>
   </alias>
 
 
