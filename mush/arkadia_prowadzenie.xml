@@ -45,7 +45,7 @@
    send_to="12"
    sequence="100"
   >
-  <send>pokazWiadomosc(%0)</send>
+  <send>pokazWiadomosc</send>
   </alias>
 
 </aliases>
@@ -58,9 +58,9 @@
 <script>
 <![CDATA[
 cel = ""
-function pokazWiadomosc(arg)
-cel = arg
-Note(cel)
+function pokazWiadomosc(n, l, w)
+cel = w
+Note(n)
 end
 ]]>
 </script> 
