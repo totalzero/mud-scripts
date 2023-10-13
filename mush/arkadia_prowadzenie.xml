@@ -42,10 +42,11 @@
   <alias
    match="me *"
    enabled="y"
+   script="pokazWiadomosc"
    send_to="12"
    sequence="100"
   >
-  <send>pokazWiadomosc()</send>
+  <send></send>
   </alias>
 
 </aliases>
@@ -60,7 +61,7 @@
 cel = ""
 function pokazWiadomosc(n, l, w)
 cel = w
-Note(n)
+Note(w)
 end
 ]]>
 </script> 
