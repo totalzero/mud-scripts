@@ -40,9 +40,9 @@
 
 <aliases>
   <alias
-   match="me *"
+   match="cel *"
    enabled="y"
-   script="pokazWiadomosc"
+   script="ustawCel"
    send_to="12"
    sequence="100"
   >
@@ -59,10 +59,12 @@
 <script>
 <![CDATA[
 cel = ""
-function pokazWiadomosc(n, l, w)
-cel = w
-Note(w)
+
+function ustawCel(n, l, w)
+cel = table.concat(w)
+Note("ustawiono cel:"..cel)
 end
+
 ]]>
 </script> 
 

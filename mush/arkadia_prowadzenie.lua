@@ -1,9 +1,7 @@
 cel = ""
 
-function ustawCel(n)
-cel = n
+function ustawCel(n, l, w)
+cel = table.concat(w)
 Note("ustawiono cel:"..cel)
 end
-function testowy(arg)
-Note(arg)
-end
+
