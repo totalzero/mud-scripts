@@ -48,6 +48,31 @@
   >
   <send></send>
   </alias>
+  <alias
+   match="zc"
+   enabled="y"
+   send_to="12"
+   sequence="100"
+  >
+  <send>odpalCel()</send>
+  </alias>
+  <alias
+   match="rozkazy on"
+   enabled="y"
+   send_to="12"
+   sequence="100"
+  >
+  <send>rozkazyOn()</send>
+  </alias>
+  <alias
+   match="rozkazy off"
+   enabled="y"
+   send_to="12"
+   sequence="100"
+  >
+  <send>rozkazyOff()</send>
+  </alias>
+
 
 </aliases>
 <timers>
@@ -59,12 +84,31 @@
 <script>
 <![CDATA[
 cel = ""
+rozkazy = false
 
 function ustawCel(n, l, w)
 cel = table.concat(w)
 Note("ustawiono cel:"..cel)
 end
 
+function odpalCel()
+    Note("wskaz "..cel.." jako cel ataku")
+    Note("zabij cel ataku")
+    if rozkazy == true then
+        Note("rozkaz druzynie zabij cel ataku")
+    end
+end
+
+
+function rozkazyOn()
+rozkazy = true
+Note("rozkazy gotowe")
+end
+
+function rozkazyOff()
+    rozkazy = false
+Note("wylaczam rozkazy")
+end
 ]]>
 </script> 
 
