@@ -7,10 +7,10 @@ Note("ustawiono cel:"..cel)
 end
 
 function odpalCel()
-    Note("wskaz "..cel.." jako cel ataku")
-    Note("zabij cel ataku")
+    Send("wskaz "..cel.." jako cel ataku")
+    Send("zabij cel ataku")
     if rozkazy == true then
-        Note("rozkaz druzynie zabij cel ataku")
+        Send("rozkaz druzynie zaatakowac cel ataku")
     end
 end
 
