@@ -123,9 +123,9 @@ end
 function ustawZaslone(n, l, w)
 zaslona = table.concat(w)
 Note("ustawiam cel obrony na: "..zaslona)
-Note("wskaz "..zaslona.." jako cel obrony")
+Send("wskaz "..zaslona.." jako cel obrony")
 if rozkazy == true then
-Note("rozkaz druzynie zaslonic cel obrony")
+Send("rozkaz druzynie zaslonic cel obrony")
 end
 end
 ]]>
