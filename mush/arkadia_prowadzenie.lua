@@ -49,6 +49,6 @@ end
 
 function przestanZaslaniac()
     if puszczanie == true then
-Note("przestan zaslaniac")
+Send("przestan zaslaniac")
     end
 end
