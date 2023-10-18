@@ -1,5 +1,6 @@
 cel = ""
 rozkazy = false
+zaslona = ""
 
 function ustawCel(n, l, w)
 cel = table.concat(w)
@@ -22,4 +23,13 @@ end
 function rozkazyOff()
     rozkazy = false
 Note("wylaczam rozkazy")
+end
+
+function ustawZaslone(n, l, w)
+zaslona = table.concat(w)
+Note("ustawiam cel obrony na: "..zaslona)
+Note("wskaz "..zaslona.." jako cel obrony")
+if rozkazy == true then
+Note("rozkaz druzynie zaslonic cel obrony")
+end
 end

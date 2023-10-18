@@ -49,6 +49,16 @@
   <send></send>
   </alias>
   <alias
+   match="\ *"
+   enabled="y"
+   script="ustawZaslone"
+   send_to="12"
+   sequence="100"
+  >
+  <send></send>
+  </alias>
+
+  <alias
    match="zc"
    enabled="y"
    send_to="12"
@@ -85,6 +95,7 @@
 <![CDATA[
 cel = ""
 rozkazy = false
+zaslona = ""
 
 function ustawCel(n, l, w)
 cel = table.concat(w)
@@ -99,7 +110,6 @@ function odpalCel()
     end
 end
 
-
 function rozkazyOn()
 rozkazy = true
 Note("rozkazy gotowe")
@@ -108,6 +118,15 @@ end
 function rozkazyOff()
     rozkazy = false
 Note("wylaczam rozkazy")
+end
+
+function ustawZaslone(n, l, w)
+zaslona = table.concat(w)
+Note("ustawiam cel obrony na: "..zaslona)
+Note("wskaz "..zaslona.." jako cel obrony")
+if rozkazy == true then
+Note("rozkaz druzynie zaslonic cel obrony")
+end
 end
 ]]>
 </script> 
