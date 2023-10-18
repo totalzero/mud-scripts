@@ -1,6 +1,7 @@
 cel = ""
 rozkazy = false
 zaslona = ""
+puszczanie = false
 
 function ustawCel(n, l, w)
 cel = table.concat(w)
@@ -32,4 +33,22 @@ Send("wskaz "..zaslona.." jako cel obrony")
 if rozkazy == true then
 Send("rozkaz druzynie zaslonic cel obrony")
 end
+end
+
+function puszczanieOn()
+puszczanie = true
+EnableGroup("puszczanie", true)
+Note("puszczanie zaslon wlaczylem")
+end
+
+function puszczanieOff()
+    EnableGroup("puszczanie", false)
+puszczanie = false
+Note("puszczanie zaslon wylaczylem")
+end
+
+function przestanZaslaniac()
+    if puszczanie == true then
+Note("przestan zaslaniac")
+    end
 end

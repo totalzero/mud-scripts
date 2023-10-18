@@ -33,7 +33,16 @@
 <!--  Triggers  -->
 
 <triggers>
-  
+    <trigger
+   enabled="n"
+   group="puszczanie"
+   match="Zrecznie zaslaniasz *"
+   send_to="12"
+   sequence="100"
+  >
+  <send>przestanZaslaniac()</send>
+  </trigger>
+
 </triggers>
 
 <!--  Aliases  -->
@@ -66,6 +75,25 @@
   >
   <send>odpalCel()</send>
   </alias>
+
+  <alias
+   match="puszczanie on"
+   enabled="y"
+   send_to="12"
+   sequence="100"
+  >
+  <send>puszczanieOn()</send>
+  </alias>
+
+  <alias
+   match="puszczanie off"
+   enabled="y"
+   send_to="12"
+   sequence="100"
+  >
+  <send>puszczanieOff()</send>
+  </alias>
+
   <alias
    match="rozkazy on"
    enabled="y"
@@ -96,6 +124,7 @@
 cel = ""
 rozkazy = false
 zaslona = ""
+puszczanie = false
 
 function ustawCel(n, l, w)
 cel = table.concat(w)
@@ -127,6 +156,25 @@ Send("wskaz "..zaslona.." jako cel obrony")
 if rozkazy == true then
 Send("rozkaz druzynie zaslonic cel obrony")
 end
+end
+
+
+function puszczanieOn()
+puszczanie = true
+EnableGroup("puszczanie", true)
+Note("puszczanie zaslon wlaczylem")
+end
+
+function puszczanieOff()
+    EnableGroup("puszczanie", false)
+puszczanie = false
+Note("puszczanie zaslon wylaczylem")
+end
+
+function przestanZaslaniac()
+    if puszczanie == true then
+Note("przestan zaslaniac")
+    end
 end
 ]]>
 </script> 
