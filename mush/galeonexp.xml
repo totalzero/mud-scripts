@@ -98,6 +98,28 @@
   >
   <send>regeneruj()</send>
   </trigger>
+
+<trigger
+   enabled="n"
+   group="regen_czujnik"
+   match="*Jestes mentalnie wykonczony*"
+   send_to="12"
+   sequence="100"
+  >
+  <send>regeneruj()</send>
+  </trigger>
+  
+<trigger
+   enabled="n"
+   group="regen_czujnik"
+   match="*Jestes mentalnie u kresu sil*"
+   send_to="12"
+   sequence="100"
+  >
+  <send>regeneruj()</send>
+  </trigger>
+
+
   <trigger
    enabled="n"
    group="sekwencja"
