@@ -611,7 +611,9 @@ end
 end
 
 function koniecExpaOn()
+ResetTimers()
 EnableGroup("koniecexpa", true)
+ResetTimers()
 Note("uruchomiono odliczanie do konca expa")
 end
 
