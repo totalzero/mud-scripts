@@ -488,6 +488,7 @@ kierunki = {
 
 licznik = 1
 koleczko = false
+regenerujemy = false
 
 function doPrzodu()
     if licznik <= iloscKrokow then
@@ -504,6 +505,7 @@ end
 end
 
 function doTylu()
+if regenerujemy != true then
     if licznik > 1 then
 licznik = licznik -1
 wyjscie = sciezka[licznik]
@@ -512,11 +514,13 @@ Note("idziesz na "..odwrotny)
 Send(odwrotny)
 end
 end
+end
 
 function regeneruj()
     Note("rozpoczynam regeneracje")
+    doTylu()
 doTylu()
-doTylu()
+regenerujemy = true
 DoAfter(180, "zabij marynarza")
 AddTimer ("regen_czar", 0, 0, 10.5, "mwypowiedz odnowienie mocy z ksiegi wskazujac siebie", 
           timer_flag.Enabled + timer_flag.OneShot, "")
@@ -528,6 +532,7 @@ Note("zakonczylem regeneracje, ide dalej")
 end
 
 function nastepnaSekwencja()
+regenerujemy = false
 doPrzodu()
 Send(cel)
 end
