@@ -505,7 +505,7 @@ end
 end
 
 function doTylu()
-if regenerujemy != true then
+if regenerujemy == false then
     if licznik > 1 then
 licznik = licznik -1
 wyjscie = sciezka[licznik]
