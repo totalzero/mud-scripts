@@ -113,6 +113,15 @@ kierunki = {
 
 licznik = 1
 koleczko = false
+regenerujemy = false
+listacelow = {"zabij splugawionego marynarza", "zabij marynarza"}
+ktorycel = 1
+ilosccelow = 2
+
+function nastepnyCel()
+ktorycel += 1
+nastepnaSekwencja()
+end
 
 function doPrzodu()
     if licznik <= iloscKrokow then
@@ -123,13 +132,14 @@ licznik = licznik +1
         if koleczko == true then
 Note("kolejne koleczko")
 licznik = 1
-bij()
+DoAfter(150, cel)
         end
 end
 end
 
 function doTylu()
-    if licznik >= 1 then
+if regenerujemy == false then
+    if licznik > 1 then
 licznik = licznik -1
 wyjscie = sciezka[licznik]
 odwrotny = kierunki[wyjscie]
@@ -137,16 +147,17 @@ Note("idziesz na "..odwrotny)
 Send(odwrotny)
 end
 end
+end
 
 function regeneruj()
     Note("rozpoczynam regeneracje")
+    doTylu()
 doTylu()
-doTylu()
-
+regenerujemy = true
+DoAfter(180, "zabij marynarza")
 AddTimer ("regen_czar", 0, 0, 10.5, "mwypowiedz odnowienie mocy z ksiegi wskazujac siebie", 
           timer_flag.Enabled + timer_flag.OneShot, "")
-          DoAfter(180, cel)
-end
+        end
 
 function koniecRegeneracji(name)
     nastepnaSekwencja()
@@ -154,8 +165,10 @@ Note("zakonczylem regeneracje, ide dalej")
 end
 
 function nastepnaSekwencja()
-doPrzodu()
-Send(cel)
+regenerujemy = false
+if ktorycel <= 2 then
+Send(listacelow[ktorycel])
+end
 end
 
 function koleczkoOn()
@@ -180,6 +193,9 @@ end
 
 function start()
 Note("rozpoczynam expy")
+licznik = 1
+koleczko = false
+
 EnableGroup("sekwencja", true)
 Send(cel)
 end
@@ -193,7 +209,7 @@ end
 function powrot()
 if licznik <= iloscKrokow then
 Send(sciezka[licznik])
-licznik = licznik + 1
+licznik = licznik +1
 else
     EnableGroup("powrot", false)
 end
@@ -226,4 +242,23 @@ else
     EnableGroup("ucieczka", false) 
     Note("bylo blisko")
 end
+end
+
+function koniecExpaOn()
+ResetTimers()
+EnableGroup("koniecexpa", true)
+ResetTimers()
+Note("uruchomiono odliczanie do konca expa")
+end
+
+function koniecExpaOff()
+EnableGroup("koniecexpa", false)
+Note("wstrzymano odliczanie czasu do konca expa")
+end
+
+function konczymy()
+koniec()
+DoAfter(305, "zakoncz")
+EnableGroup("koniecexpa", false)
+Note("uwaga!!! za 300 sekund nastapi wylogowanie")
 end

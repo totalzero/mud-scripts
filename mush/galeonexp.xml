@@ -40,7 +40,7 @@
    send_to="12"
    sequence="100"
   >
-  <send>nastepnaSekwencja()</send>
+  <send>nastepnyCel()</send>
   </trigger>
   <trigger
    enabled="n"
@@ -49,7 +49,7 @@
    send_to="12"
    sequence="100"
   >
-  <send>bij()</send>
+  <send>nastepnaSekwencja()</send>
   </trigger>
     <trigger
    enabled="n"
@@ -58,7 +58,7 @@
    send_to="12"
    sequence="100"
   >
-  <send>bij()</send>
+  <send>nastepnaSekwencja()</send>
   </trigger>
 
   <trigger
@@ -77,7 +77,7 @@
    send_to="12"
    sequence="100"
   >
-  <send>bij()</send>
+  <send>nastepnaSekwencja()</send>
   </trigger>
   <trigger
    enabled="n"
@@ -86,7 +86,7 @@
    send_to="12"
    sequence="100"
   >
-  <send>bij()</send>
+  <send>nastepnaSekwencja()</send>
   </trigger>
   
   <trigger
@@ -363,7 +363,14 @@ group="ucieczka" >
   <send>ucieczka()</send>
 
   </timer>
-  
+
+<timer second="8.0" offset_second="0.00"    send_to="12"
+group="sekwencja" >
+  <send>nastepnaSekwencja</send>
+
+  </timer>
+
+
   <timer hour="6" minute="0" second="0.00" offset_second="0.00" at_time="y" 
   send_to="12"
   group="koniecexpa" >
@@ -489,6 +496,14 @@ kierunki = {
 licznik = 1
 koleczko = false
 regenerujemy = false
+listacelow = {"zabij splugawionego marynarza", "zabij marynarza"}
+ktorycel = 1
+ilosccelow = 2
+
+function nastepnyCel()
+ktorycel += 1
+nastepnaSekwencja()
+end
 
 function doPrzodu()
     if licznik <= iloscKrokow then
@@ -533,8 +548,13 @@ end
 
 function nastepnaSekwencja()
 regenerujemy = false
-doPrzodu()
-Send(cel)
+if ktorycel <= 2 then
+Send(listacelow[ktorycel])
+else
+ktorycel = 1
+    Note("ide dalej")
+    doPrzodu()
+end
 end
 
 function koleczkoOn()
@@ -587,12 +607,13 @@ end
 
 function wstrzymaj()
     EnableGroup("sekwencja", false)
+    ResetTimers()
     Note("wstrzymuje expa")
 end
 
 function wznow()
     EnableGroup("sekwencja", true)
-    Send(cel)
+    nastepnaSekwencja()
     Note("wznawiam expa")
 end
 
@@ -628,6 +649,7 @@ DoAfter(305, "zakoncz")
 EnableGroup("koniecexpa", false)
 Note("uwaga!!! za 300 sekund nastapi wylogowanie")
 end
+
 ]]>
 </script> 
 
