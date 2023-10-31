@@ -501,7 +501,7 @@ ktorycel = 1
 ilosccelow = 2
 
 function nastepnyCel()
-ktorycel += 1
+ktorycel = ktorycel + 1
 nastepnaSekwencja()
 end
 
