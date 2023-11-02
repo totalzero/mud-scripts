@@ -243,6 +243,7 @@ end
 
 function uciekaj()
         EnableGroup("ucieczka", true)
+        EnableGroup("sekwencja", false)
         Note("o kurwa!!! S P I E R D A A A A L A M Y")
 end
 
