@@ -284,6 +284,16 @@
   </alias>
 
   <alias
+   match="galeon-pomin *"
+   enabled="y"
+   script="pomin"
+   send_to="12"
+   sequence="100"
+  >
+  <send></send>
+  </alias>
+
+  <alias
    match="koniecexpa off"
    enabled="y"
    send_to="12"
@@ -656,6 +666,16 @@ koniec()
 DoAfter(305, "zakoncz")
 EnableGroup("koniecexpa", false)
 Note("uwaga!!! za 300 sekund nastapi wylogowanie")
+end
+
+function pomin(n, l, w)
+w = table.concat(w)
+if w == "off" then
+deletetrigger("pomijacz")
+Note("wylaczam pomijanie")
+end
+AddTrigger("pomijacz", w, "", trigger_flag.Enabled , custom_colour.Custom15, 0, "", "doPrzodu")
+Note("pomijam: "..w)
 end
 
 ]]>
