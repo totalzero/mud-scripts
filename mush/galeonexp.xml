@@ -572,6 +572,7 @@ else
 ktorycel = 1
     Note("ide dalej")
     doPrzodu()
+    delay()
 end
 end
 
