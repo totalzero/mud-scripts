@@ -515,7 +515,7 @@ ktorycel = 1
 ilosccelow = 2
 
 function delay()
-DoAfter(3, listacelow[ktorycel])
+DoAfter(1, listacelow[ktorycel])
 end
 
 function nastepnyCel()
@@ -672,7 +672,7 @@ end
 function pomin(n, l, w)
 w = table.concat(w)
 if w == "off" then
-deletetrigger("pomijacz")
+DeleteTrigger("pomijacz")
 Note("wylaczam pomijanie")
 end
 AddTrigger("pomijacz", w, "", trigger_flag.Enabled , custom_colour.Custom15, 0, "", "doPrzodu")
