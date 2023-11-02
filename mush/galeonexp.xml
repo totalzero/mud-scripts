@@ -228,6 +228,17 @@
   >
   <send>uciekaj()</send>
   </trigger>
+
+  <trigger
+   enabled="n"
+   group="sekwencja"
+      match="*pantera jest ciezko ranna.*"
+   send_to="12"
+   sequence="100"
+  >
+  <send>uciekaj()</send>
+  </trigger>
+
   <trigger
    enabled="n"
    group="sekwencja"
@@ -364,11 +375,6 @@ group="ucieczka" >
 
   </timer>
 
-<timer second="8.0" offset_second="0.00"    send_to="12"
-group="sekwencja" >
-  <send>nastepnaSekwencja()</send>
-  </timer>
-
   <timer hour="6" minute="0" second="0.00" offset_second="0.00" at_time="y" 
   send_to="12"
   group="koniecexpa" >
@@ -498,6 +504,10 @@ listacelow = {"zabij splugawionego marynarza", "zabij marynarza"}
 ktorycel = 1
 ilosccelow = 2
 
+function delay()
+DoAfter(3, listacelow[ktorycel])
+end
+
 function nastepnyCel()
 ktorycel = ktorycel + 1
 nastepnaSekwencja()
@@ -512,7 +522,7 @@ licznik = licznik +1
         if koleczko == true then
 Note("kolejne koleczko")
 licznik = 1
-DoAfter(150, cel)
+delay()
         end
 end
 end
@@ -546,8 +556,8 @@ end
 
 function nastepnaSekwencja()
 regenerujemy = false
-if ktorycel <= 2 then
-Send(listacelow[ktorycel])
+if ktorycel < 3 then
+delay()
 else
 ktorycel = 1
     Note("ide dalej")
@@ -581,7 +591,7 @@ licznik = 1
 koleczko = false
 
 EnableGroup("sekwencja", true)
-Send(cel)
+delay()
 end
 
 function koniec()

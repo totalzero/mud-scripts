@@ -118,8 +118,12 @@ listacelow = {"zabij splugawionego marynarza", "zabij marynarza"}
 ktorycel = 1
 ilosccelow = 2
 
+function delay()
+DoAfter(3, listacelow[ktorycel])
+end
+
 function nastepnyCel()
-ktorycel += 1
+ktorycel = ktorycel + 1
 nastepnaSekwencja()
 end
 
@@ -132,7 +136,7 @@ licznik = licznik +1
         if koleczko == true then
 Note("kolejne koleczko")
 licznik = 1
-DoAfter(150, cel)
+delay()
         end
 end
 end
@@ -166,8 +170,12 @@ end
 
 function nastepnaSekwencja()
 regenerujemy = false
-if ktorycel <= 2 then
-Send(listacelow[ktorycel])
+if ktorycel < 3 then
+delay()
+else
+ktorycel = 1
+    Note("ide dalej")
+    doPrzodu()
 end
 end
 
@@ -197,7 +205,7 @@ licznik = 1
 koleczko = false
 
 EnableGroup("sekwencja", true)
-Send(cel)
+delay()
 end
 
 function koniec()
@@ -221,12 +229,13 @@ end
 
 function wstrzymaj()
     EnableGroup("sekwencja", false)
+    ResetTimers()
     Note("wstrzymuje expa")
 end
 
 function wznow()
     EnableGroup("sekwencja", true)
-    Send(cel)
+    nastepnaSekwencja()
     Note("wznawiam expa")
 end
 
