@@ -1,3 +1,4 @@
+<![CDATA[
 sciezka = {
     "w",
     "w",
@@ -119,7 +120,7 @@ ktorycel = 1
 ilosccelow = 2
 
 function delay()
-DoAfter(3, listacelow[ktorycel])
+DoAfter(1, listacelow[ktorycel])
 end
 
 function nastepnyCel()
@@ -176,6 +177,7 @@ else
 ktorycel = 1
     Note("ide dalej")
     doPrzodu()
+    Send(listacelow[ktorycel])
 end
 end
 
@@ -270,4 +272,14 @@ koniec()
 DoAfter(305, "zakoncz")
 EnableGroup("koniecexpa", false)
 Note("uwaga!!! za 300 sekund nastapi wylogowanie")
+end
+
+function pomin(n, l, w)
+w = table.concat(w)
+if w == "off" then
+DeleteTrigger("pomijacz")
+Note("wylaczam pomijanie")
+end
+AddTrigger("pomijacz", w, "", trigger_flag.Enabled , custom_colour.Custom15, 0, "", "doPrzodu")
+Note("pomijam: "..w)
 end
