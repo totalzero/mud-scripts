@@ -600,7 +600,7 @@ function start()
 Note("rozpoczynam expy")
 licznik = 1
 koleczko = false
-
+EnableGroup("ucieczka", false) 
 EnableGroup("sekwencja", true)
 delay()
 end
@@ -670,13 +670,18 @@ EnableGroup("koniecexpa", false)
 Note("uwaga!!! za 300 sekund nastapi wylogowanie")
 end
 
+function pomijanie()
+doPrzodu()
+nastepnaSekwencja()
+end
+
 function pomin(n, l, w)
 w = table.concat(w)
 if w == "off" then
 DeleteTrigger("pomijacz")
 Note("wylaczam pomijanie")
 end
-AddTrigger("pomijacz", w, "", trigger_flag.Enabled , custom_colour.Custom15, 0, "", "doPrzodu")
+AddTrigger("pomijacz", w, "", trigger_flag.Enabled , custom_colour.Custom15, 0, "", "pomijanie")
 Note("pomijam: "..w)
 end
 
