@@ -232,7 +232,7 @@
   <trigger
    enabled="n"
    group="sekwencja"
-      match="*pantera jest ciezko ranna.*"
+      match="*pantera jest ciezko ranny.*"
    send_to="12"
    sequence="100"
   >
