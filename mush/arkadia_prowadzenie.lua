@@ -53,7 +53,7 @@ if puszczanie == false then
 else
     puszczanieOff()
 end
-
+end
 function przestanZaslaniac()
     if puszczanie == true then
 Send("przestan zaslaniac")
