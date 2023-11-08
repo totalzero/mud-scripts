@@ -47,7 +47,7 @@ puszczanie = false
 Note("puszczanie zaslon wylaczylem")
 end
 
-function puszczanie()
+function Puszczanie()
 if puszczanie == false then
     puszczanieOn()
 else
