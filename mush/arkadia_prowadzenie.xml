@@ -95,6 +95,15 @@
   </alias>
 
   <alias
+   match="puszczanie"
+   enabled="y"
+   send_to="12"
+   sequence="100"
+  >
+  <send>puszczanie()</send>
+  </alias>
+
+  <alias
    match="rozkazy on"
    enabled="y"
    send_to="12"
@@ -158,7 +167,6 @@ Send("rozkaz druzynie zaslonic cel obrony")
 end
 end
 
-
 function puszczanieOn()
 puszczanie = true
 EnableGroup("puszczanie", true)
@@ -169,6 +177,13 @@ function puszczanieOff()
     EnableGroup("puszczanie", false)
 puszczanie = false
 Note("puszczanie zaslon wylaczylem")
+end
+
+function puszczanie()
+if puszczanie == false then
+    puszczanieOn()
+else
+    puszczanieOff()
 end
 
 function przestanZaslaniac()

@@ -47,6 +47,13 @@ puszczanie = false
 Note("puszczanie zaslon wylaczylem")
 end
 
+function puszczanie()
+if puszczanie == false then
+    puszczanieOn()
+else
+    puszczanieOff()
+end
+
 function przestanZaslaniac()
     if puszczanie == true then
 Send("przestan zaslaniac")
