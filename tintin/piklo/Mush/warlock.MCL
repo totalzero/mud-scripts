@@ -1,0 +1,1153 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE muclient>
+<!-- Saved on niedziela, luty 17, 2019, 1:42  -->
+<!-- MuClient version 4.84 -->
+<!-- Written by Nick Gammon -->
+<!-- Home Page: http://www.mushclient.com/ -->
+<muclient>
+<world
+   muclient_version="4.84"
+   world_file_version="15"
+   date_saved="2019-02-17 01:42:15"
+
+   auto_say_override_prefix="-"
+   auto_say_string="say "
+   chat_name="Name-not-set"
+   command_stack_character=";"
+   id="8dd696713c8f1cf25fcfcf03"
+   input_font_name="Fixedsys"
+   mapping_failure="Alas, you cannot go that way."
+   name="warlock"
+   new_activity_sound="(No sound)"
+   output_font_name="FixedSys"
+   password_base64="y"
+   password="SWxha28ubG9s"
+   player="blump"
+   script_editor="notepad"
+   script_editor_argument="%file"
+   script_language="Lua"
+   site="warlock.pl"
+   spam_message="look"
+   speed_walk_prefix="#"
+   terminal_identification="mushclient"
+
+   arrows_change_history="y"
+   auto_pause="y"
+   auto_resize_minimum_lines="1"
+   auto_resize_maximum_lines="20"
+   chat_foreground_colour="red"
+   chat_background_colour="black"
+   chat_port="4050"
+   confirm_before_replacing_typing="y"
+   confirm_on_paste="y"
+   confirm_on_send="y"
+   default_trigger_sequence="100"
+   default_alias_sequence="100"
+   detect_pueblo="y"
+   display_my_input="y"
+   echo_hyperlink_in_output_window="y"
+   edit_script_with_notepad="y"
+   enable_aliases="y"
+   enable_beeps="y"
+   enable_scripts="y"
+   enable_timers="y"
+   enable_triggers="y"
+   enable_trigger_sounds="y"
+   history_lines="1000"
+   hyperlink_adds_to_command_history="y"
+   hyperlink_colour="#0080FF"
+   indent_paras="y"
+   input_background_colour="white"
+   input_font_height="9"
+   input_font_weight="400"
+   input_text_colour="black"
+   keypad_enable="y"
+   line_information="y"
+   log_input="y"
+   log_output="y"
+   max_output_lines="5000"
+   mud_can_change_link_colour="y"
+   mud_can_change_options="y"
+   note_text_colour="#040000"
+   output_font_height="9"
+   output_font_weight="400"
+   paste_delay_per_lines="1"
+   pixel_offset="1"
+   port="23"
+   proxy_port="1080"
+   save_world_automatically="y"
+   send_file_delay_per_lines="1"
+   send_mxp_afk_response="y"
+   show_connect_disconnect="y"
+   show_italic="y"
+   show_underline="y"
+   spam_line_count="20"
+   tab_completion_lines="200"
+   timestamp_input_text_colour="maroon"
+   timestamp_notes_text_colour="blue"
+   timestamp_output_text_colour="white"
+   timestamp_input_back_colour="black"
+   timestamp_notes_back_colour="black"
+   timestamp_output_back_colour="black"
+   tool_tip_visible_time="5000"
+   tool_tip_start_time="400"
+   underline_hyperlinks="y"
+   unpause_on_send="y"
+   use_custom_link_colour="y"
+   use_default_input_font="y"
+   use_default_output_font="y"
+   warn_if_scripting_inactive="y"
+   wrap="y"
+   wrap_column="80"
+   write_world_name_to_log="y"
+   > <!-- end of general world attributes -->
+  <connect_text>t</connect_text>
+
+</world>
+
+<!-- triggers -->
+
+<triggers
+   muclient_version="4.84"
+   world_file_version="15"
+   date_saved="2019-02-17 01:42:15"
+  >
+  <trigger
+   enabled="y"
+   match="* atakuje cie*"
+   sequence="100"
+   sound="C:\Users\Jan\Documents\Documents\castaways\sounds\General\Resume.wav"
+  >
+  </trigger>
+  <trigger
+   enabled="y"
+   match="* bulgocze *"
+   sequence="100"
+  >
+  <send>zamieszaj lycha miksture w kotle
+zamieszaj lycha miksture w kotle
+zamieszaj lycha miksture w kotle
+zamieszaj lycha miksture w kotle
+zamieszaj lycha miksture w kotle
+zamieszaj lycha miksture w kotle
+zamieszaj lycha miksture w kotle
+zamieszaj lycha miksture w kotle
+zamieszaj lycha miksture w kotle
+zamieszaj lycha miksture w kotle
+zamieszaj lycha miksture w kotle
+zamieszaj lycha miksture w kotle
+
+ob kociol</send>
+  </trigger>
+  <trigger
+   enabled="y"
+   match="* do ciebie *"
+   sequence="100"
+   sound="C:\Users\Jan\Documents\Documents\castaways\sounds\General\Message.wav"
+  >
+  </trigger>
+  <trigger
+   enabled="y"
+   match="* gesta *"
+   sequence="100"
+   sound="C:\Users\Jan\Documents\Documents\castaways\sounds\General\Alarm.wav"
+  >
+  </trigger>
+  <trigger
+   enabled="y"
+   match="* kogos ciac."
+   sequence="100"
+  >
+  <send>x</send>
+  </trigger>
+  <trigger
+   enabled="y"
+   match="* kogos pchnac."
+   sequence="100"
+  >
+  <send>c</send>
+  </trigger>
+  <trigger
+   enabled="y"
+   match="* mowi *"
+   sequence="100"
+   sound="C:\Users\Jan\Documents\Documents\castaways\sounds\General\Message.wav"
+  >
+  </trigger>
+  <trigger
+   enabled="y"
+   match="* mozesz znowu kogos rozbroic."
+   sequence="100"
+  >
+  <send>z</send>
+  </trigger>
+  <trigger
+   enabled="y"
+   match="* nowa *"
+   sequence="100"
+   sound="C:\Users\Jan\Documents\Documents\castaways\sounds\General\Upgrade.wav"
+  >
+  </trigger>
+  <trigger
+   enabled="y"
+   match="* podpowiadaja *"
+   sequence="100"
+   sound="C:\Users\Jan\Documents\Documents\castaways\sounds\General\Pause2.wav"
+  >
+  </trigger>
+  <trigger
+   enabled="y"
+   match="* przybywa *"
+   sequence="100"
+   sound="C:\Users\Jan\Documents\Documents\castaways\sounds\General\Action.wav"
+  >
+  </trigger>
+  <trigger
+   enabled="y"
+   match="* uciekl *"
+   sequence="100"
+   sound="C:\Users\Jan\Documents\Documents\castaways\sounds\Military\Burned.wav"
+  >
+  </trigger>
+  <trigger
+   enabled="y"
+   match="* wykonac unik."
+   sequence="100"
+  >
+  <send>v</send>
+  </trigger>
+  <trigger
+   enabled="y"
+   match="* wystarczajaco wypoczety *"
+   sequence="100"
+   sound="C:\Users\Jan\Documents\Documents\castaways\sounds\General\Pause2.wav"
+  >
+  <send>zskpogrzeb cialo</send>
+  </trigger>
+  <trigger
+   enabled="y"
+   match="*Flantsawern przechodzi do drugiego szeregu druzyny, chowajac sie za ciebie*"
+   sequence="100"
+  >
+  <send>narozkaz przejdz do przodu</send>
+  </trigger>
+  <trigger
+   enabled="y"
+   match="*atakuje Flantsawerna."
+   sequence="100"
+  >
+  <send>narozkaz przejdz za periasa
+</send>
+  </trigger>
+  <trigger
+   enabled="y"
+   match="*gremlin*"
+   sequence="100"
+  >
+  <send>zabij gremlina</send>
+  </trigger>
+  <trigger
+   enabled="y"
+   match="*skomplikowany manewr*"
+   sequence="100"
+  >
+  <send>sztnij</send>
+  </trigger>
+  <trigger
+   enabled="y"
+   match="*wyskakujesz do*"
+   sequence="100"
+  >
+  <send>szrozbroj</send>
+  </trigger>
+  <trigger
+   enabled="y"
+   match="*zabil*"
+   sequence="100"
+   sound="C:\Users\Jan\Documents\Documents\castaways\sounds\General\Backlogged.wav"
+  >
+  </trigger>
+  <trigger
+   enabled="y"
+   match="*zwodniczo mlynkujesz*"
+   sequence="100"
+  >
+  <send>szpchnij</send>
+  </trigger>
+</triggers>
+
+<!-- aliases -->
+
+<aliases
+   muclient_version="4.84"
+   world_file_version="15"
+   date_saved="2019-02-17 01:42:15"
+  >
+  <alias
+   match="ab"
+   enabled="y"
+   sequence="100"
+  >
+  <send>wez lodowa zbroje z ciala
+wez plomienista zbroje z ciala
+wez karmazynowa zbroje z ciala
+wez plomienista bron z ciala
+wez karmazynowa bron z ciala
+wez lodowa bron z ciala
+wez zielonkawa bron z ciala
+wez zielonkawa zbroje z ciala</send>
+  </alias>
+  <alias
+   match="br"
+   enabled="y"
+   sequence="100"
+  >
+  <send>pdobadz topora z temblaka blyskawicznie</send>
+  </alias>
+  <alias
+   match="droga"
+   enabled="y"
+   sequence="100"
+  >
+  <send>w
+w
+w
+w
+w
+w
+w
+w
+w
+w
+w
+w
+w
+w
+nw
+nw
+w
+w
+w
+e
+e
+e
+se
+se
+e
+plaza
+e
+w
+w
+w
+e
+e
+trakt
+e
+e
+e
+e
+e
+e
+e
+e
+e
+e
+e
+e
+e
+</send>
+  </alias>
+  <alias
+   match="droga_wieza"
+   enabled="y"
+   sequence="100"
+  >
+  <send>nw
+nw
+w
+w
+sw
+sw
+w
+sw
+w
+w
+w
+sw
+s
+nw
+w
+w
+w
+nw
+w
+sw
+nw
+w
+s
+w
+nw
+w
+sw
+w
+w
+sw
+w
+sw
+n
+n
+ne
+wieza
+</send>
+  </alias>
+  <alias
+   match="jaskinia_powrot"
+   enabled="y"
+   sequence="100"
+  >
+  <send>s
+e
+ne
+nw
+e
+e
+e
+se
+n
+ne
+e
+e
+e
+ne
+e
+ne
+ne
+e
+e
+se
+se
+</send>
+  </alias>
+  <alias
+   match="jaskinia_start"
+   enabled="y"
+   sequence="100"
+  >
+  <send> nw
+nw
+w
+w
+sw
+sw
+w
+sw
+w
+w
+w
+sw
+s
+nw
+w
+w
+w
+se
+sw
+w
+n</send>
+  </alias>
+  <alias
+   match="oboz_dalej"
+   enabled="y"
+   sequence="100"
+  >
+  <send>e
+se
+se
+sw
+s
+se
+w
+w
+sw
+sw
+w
+sw
+sw
+s
+sw
+se
+s
+s
+</send>
+  </alias>
+  <alias
+   match="oboz_start"
+   enabled="y"
+   sequence="100"
+  >
+  <send>
+w
+sw
+w
+w
+nw
+w
+nw
+w
+w
+nw
+nw
+w
+w
+nw
+w
+w
+w
+w
+sw
+sw
+w
+w
+nw
+ne
+
+</send>
+  </alias>
+  <alias
+   match="oboz_wyjscie"
+   enabled="y"
+   sequence="100"
+  >
+  <send>n
+n
+nw
+ne
+n
+ne
+ne
+e
+ne
+ne
+e
+e
+nw
+n
+ne
+nw
+nw
+w
+</send>
+  </alias>
+  <alias
+   match="pustynia_powrot"
+   enabled="y"
+   sequence="100"
+  >
+  <send>'powrót
+n
+w
+n
+w
+sw
+w
+nw
+n
+nw
+w
+w
+w
+s
+w
+sw
+sw
+sw
+se
+s
+se
+se
+se
+s
+sw
+sw
+sw
+s
+s
+'i tu juz jest trakt</send>
+  </alias>
+  <alias
+   match="pustynia_start"
+   enabled="y"
+   sequence="100"
+  >
+  <send>n
+wez roze
+ne
+wez roze
+ne
+wez roze
+n
+wez roze
+ne
+wez roze
+nw
+wez roze
+nw
+wez roze
+nw
+wez roze
+nw
+wez roze
+e
+wez roze
+nw
+wez roze
+ne
+wez roze
+ne
+wez roze
+ne
+wez roze
+e
+wez roze
+n
+wez roze
+e
+wez roze
+e
+wez roze
+e
+wez roze
+se
+wez roze
+s
+wez roze
+se
+wez roze
+e
+wez roze
+ne
+wez roze
+e
+wez roze
+s
+wez roze
+e
+wez roze
+s
+wez roze
+wcisnij sie do szczeliny
+</send>
+  </alias>
+  <alias
+   match="uzupelnij"
+   enabled="y"
+   sequence="100"
+  >
+  <send>otworz woreczki
+otworz sloiki
+wez kwiatki z drugiego woreczka
+wez kwiatki ze sloika
+wez kwiatki z drugiego sloika
+wloz kwiatki do woreczka
+wloz kwiatki do drugiego woreczka
+wloz kwiatki do sloika
+wloz kwiatki do drugiego sloika
+wez klacza z drugiego woreczka
+wez klacza ze sloika
+wez klacza z drugiego sloika
+wloz klacza do woreczka
+wloz klacza do drugiego woreczka
+wloz klacza do sloika
+wloz klacza do drugiego sloika
+zamknij woreczki
+zamknij sloiki</send>
+  </alias>
+  <alias
+   match="zal"
+   enabled="y"
+   sequence="100"
+  >
+  <send>zaloz wszystko
+otworz plecak
+dobadz mieczy
+dobadz gladiusa
+zaloz pierscien
+zaloz pierscien
+otworz sloiczek
+otworz sloiki
+otworz woreczki
+wloz kwiatki do woreczka
+wloz klacza do woreczka
+wloz kwiatki do drugiego woreczka
+wloz klacza do drugiego woreczka
+wloz ziola do drugiego sloika
+wloz ziola do sloika
+wloz ziola do drugiego sloika
+wloz ziola do trzeciego sloika
+wloz ziola do czwartego sloika
+zamknij woreczki
+zamknij sloiki
+wloz ziola do plecaka
+zamknij woreczek
+zamknij sloik
+zaloz naszyjnik
+zaloz lancuszek
+zaloz plecak
+napelnij plecak
+zamknij plecak
+</send>
+  </alias>
+  <alias
+   match="zio"
+   enabled="y"
+   sequence="100"
+  >
+  <send>otworz woreczek
+wloz ziola do woreczka
+zamknij woreczek
+otworz sloik
+wloz ziola do sloika
+zamknij sloik
+</send>
+  </alias>
+  <alias
+   match="zx"
+   enabled="y"
+   sequence="100"
+  >
+  <send>kup bilet
+wejdz na statek</send>
+  </alias>
+</aliases>
+
+<!-- timers -->
+
+<timers
+   muclient_version="4.84"
+   world_file_version="15"
+   date_saved="2019-02-17 01:42:15"
+  >
+  <timer enabled="y" minute="18" second="0.00" offset_second="0.00" >
+  <send>kto</send>
+
+  </timer>
+</timers>
+
+<!-- macros -->
+
+<macros
+   muclient_version="4.84"
+   world_file_version="15"
+   date_saved="2019-02-17 01:42:15"
+  >
+
+  <macro name="up" type="send_now" >
+  <send>up</send>
+
+  </macro>
+
+  <macro name="down" type="send_now" >
+  <send>down</send>
+
+  </macro>
+
+  <macro name="north" type="send_now" >
+  <send>north</send>
+
+  </macro>
+
+  <macro name="south" type="send_now" >
+  <send>south</send>
+
+  </macro>
+
+  <macro name="east" type="send_now" >
+  <send>east</send>
+
+  </macro>
+
+  <macro name="west" type="send_now" >
+  <send>west</send>
+
+  </macro>
+
+  <macro name="examine" type="replace" >
+  <send>examine </send>
+
+  </macro>
+
+  <macro name="look" type="replace" >
+  <send>look </send>
+
+  </macro>
+
+  <macro name="page" type="replace" >
+  <send>page </send>
+
+  </macro>
+
+  <macro name="say" type="replace" >
+  <send>say </send>
+
+  </macro>
+
+  <macro name="whisper" type="replace" >
+  <send>whisper </send>
+
+  </macro>
+
+  <macro name="doing" type="send_now" >
+  <send>DOING</send>
+
+  </macro>
+
+  <macro name="who" type="send_now" >
+  <send>WHO</send>
+
+  </macro>
+
+  <macro name="drop" type="replace" >
+  <send>drop </send>
+
+  </macro>
+
+  <macro name="take" type="replace" >
+  <send>take </send>
+
+  </macro>
+
+  <macro name="F2" type="send_now" >
+  <send>mwypowiedz Leczenie lekkich ran</send>
+
+  </macro>
+
+  <macro name="F3" type="send_now" >
+  <send>mwypowiedz Leczenie srednich ran</send>
+
+  </macro>
+
+  <macro name="F4" type="send_now" >
+  <send>mwypowiedz Stworzenie wody</send>
+
+  </macro>
+
+  <macro name="F5" type="send_now" >
+  <send>mwypowiedz Przywolanie swietlika</send>
+
+  </macro>
+
+  <macro name="F7" type="send_now" >
+  <send>mwypowiedz Stworzenie zywnosci</send>
+
+  </macro>
+
+  <macro name="F8" type="send_now" >
+  <send>mwypowiedz Usuniecie zmeczenia</send>
+
+  </macro>
+
+  <macro name="F11" type="send_now" >
+  <send>szukaj dziewanny</send>
+
+  </macro>
+
+  <macro name="F12" type="send_now" >
+  <send>krocz_szlakiem_zielarzy</send>
+
+  </macro>
+
+  <macro name="F2+Shift" type="send_now" >
+  <send>mwypowiedz goblinska wlocznia</send>
+
+  </macro>
+
+  <macro name="F3+Shift" type="send_now" >
+  <send>mwypowiedz lodowy pocisk</send>
+
+  </macro>
+
+  <macro name="F2+Ctrl" type="send_now" >
+  <send>mwypowiedz leczenie lekkich ran</send>
+
+  </macro>
+
+  <macro name="F3+Ctrl" type="send_now" >
+  <send>mwypowiedz Leczenie ciezkich ran</send>
+
+  </macro>
+
+  <macro name="logout" type="send_now" >
+  <send>LOGOUT</send>
+
+  </macro>
+
+  <macro name="quit" type="send_now" >
+  <send>QUIT</send>
+
+  </macro>
+
+  <macro name="Alt+A" type="send_now" >
+  <send>otworz woreczek
+wez ziolo z woreczka
+wycisnij ziolo na rane
+wloz kwiatek do woreczka
+zamknij woreczek
+</send>
+
+  </macro>
+
+  <macro name="Alt+B" type="send_now" >
+  <send>krocz_platynowa_sciezka</send>
+
+  </macro>
+
+  <macro name="Alt+O" type="send_now" >
+  <send>mwskaz siebie
+zal</send>
+
+  </macro>
+
+  <macro name="Alt+P" type="send_now" >
+  <send>mzakresl krag</send>
+
+  </macro>
+
+  <macro name="Alt+Q" type="send_now" >
+  <send>szrozbroj
+sztnij
+szpchnij
+szuniknij</send>
+
+  </macro>
+
+  <macro name="Alt+S" type="send_now" >
+  <send>mwskaz wroga</send>
+
+  </macro>
+
+  <macro name="F6" type="send_now" >
+  <send>mwypowiedz Lodowy pocisk</send>
+
+  </macro>
+</macros>
+
+<!-- variables -->
+
+<variables
+   muclient_version="4.84"
+   world_file_version="15"
+   date_saved="2019-02-17 01:42:15"
+  >
+</variables>
+
+<!-- colours -->
+
+<colours
+   muclient_version="4.84"
+   world_file_version="15"
+   date_saved="2019-02-17 01:42:15"
+  >
+
+<ansi>
+
+ <normal>
+   <colour seq="1" rgb="black" />
+   <colour seq="2" rgb="maroon" />
+   <colour seq="3" rgb="green" />
+   <colour seq="4" rgb="olive" />
+   <colour seq="5" rgb="navy" />
+   <colour seq="6" rgb="purple" />
+   <colour seq="7" rgb="teal" />
+   <colour seq="8" rgb="silver" />
+
+ </normal>
+
+ <bold>
+   <colour seq="1" rgb="gray" />
+   <colour seq="2" rgb="red" />
+   <colour seq="3" rgb="lime" />
+   <colour seq="4" rgb="yellow" />
+   <colour seq="5" rgb="blue" />
+   <colour seq="6" rgb="magenta" />
+   <colour seq="7" rgb="cyan" />
+   <colour seq="8" rgb="white" />
+
+ </bold>
+
+</ansi>
+
+<custom>
+  <colour seq="1" name="Custom1" text="#FF8080" back="black" />
+  <colour seq="2" name="Custom2" text="#FFFF80" back="black" />
+  <colour seq="3" name="Custom3" text="#80FF80" back="black" />
+  <colour seq="4" name="Custom4" text="#80FFFF" back="black" />
+  <colour seq="5" name="Custom5" text="#0080FF" back="black" />
+  <colour seq="6" name="Custom6" text="#FF80C0" back="black" />
+  <colour seq="7" name="Custom7" text="red" back="black" />
+  <colour seq="8" name="Custom8" text="#0080C0" back="black" />
+  <colour seq="9" name="Custom9" text="magenta" back="black" />
+  <colour seq="10" name="Custom10" text="#804040" back="black" />
+  <colour seq="11" name="Custom11" text="#FF8040" back="black" />
+  <colour seq="12" name="Custom12" text="teal" back="black" />
+  <colour seq="13" name="Custom13" text="#004080" back="black" />
+  <colour seq="14" name="Custom14" text="#FF0080" back="black" />
+  <colour seq="15" name="Custom15" text="green" back="black" />
+  <colour seq="16" name="Custom16" text="blue" back="black" />
+
+</custom>
+</colours>
+
+<!-- keypad -->
+
+<keypad
+   muclient_version="4.84"
+   world_file_version="15"
+   date_saved="2019-02-17 01:42:15"
+  >
+
+  <key name="0" >
+  <send>zr</send>
+  </key>
+
+  <key name="1" >
+  <send>sw</send>
+  </key>
+
+  <key name="2" >
+  <send>s</send>
+  </key>
+
+  <key name="3" >
+  <send>se</send>
+  </key>
+
+  <key name="4" >
+  <send>w</send>
+  </key>
+
+  <key name="5" >
+  <send>wyjscie</send>
+  </key>
+
+  <key name="6" >
+  <send>e</send>
+  </key>
+
+  <key name="7" >
+  <send>nw</send>
+  </key>
+
+  <key name="8" >
+  <send>n</send>
+  </key>
+
+  <key name="9" >
+  <send>ne</send>
+  </key>
+
+  <key name="." >
+  <send>mm</send>
+  </key>
+
+  <key name="/" >
+  <send>k wszystkich</send>
+  </key>
+
+  <key name="*" >
+  <send>cechy</send>
+  </key>
+
+  <key name="-" >
+  <send>u</send>
+  </key>
+
+  <key name="+" >
+  <send>d</send>
+  </key>
+
+  <key name="Ctrl+0" >
+  </key>
+
+  <key name="Ctrl+1" >
+  </key>
+
+  <key name="Ctrl+2" >
+  </key>
+
+  <key name="Ctrl+3" >
+  </key>
+
+  <key name="Ctrl+4" >
+  </key>
+
+  <key name="Ctrl+5" >
+  </key>
+
+  <key name="Ctrl+6" >
+  </key>
+
+  <key name="Ctrl+7" >
+  </key>
+
+  <key name="Ctrl+8" >
+  </key>
+
+  <key name="Ctrl+9" >
+  </key>
+
+  <key name="Ctrl+." >
+  </key>
+
+  <key name="Ctrl+/" >
+  </key>
+
+  <key name="Ctrl+*" >
+  </key>
+
+  <key name="Ctrl+-" >
+  </key>
+
+  <key name="Ctrl++" >
+  </key>
+</keypad>
+
+<!-- printing -->
+
+<printing
+   muclient_version="4.84"
+   world_file_version="15"
+   date_saved="2019-02-17 01:42:15"
+  >
+
+<ansi>
+
+ <normal>
+
+ </normal>
+
+ <bold>
+   <style seq="1" bold="y" />
+   <style seq="2" bold="y" />
+   <style seq="3" bold="y" />
+   <style seq="4" bold="y" />
+   <style seq="5" bold="y" />
+   <style seq="6" bold="y" />
+   <style seq="7" bold="y" />
+   <style seq="8" bold="y" />
+
+ </bold>
+
+</ansi>
+</printing>
+
+<!-- plugins -->
+<include name="mushplugins\Lazik.xml" plugin="y" />
+<include name="mushplugins\Przemykanie.xml" plugin="y" />
+<include name="Mush\Warlock_Gagi.xml" plugin="y" />
+<include name="Mush\Warlock_Liczbowa_Kondycja.xml" plugin="y" />
+<include name="Mush\Licznik_killsow.xml" plugin="y" />
+<include name="Mush\Zbieranie_z_cial.xml" plugin="y" />
+<include name="Mush\Warlock_Stan_Sprzetu.xml" plugin="y" />
+<include name="Mush\Warlock_Stan_Sprzetu_Niezbednik.xml" plugin="y" />
+<include name="Mush\Warlock_szlak_zielarzy.xml" plugin="y" />
+</muclient>

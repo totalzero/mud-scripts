@@ -1,0 +1,77 @@
+10:33:08p |    Ort   Tal   Ral    ++     Szczesciarz   Podnosi nieco prawdopodobienstwo zdobycia lepszych run
+10:33:08p |     Ko   Dol    El    ++  Wybraniec losu   Podnosi zauwazalnie prawdopodobienstwo zdobycia lepszych run
+10:33:08p |    Sol   Tir   Ral    ++         Widzacy   Podnosi troche umiejetnosc w ocenianiu wlasnosci przedmiotow, troche umiejetnosc w szacowaniu wartosci przedmiotow oraz zauwazalnie widzenie w ciemnosci ponadto pozwala widziec magiczna energie
+10:33:08p |    Nef   Hel    Ko    ++       Leniuszek   Podnosi troche umiejetnosc w ocenianiu wlasnosci przedmiotow ponadto juz nigdy nie bedziesz musial odwiedzac kowala
+10:33:08p |    Eth   Ort   Ral     +          Wiecej   Podnosi nieco prawdopodobienstwo zdobycia dodatkowych run
+10:33:08p |    Ort   Hel    Io     +     Duzo wiecej   Podnosi zauwazalnie prawdopodobienstwo zdobycia dodatkowych run
+10:33:08p |    Sol   Tal  Thul     +       Jajoglowy   Podnosi sporo ilosc zapamietanych czarow oraz nieco wielkosc listy dozwolonych czarow
+10:33:08p |   Thul   Ort   Amn    ++       Spekulant   Podnosi nieco umiejetnosc w zawieraniu korzystnych transakcji handlowych
+10:33:08p |    Dol   Tir   Tal    ++        Profesor   Podnosi nieznacznie ilosc doswiadczenia przekazywanego na inteligencje oraz nieznacznie ilosc doswiadczenia przekazywanego na madrosc
+10:33:08p |     El   Ral   Dol    ++        Miesniak   Podnosi minimalnie ilosc doswiadczenia przekazywanego na sile, minimalnie ilosc doswiadczenia przekazywanego na zrecznosc oraz minimalnie ilosc doswiadczenia przekazywanego na wytrzymalosc
+10:33:08p |    Tal   Hel   Amn    ++           Heros   Podnosi nieznacznie ilosc doswiadczenia przekazywanego na odwage
+10:33:08p |     El   Amn   Ith     +          Kopacz   Podnosi nieznacznie umiejetnosc w wydobywaniu mineralow spod ziemi
+10:33:08p |    Amn   Eld   Eth     +       Wytapiacz   Podnosi nieznacznie umiejetnosc w metalurgii
+10:33:08p |    Tir   Dol   Ort    ++     Kolekcjoner   Podnosi nieznacznie ilosc przedmiotow ktore mozesz trwale zabezpieczyc
+10:33:08p |    Tir   Ort   Amn   +++           Silny   Podnosi nieznacznie sile
+10:33:08p |    Amn   Eth    El   +++         Zreczny   Podnosi nieznacznie zrecznosc
+10:33:08p |   Thul   Amn   Eld   +++      Wytrzymaly   Podnosi nieznacznie wytrzymalosc
+10:33:08p |    Eth   Amn   Ral   +++    Inteligentny   Podnosi nieznacznie inteligencje
+10:33:08p |    Nef   Ral   Amn   +++           Madry   Podnosi nieznacznie madrosc
+10:33:08p |    Amn   Tal   Ort   +++         Odwazny   Podnosi nieznacznie odwage
+10:33:08p |    Tal   Eld   Sol   +++            Lisc   Podnosi nieznacznie umiejetnosc w walce wlocznia
+10:33:08p |    Ral   Sol   Tir   +++           Kolec   Podnosi nieznacznie umiejetnosc w walce maczuga
+10:33:08p |    Sol   Ort   Eld   +++           Patyk   Podnosi nieznacznie umiejetnosc w walce bronia drzewcowa
+10:33:08p |    Ral   Sol    El   +++           Bijak   Podnosi nieznacznie umiejetnosc w walce toporem
+10:33:08p |    Ith   Nef   Amn   +++       Dziurkacz   Podnosi nieco umiejetnosc w walce sztyletem
+10:33:08p |    Sol  Thul   Ith   +++          Ostrze   Podnosi nieznacznie umiejetnosc w walce mieczem
+10:33:08p |     El   Sol   Nef   +++         Tluczek   Podnosi nieznacznie umiejetnosc w walce mlotem
+10:33:08p |    Sol   Nef  Thul   +++         Krzywak   Podnosi nieznacznie umiejetnosc w walce szabla
+10:33:08p |    Tir   Amn   Tal   +++        Karateka   Podnosi nieznacznie umiejetnosc w walce bez broni
+10:33:08p |    Sol   Eth   Eld   +++         Lancuch   Podnosi nieznacznie umiejetnosc w walce bronmi lanuchowymi
+10:33:08p |    Eth   Tal   Sol   +++        Patelnia   Podnosi nieznacznie umiejetnosc w skutecznym uzywaniu tarczy
+10:33:08p |    Tal   Amn   Ral   +++           Lewak   Podnosi nieznacznie umiejetnosc w parowaniu ciosow przeciwnika
+10:33:08p |    Ith   Ort   Amn   +++          Wicher   Podnosi nieznacznie umiejetnosc w unikaniu ciosow przeciwnika
+10:33:08p |    Dol    El   Ith   +++         Tancerz   Podnosi nieznacznie umiejetnosc w walce dwiema bronmi jednoczesnie
+10:33:08p |    Ort   Nef  Thul   +++        Koniuszy   Podnosi troche umiejetnosc w walce z konskiego grzbietu
+10:33:08p |    Sol   Ith   Nef   +++      Przyboczny   Podnosi troche umiejetnosc w walce w szyku
+10:33:08p |   Thul   Hel   Dol   +++       Przywodca   Podnosi minimalnie umiejetnosc w wywieraniu wplywu na innych
+10:33:08p |  Shael  Thul   Tir   +++           Ogien   Podnosi nieznacznie umiejetnosc w poslugiwaniu sie magia ognia
+10:33:08p |    Ort   Ith Shael   +++       Powietrze   Podnosi nieznacznie umiejetnosc w poslugiwaniu sie magia powietrza
+10:33:08p |   Thul Shael   Eld   +++          Ziemia   Podnosi nieznacznie umiejetnosc w poslugiwaniu sie magia ziemi
+10:33:08p |  Shael   Eth    El   +++            Woda   Podnosi nieznacznie umiejetnosc w poslugiwaniu sie magia wody
+10:33:08p |     El   Tir Shael   +++           Zycie   Podnosi nieznacznie umiejetnosc w poslugiwaniu sie magia zycia
+10:33:08p |  Shael   Nef   Ort   +++          Smierc   Podnosi nieznacznie umiejetnosc w poslugiwaniu sie magia mroku
+10:33:08p |    Ith Shael   Tal   +++       Przemiana   Podnosi nieznacznie umiejetnosc w poslugiwaniu sie magia przemiany
+10:33:08p |    Ort   Eld Shael   +++       Mistycyzm   Podnosi nieznacznie umiejetnosc w mistycyzmie
+10:33:08p |  Shael   Tal   Tir   +++      Zaklinanie   Podnosi nieznacznie umiejetnosc w zaklinaniu
+10:33:08p |  Shael   Ral   Nef   +++   Przywolywanie   Podnosi nieznacznie umiejetnosc w magii tworzenia i przywolywania
+10:33:08p |    Nef Shael   Tal   +++          Iluzja   Podnosi nieznacznie umiejetnosc w poslugiwaniu sie magia iluzji
+10:33:08p |    Ith    El Shael   +++    Rozpraszanie   Podnosi nieznacznie umiejetnosc w rozpraszaniu zaklec
+10:33:08p |    Eth Shael   Tir   +++  Czarodziejstwo   Podnosi nieznacznie umiejetnosc w znajomosci i uzywaniu magii
+10:33:08p |    Eld   Tal Shael   +++            Runy   Podnosi nieznacznie umiejetnosc w rozpoznawaniu i uzywaniu run
+10:33:08p |    Ith   Dol    El   +++    Koncentracja   Podnosi nieznacznie umiejetnosc w koncentrowaniu swoich magicznych zdolnosci
+10:33:08p |    Ral   Tir   Nef +++++        Wojownik   Pozwala trenowac umiejetnosci walki wszystkimi bronmi na poprawnie, pozwala trenowac umiejetnosc w skutecznym uzywaniu tarczy na znosnie, pozwala trenowac umiejetnosc w parowaniu ciosow przeciwnika na znosnie oraz pozwala trenowac umiejetnosc w unikaniu ciosow przeciwnika na znosnie
+10:33:08p |    Eth   Ral   Tir +++++             Mag   Pozwala trenowac umiejetnosci ze wszystkich szkol magii na powierzchownie, pozwala trenowac umiejetnosc w koncentrowaniu swoich magicznych zdolnosci na poprawnie oraz pozwala trenowac umiejetnosc w koncentrowaniu swoich magicznych zdolnosci podczas walki na znosnie
+10:33:08p |    Eld   Eth   Hel  ++++           Galop   Podnosi troche umiejetnosc w jezdzie konnej, troche umiejetnosc w walce z konskiego grzbietu oraz nieznacznie umiejetnosci walki wszystkimi bronmi
+10:33:08p |    Dol  Thul   Ral  ++++        Mikstura   Podnosi troche umiejetnosc w warzeniu i rozpoznawaniu mikstur, troche umiejetnosc w znajdowaniu i rozpoznawaniu ziol oraz nieznacznie umiejetnosc w poslugiwaniu sie magia przemiany
+10:33:08p |    Tir   Lum   Eth  ====       Berserker   Podnosi troche umiejetnosci walki wszystkimi bronmi, troche umiejetnosc w walce bez broni oraz minimalnie sile natomiast obniza minimalnie umiejetnosc w unikaniu ciosow przeciwnika, minimalnie umiejetnosc w parowaniu ciosow przeciwnika, minimalnie umiejetnosc w skutecznym uzywaniu tarczy oraz minimalnie wytrzymalosc
+10:33:08p |    Lum   Nef   Ith  ====     Barbarzynca   Podnosi nieco umiejetnosci walki wszystkimi bronmi, nieco umiejetnosc w walce bez broni, minimalnie umiejetnosc w unikaniu ciosow przeciwnika, minimalnie umiejetnosc w parowaniu ciosow przeciwnika oraz minimalnie umiejetnosc w skutecznym uzywaniu tarczy ponadto blokuje uzywanie jakiekolwiek magii
+10:33:08p |    Eth    Io  Thul  ++++      Mag bojowy   Podnosi minimalnie umiejetnosci walki wszystkimi bronmi, nieco umiejetnosc w koncentrowaniu swoich magicznych zdolnosci podczas walki, minimalnie umiejetnosc w unikaniu ciosow przeciwnika, minimalnie umiejetnosc w parowaniu ciosow przeciwnika oraz minimalnie umiejetnosc w skutecznym uzywaniu tarczy natomiast obniza nieco wplyw wagi zbroi na czarowanie
+10:33:08p |     Io   Ith   Ral  ++++      Tarczownik   Podnosi nieco umiejetnosc w unikaniu ciosow przeciwnika, nieco umiejetnosc w parowaniu ciosow przeciwnika, nieco umiejetnosc w skutecznym uzywaniu tarczy, nieco umiejetnosc w walce w szyku oraz nieco kondycje natomiast obniza minimalnie umiejetnosci walki wszystkimi bronmi
+10:33:08p |    Amn   Ort   Hel  ++++       Silnoreki   Podnosi minimalnie sile natomiast obniza minimalnie zrecznosc ponadto pozwala dobywac dwureczne bronie prawa reka
+10:33:08p |   Thul   Hel   Eld  ++++          Szybki   Podnosi minimalnie zrecznosc oraz nieznacznie szybkosc wyprowadzanych atakow natomiast obniza minimalnie sile
+10:33:08p |    Fal  Thul   Ith  ++++          Silacz   Podnosi nieznacznie sile natomiast obniza minimalnie zrecznosc oraz minimalnie szybkosc wyprowadzanych atakow ponadto pozwala dobywac dwureczne bronie jedna reka
+10:33:08p |    Sol   Eth   Lum  ++++          Mesmer   Podnosi minimalnie inteligencje, nieznacznie umiejetnosc w koncentrowaniu swoich magicznych zdolnosci, minimalnie umiejetnosci ze wszystkich szkol magii oraz nieco mane
+10:33:08p |  Shael    Io   Sol  ====     Specjalista   Podnosi minimalnie umiejetnosci walki wszystkimi bronmi, nieznacznie umiejetnosc w walce bez broni oraz nieznacznie ilosc wyprowadzanych atakow specjalnych
+10:33:08p |    Dol   Tir    Io  ++++  Kaplan bitewny   Podnosi minimalnie umiejetnosc w poslugiwaniu sie magia zycia, nieznacznie umiejetnosc w koncentrowaniu swoich magicznych zdolnosci podczas walki, minimalnie umiejetnosc w unikaniu ciosow przeciwnika, minimalnie umiejetnosc w parowaniu ciosow przeciwnika oraz minimalnie umiejetnosc w skutecznym uzywaniu tarczy ponadto pozwala uzywac tarczy, parowac i unikac podczas czarowania
+10:33:08p |     Io   Tal    El    ++          Zdrada   Podnosi minimalnie inteligencje ponadto zamienia ze soba umiejetnosci w poslugiwaniu sie magia zycia i w poslugiwaniu sie magia mroku
+10:33:08p |    Eld    Io  Thul    ++        Podmiana   Podnosi minimalnie sile ponadto zamienia ze soba umiejetnosci w skutecznym uzywaniu tarczy i w walce dwiema bronmi jednoczesnie
+10:33:08p |    Hel    El   Dol  ++++          Bestia   Podnosi nieznacznie umiejetnosc w walce bez broni, nieznacznie umiejetnosc w poslugiwaniu sie magia przemiany oraz minimalnie umiejetnosc w unikaniu ciosow przeciwnika
+10:33:08p |     Io   Amn   Nef  ++++   Wladca bestii   Podnosi nieznacznie umiejetnosc w magii tworzenia i przywolywania ponadto pozwala przywolac jednego dodatkowego, innego niz juz wezwany przywolanca
+10:33:08p |    Sol   Hel   Ort  ++++     Kaznodzieja   Podnosi nieznacznie umiejetnosc w poslugiwaniu sie magia zycia, nieznacznie umiejetnosc w mistycyzmie, minimalnie madrosc oraz nieznacznie odpornosc na obrazenia magii smierci
+10:33:08p |    Tal   Dol    Ko ++++++++      Sila smoka   Laczy ducha wlasciciela z duchem pradawnego smoka
+10:33:08p |    Lum   Eth   Eld  ++++   Ciezkozbrojny   Podnosi minimalnie sile, minimalnie umiejetnosci walki wszystkimi bronmi oraz minimalnie umiejetnosc w skutecznym uzywaniu tarczy natomiast obniza zauwazalnie wplyw przeciazenia na zmeczenie w walce
+10:33:08p |    Nef   Sol    Io  ++++ Wladca ciemnosci   Podnosi nieznacznie umiejetnosc w poslugiwaniu sie magia mroku ponadto pozwala przywolac jednego dodatkowego, innego niz juz wezwany przywolanca
+10:33:08p |    Gul   Dol   Ral  ++++   Wszechstronny   Podnosi zauwazalnie wielkosc listy dozwolonych czarow oraz minimalnie umiejetnosci ze wszystkich szkol magii natomiast obniza zauwazalnie koszt czarow, sporo szybkosc odnawiania czarow oraz nieco szybkosc czarowania
+10:33:08p |    Tal   Hel   Gul  ++++          Wampir   Podnosi sporo ilosc wykradanego zycia przy atakach ponadto sprawia ze nie mozesz byc magicznie uleczony
+10:33:08p |    Lum   Ist   Eld  ++++      Sama magia   Podnosi minimalnie szybkosc odnawiania czarow oraz minimalnie szybkosc czarowania natomiast obniza nieznacznie koszt czarow, ogromnie szybkosc wyprowadzanych atakow oraz ogromnie ilosc wyprowadzanych atakow specjalnych

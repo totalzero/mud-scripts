@@ -1,0 +1,56 @@
+#CONFIG {AUTO TAB} {5000}
+#CONFIG {BUFFER SIZE} {10000}
+#CONFIG {CHARSET} {BIG-5}
+#CONFIG {COLOR MODE} {TRUE}
+#CONFIG {COLOR PATCH} {OFF}
+#CONFIG {COMMAND COLOR} {\e[0;37m}
+#CONFIG {COMMAND ECHO} {ON}
+#CONFIG {CONNECT RETRY} {0.0}
+#CONFIG {HISTORY SIZE} {1000}
+#CONFIG {LOG MODE} {RAW}
+#CONFIG {MOUSE} {OFF}
+#CONFIG {PACKET PATCH} {AUTO OFF}
+#CONFIG {RANDOM SEED} {53771459}
+#CONFIG {REPEAT CHAR} {!}
+#CONFIG {REPEAT ENTER} {OFF}
+#CONFIG {SCREEN READER} {OFF}
+#CONFIG {SCROLL LOCK} {ON}
+#CONFIG {SPEEDWALK} {OFF}
+#CONFIG {TAB WIDTH} {8}
+#CONFIG {TELNET} {ON}
+#CONFIG {TINTIN CHAR} {#}
+#CONFIG {VERBATIM} {OFF}
+#CONFIG {VERBATIM CHAR} {\}
+#CONFIG {VERBOSE} {OFF}
+#CONFIG {WORDWRAP} {ON}
+#SESSION {killer} {killer-mud.pl} {4004} ;
+#PATHDIR {d} {u} {32}
+#PATHDIR {e} {w} {2}
+#PATHDIR {n} {s} {1}
+#PATHDIR {ne} {sw} {3}
+#PATHDIR {nw} {se} {9}
+#PATHDIR {s} {n} {4}
+#PATHDIR {se} {nw} {6}
+#PATHDIR {sw} {ne} {12}
+#PATHDIR {u} {d} {16}
+#PATHDIR {w} {e} {8}
+
+#format {logFile} {/volumes/appdoc/tintin/logs/killer/%t.html} {%Y.%m.%d}
+#log {append} {$logFile}
+
+
+#action {Najpierw wstan.} {stan}
+#GAG {Probojesz wyprowadzic};
+#GAG {Probojesz walnac};
+#GAG {przecina z sykiem};
+#GAG {w ostatniej chwili odskakuje};
+#GAG {latwoscia unikasz ataku};
+#GAG {zamach i probujesz kopnac};
+#GAG {chybia};
+#GAG {chybiasz};
+#GAG {w ostatniej chwili};
+#GAG { jak ci sie to udalo};
+#GAG {z latwoscia unika};
+#GAG {mijasz sie ze swoim celem};
+#gag {=<>};
+#gag {===};

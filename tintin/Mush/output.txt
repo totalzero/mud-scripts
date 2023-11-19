@@ -1,0 +1,959 @@
+
+--- Connected on wtorek, luty 11, 2014, 10:23  ---
+
+                           -- N I G H T A L --
+                Gra tekstowa w realiach Forgotten Realms 
+--------------------------------------------------------------------------
+Dziekujemy kreatorom muda Vattghern za udostepnienie swojego lacza dla 
+potrzeb naszego muda.
+Specjalne podziekowania takze naleza sie Reifowi za stworzenie oraz 
+administrowanie internetowa witryna muda oraz forum.
+--------------------------------------------------------------------------
+                                                ___________
+                                   _______....---''  ____..._.-`
+                                  \\`._______.._,.---'''     ,'
+                                  ; )`.      __..-'`-.      /
+                                 / /     _.-' _,.;;._ `-._,'
+                                / /   ,-' _.-'  //   ``--._``._
+                              ,','_.-' ,-' _.- (( =-    -. `-._`-._____
+                            ,;.''__..-'   _..--.\\.--'````--.._``-.`-._`.
+             _          |\,' .-''        ```-'`---'`-...__,._  ``-.`-.`-.`.
+  _     _.-,'(__)\__)\-'' `     ___  .          `     \      `--._
+,',)---' /|)          `     `      ``-.   `     /     /     `     `-.
+\_____--.  '`  `               __..-.  \     . (   < _...-----..._   `.
+ \_,--..__. \\ .-`.\----'';``,..-.__ \  \      ,`_. `.,-'`--'`---''`.  )
+           `.\`.\  `_.-..' ,'   _,-..'  /..,-''(, ,' ; ( _______`___..'__
+                   ((,(,__(    ((,(,__,'  ``'-- `'`.(\  `.,..______
+
+--------------------------------------------------------------------------
+
+
+
+ ! U W A G A !    Tymczasowa zmiana adresu strony i forum!    ! U W A G A !
+
+
+
+              Strona Nightala            http://www.nightal.tk
+              Forum Nigtala              http://www.nightal.insomniac.pl/forum/
+                   (Forum chwilowo nie dziala do konca poprawnie,
+                   moze czasem wylogowywac uzytkownikow)
+              Dzial Administracji        nightalmud@gmail.com
+
+
+
+ ! U W A G A !    Tymczasowa zmiana adresu strony i forum!    ! U W A G A !
+
+
+
+ Serdecznie dziekujemy Ianowi za hostowanie domeny!
+--------------------------------------------------------------------------
+Wersja gamedrivera:     CD.07+MySQL             Wersja mudliba:  CD.03.00
+
+Podaj swoje imie: 
+gurgor
+Witaj, Gurgorze. Podaj swe haslo: 
+
+Straciles kontakt z mudem na mniej niz dziesiec minut ...
+... przywracam polaczenie ...
+
+Zatloczony bazar.
+Sa tutaj cztery widoczne wyjscia: polnoc, wschod, zachod i poludnie.
+Na niskim murku siedzi zasmucona dojrzala kobieta.
+> Gwiazdy radosnie migocza na niebie.
+Zatloczony bazar.
+Sa tutaj cztery widoczne wyjscia: polnoc, wschod, zachod i poludnie.
+Tlusciutki przebiegly krasnolud.
+> Ulica wiodaca na bazar.
+Sa tutaj trzy widoczne wyjscia: poludniowy-zachod, zachod i wschod.
+> Ulica wiodaca na bazar.
+Sa tutaj trzy widoczne wyjscia: polnoc, wschod i zachod.
+> Obszerny plac.
+Jest tutaj piec widocznych wyjsc: polnoc, poludniowy-wschod, kantorek, wschod i zachod.
+Na debowej lawce siedzi Linandil.
+Tablica ogloszeniowa i dluga debowa lawka.
+> Masz wrazenie ze jest teraz godzina trzecia w nocy. Sadzisz iz jest teraz dwudziesty szosty dzien, miesiaca Tarsakh, nazwanego potocznie Nadejsciem Burz, wedlug rachuby kalendarza Dolin. W swiecie panuje aktualnie wiosna.
+Gdy spogladasz w gore na gwiezdzistym sklepieniu widzisz okragla tarcze ksiezyca w pelni.
+> Ulica wiodaca na bazar.
+Sa tutaj trzy widoczne wyjscia: polnoc, wschod i zachod.
+> Ulica wiodaca na bazar.
+Sa tutaj trzy widoczne wyjscia: poludniowy-zachod, zachod i wschod.
+> KOMENDA
+        czas - sprawdz jaka jest aktualnie pora dnia.
+
+SKLADNIA
+        czas
+
+OPIS
+        Pozwala ci ocenic, jaka jest mniej wiecej pora dnia, a czasami
+        rowniez jaki jest dzien tygodnia, miesiac i rok.
+
+UWAGA
+        Wynik tej komendy jest calkowicie zalezny od miejsca w jakim sie 
+        znajdujesz - np. w niektorych krainach kalendarz moze nie byc 
+        wogole wprowadzony.
+
+EOF
+> Swiat odrodzil sie  : Pt, 18 X -1707429, 06:43:23
+Lokalny czas        : Pt, 18 X -1707429, 08:27:37
+Swiat istnieje      : 1 godzina 44 minuty 14 sekund
+> Bronie                                        Lord Cadron       37  20 I   
+
+Drodzy Smiertelnicy!
+  Nastapil dlugo planowany i zapowiadany przez Grono balans wszystkich
+broni w naszym swiecie. Zostaly one mocno ustandaryzowane, ponadto
+znaczacy wplyw na celnosc/obrazenia ma teraz waga - nie pojawia sie
+juz bardzo ciezkie bronie, ktorymi trafic mozna bylo jak sztyletem.
+  Naturalnie liczymy sie z tym, ze cos moglo umknac naszej uwadze, z
+naszej pozycji, dosc jednak dalekiej od Waszej, z ktorej spojrzenie
+na swiat jest odmienne, moglismy nie dostrzec pewnych faktow, majacych
+wplyw na przewidywana jakosc i skutecznosc broni. Z tego powodu pro-
+simy o zglaszanie swych watpliwosci co do poszczegolnych egzemplarzy
+broni. Jesli wyda sie Wam, ze dany orez jest za slaby lub zbyt mocny
+(tak, liczymy na Wasza uczciwosc w tej kwestii) w stosunku do swego
+poprzednika, czy tez w stosunku do aktualnej trudnosci zdobycia, po-
+tencjalnej ilosci egzemplarzy w swiecie, itd., prosimy o zgloszenie
+tego listownie na nowy alias pocztowy 'balans'. W liscie zawrzyjcie
+krotki opis broni oraz miejsce zdobycia, co znacznie ulatwi nam szy-
+bkie znalezienie danej broni.
+  Liczymy sie z duza iloscia takich listow, proces balansowania broni
+nie jest jeszcze uznany za zakonczony. Wasze sugestie beda z cala pew-
+noscia brane pod uwage, lecz pamietajcie, ze ostateczne zdanie ma
+Administracja.
+  Co do broni dostepnych czlonkom gildii, a na pewno pojawia sie ro-
+zne uwagi - takze i te bronie zostaly zbalansowane, a ich poziom
+odpowiednio dostosowany (zwykle wyrownany do ogolnie przyjetej za-
+sady broni gildiowych).
+
+  Z racji panujacego ostatnio braku rak do pracy aktualnie czaro-
+dzieje nie pracuja w takim tempie i z taka efektywnoscia, jakbysmy
+wszyscy chcieli, dlatego prosimy takze o wyrozumialosc. Zwlaszcza
+tych, ktorzy czekaja na urzeczywistnienie pewnych projektow. Cier-
+pliwosci.
+
+  W imieniu Grona z drzacym sercem otwierajacy
+  swiat Nightal dla Smiertelnikow
+
+  Lord Cadron
+  
+> > Sposrod osmiu osob przebywajacych obecnie w swiecie Nightal, znane tobie to:
+Gurgor, krasnolud
+Linandil Prawa Reka Pashy, niziolek
+
+Sposrod obecnie przebywajacych niesmiertelnych w swiecie Nightal znani tobie to:
+Puszysty Lurk Thans'fass Mrauk, kocur
+> Ulica wiodaca na bazar.
+Sa tutaj trzy widoczne wyjscia: poludniowy-zachod, zachod i wschod.
+> Ulica wiodaca na bazar.
+Sa tutaj trzy widoczne wyjscia: poludniowy-zachod, zachod i wschod.
+> Ulica wiodaca na bazar.
+Sa tutaj trzy widoczne wyjscia: poludniowy-zachod, zachod i wschod.
+> Masz wrazenie ze jest teraz godzina czwarta nad ranem, przed wschodem slonca. Sadzisz iz jest teraz dwudziesty szosty dzien, miesiaca Tarsakh, nazwanego potocznie Nadejsciem Burz, wedlug rachuby kalendarza Dolin. W swiecie panuje aktualnie wiosna.
+> Jaskrawe promienie slonca wynurzyly sie wlasnie sponad linii horyzontu ogrzewajac swym cieplem cale krainy. Oznacza to, iz nad Faerunem powstal kolejny, pelen mozliwosci dzien.
+Droga przybywa mlody charyzmatyczny krasnolud i zestawia z wozu sterte jakichs skrzyn i paczek.
+Mlody charyzmatyczny krasnolud mowi: Witajcie! Jestem Grehon, Kupiec Ruda I Nie Tylko, zapraszam do mojego stoiska!
+Mlody charyzmatyczny krasnolud rozglada sie chytrze.
+Mlody charyzmatyczny krasnolud mowi: Masz jakas rude na sprzedaz?
+ ___________________________________________________________________________
+|Tutaj mozesz kupic nastepujace towary.                                     |
+ ---------------------------------------------------------------------------
+|ILOSC           TOWAR                                          CENA        |
+ ---------------------------------------------------------------------------
+|[4] Metalowe solidne wiadro                        |  0pt| 19zl|  3sr|  4md|
+|[+] Krotka waska belka                             |  0pt|  0zl|  5sr|  0md|
+|[4] Pleciona sznurowa drabinka                     |  0pt| 19zl|  6sr|  8md|
+|[1] Zlocista gladka brylka                         |  0pt|  6zl|  2sr|  2md|
+|[+] Butelka                                        |  0pt|  0zl|  9sr|  9md|
+|[4] Lekka gornicza drabina                         |  0pt| 10zl|  4sr|  2md|
+|[1] Pojemny gorniczy wagonik                       |  0pt| 30zl|  7sr|  8md|
+|[2] Ciezki gorniczy kilof                          |  0pt| 21zl|  6sr|  8md|
+|[1] Brunatnoczerwony czysty krysztal               |  0pt| 63zl|  7sr|  0md|
+|[3] Poreczny stalowy oskard                        |  0pt| 12zl|  4sr|  4md|
+|[1] Gornicza lekka lampa                           |  0pt| 12zl|  9sr|  8md|
+|[10] Gruby drewniany podklad                        |  0pt|  0zl|  8sr|  6md|
+|[10] Ciezka zelazna szyna                           |  0pt|  1zl|  7sr|  2md|
+|___________________________________________________________________________|
+>  ___________________________________________________________________________
+| Rzeczy o ktore prosiles:                                                  |
+ --------------------------------------------------------------------------- 
+|[1] Zlocista gladka brylka                         |  0pt|  6zl|  2sr|  2md|
+|[1] Brunatnoczerwony czysty krysztal               |  0pt| 63zl|  7sr|  0md|
+|___________________________________________________________________________|
+> Juz pierwsze spojrzenie na zlocista barwe i cieply blask tego mineralu nie pozwala na zadne watpliwosci. Marzenie gornika i milosc krasnoluda ucielesniaja sie w tym samorodku najprawdziwszego zlota. Mila sercu waga z pewnoscia przeklada sie na spora wartosc tego znaleziska.
+Wydaje ci sie, ze jak na te rude jest to malutki okaz.
+
+Oceniasz, ze zlocista gladka brylka wazy 50 gramow, zas jej objetosc wynosi 6 mililitrow.
+Wydaje ci sie, ze jest 1 sztuka warta 260 miedziakow.
+> Masz przed soba krysztal utworzony z dziesiatkow pomniejszych, wydluzonych krysztalkow. 
+Wydaje ci sie, ze jak na te rude jest to spory okaz.
+
+Oceniasz, ze brunatnoczerwony czysty krysztal wazy 2100 gramow, zas go objetosc wynosi 350 mililitrow.
+Wydaje ci sie, ze jest 1 sztuka warta 2400 miedziakow.
+> Ulica wiodaca na bazar.
+Sa tutaj trzy widoczne wyjscia: poludniowy-zachod, zachod i wschod.
+Spora sterta skrzyn.
+Mlody charyzmatyczny krasnolud.
+> Nie mamy niczego takiego na skladzie.
+> Nie mamy niczego takiego na skladzie.
+> Ulica wiodaca na bazar.
+Sa tutaj trzy widoczne wyjscia: poludniowy-zachod, zachod i wschod.
+Spora sterta skrzyn.
+Mlody charyzmatyczny krasnolud.
+>  ___________________________________________________________________________
+|Tutaj mozesz kupic nastepujace towary.                                     |
+ ---------------------------------------------------------------------------
+|ILOSC           TOWAR                                          CENA        |
+ ---------------------------------------------------------------------------
+|[4] Metalowe solidne wiadro                        |  0pt| 19zl|  3sr|  4md|
+|[+] Krotka waska belka                             |  0pt|  0zl|  5sr|  0md|
+|[4] Pleciona sznurowa drabinka                     |  0pt| 19zl|  6sr|  8md|
+|[1] Zlocista gladka brylka                         |  0pt|  6zl|  2sr|  2md|
+|[+] Butelka                                        |  0pt|  0zl|  9sr|  9md|
+|[4] Lekka gornicza drabina                         |  0pt| 10zl|  4sr|  2md|
+|[1] Pojemny gorniczy wagonik                       |  0pt| 30zl|  7sr|  8md|
+|[2] Ciezki gorniczy kilof                          |  0pt| 21zl|  6sr|  8md|
+|[1] Brunatnoczerwony czysty krysztal               |  0pt| 63zl|  7sr|  0md|
+|[3] Poreczny stalowy oskard                        |  0pt| 12zl|  4sr|  4md|
+|[1] Gornicza lekka lampa                           |  0pt| 12zl|  9sr|  8md|
+|[10] Gruby drewniany podklad                        |  0pt|  0zl|  8sr|  6md|
+|[10] Ciezka zelazna szyna                           |  0pt|  1zl|  7sr|  2md|
+|___________________________________________________________________________|
+> To jeden z najdrozszych lecz zarazem najbardziej przydatnych elementow gorniczego wyposazenia. Sporych rozmiarow wagonik, zdolny pomiescic kilka osob lub cala sterte urobku, wykonany jest z grubych debowych desek, oblozonych stalowymi obejmami i ponabijanych zelaznymi cwiekami. Krawedzie wyposazono w oslony z wysokiej jakosci stali by calosc mogla wytrzymac zderzenie ze skala lub innym wagonikiem. Zmyslne mocowanie na spodniej stronie wehikulu podtrzymuje zestaw czterech pelnych kol z twardego drzewa, wzmacnianych metalowa tasma.
+
+Oceniasz, ze pojemny gorniczy wagonik wazy 51 kilogramow, zas jego objetosc wynosi 100 litrow.
+Wydaje ci sie, ze jest wart 2600 miedziakow.
+> Ogladasz dluga na kilkanascie lokci i gruba jak ludzkie ramie szyne, przeznaczona do prac gorniczych. Wykonano ja ze stopu nazywanego gnomim zelazem, ktory laczy w sobie niewielka wage i niepodatnosc na korozje. W dodatku, pomimo znacznej odpornosci na sciskanie, taka szyna moze zostac wygieta w luk sama sila ramion kilku zaledwie gornikow. Dzieki temu mozna ksztaltowac bezposrednio pod ziemia tory dla kopalnianych wagonikow w lagodne luki a nawet ostre zakrety.
+
+Oceniasz, ze ciezka zelazna szyna wazy 7500 gramow, zas jej objetosc wynosi 4700 mililitrow.
+Wydaje ci sie, ze jest warta 100 miedziakow.
+> Ulica wiodaca na bazar.
+Sa tutaj trzy widoczne wyjscia: polnoc, wschod i zachod.
+> Obszerny plac.
+Jest tutaj piec widocznych wyjsc: polnoc, poludniowy-wschod, kantorek, wschod i zachod.
+Na debowej lawce siedzi Linandil.
+Tablica ogloszeniowa i dluga debowa lawka.
+> Szeroka droga.
+Sa tutaj dwa widoczne wyjscia: poludnie i polnoc.
+Niska czarnooka kobieta.
+> Niewielkie skrzyzowanie.
+Sa tutaj cztery widoczne wyjscia: polnocny-wschod, wschod, poludnie i zachod.
+> Droga w miasteczku.
+Sa tutaj trzy widoczne wyjscia: polnocny-wschod, poludniowy-zachod i zachod.
+Roztargnione chytre dziecko.
+> W straznicy.
+Sa tutaj dwa widoczne wyjscia: poludniowy-zachod i poludniowy-wschod.
+Ladna bialowlosa kobieta, mocarny czarnooki krasnolud, czarnobrody ciemnoskory krasnolud i wytatuowany miedzianobrody krasnolud.
+> Wytatuowany miedzianobrody krasnolud mowi: W miescie musi panowac porzadek.
+Czarnobrody ciemnoskory krasnolud mowi: Syszeliscie co sie dzialo wczoraj wieczorem?
+Mocarny czarnooki krasnolud mowi: W tym miescie lepiej nie wszczynac zadnych bojek.
+Pod bekajacym smokiem.
+Jest tutaj jedno widoczne wyjscie: polnocny-zachod.
+Przy barze siedzi podpity krasnoludzki gornik i chudy wyniszczony mezczyzna.
+Niska drobna kobieta i brodaty tegi mezczyzna stojacy za barem.
+> Podpity krasnoludzki gornik mowi: Wszystko pyl, jeno pyl... hic!
+Ladna bialowlosa kobieta przybywa z polnocnego-zachodu.
+Erm... Slucham?
+> Przedstawiasz sie wszystkim.
+> Brodaty tegi mezczyzna przedstawia sie jako:
+Bango Hyrr, wlasciciel karczmy Pod bekajacym smokiem, mezczyzna.
+Bango mowi: Czolem! Co podac ?
+Bango usmiecha sie do ciebie lekko.
+Chudy wyniszczony mezczyzna przedstawia sie jako:
+Herdonot, mezczyzna.
+Herdonot mowi: Postaw mi lepiej piwo!
+W ostatniej chwili decydujesz sie nic nie mowic.
+> Niska drobna kobieta podaza na polnocny-zachod.
+Mowisz w mowie krasnoludow: buheh
+> Przeczytaj co?
+> Nie zauwazasz niczego takiego.
+> Przeczytaj co?
+> Nie zauwazasz niczego takiego.
+> Sala, w ktorej przyszlo ci przebywac, pelna jest wszystkich typowych dla karczm zapachow. Biorac gleboki wdech mozna niemal poczuc smak hojnie rozlewanego piwa, ostra won ziela fajkowego oraz aromat przeroznych potraw. Strop, podtrzymywany przez grube, drewniane pale, jest niemal niewidoczny z powodu gestej luny szarego dymu, unoszacego sie w powietrzu. Cale pomieszczenie jest utrzymane w dosc luznym porzadku. Sprzataczka pracujaca tu, ma pewnikiem wolne... Od kilku lat. Stoly zaslane szaro-bialo-zoltymi obruszami, uginaja sie pod ciezarem kufli, szklanic i talerzy. Dostawione do nich krzesla nie sprawiaja wrazenia wygodnych, a ich stabilnosc naruszyly przez liczne karczmiane awantury. W rogu pomieszczenia umiejscowiony jest wysoki bar. Na jego polkach mozna dostrzec butelki, zawierajace trunki niemal ze wszystkich slawniejszych miast Faerunu. Przekrzywiona tablica, zawieszona na centralnym miejscu jednej ze scian, nosi na sobie spis wszystkich dostepnych w karczmie potraw i napitkow.
+Jest tutaj jedno widoczne wyjscie: polnocny-zachod.
+Przy barze siedzi podpity krasnoludzki gornik i Herdonot.
+Ladna bialowlosa kobieta i Bango stojacy za barem.
+>  ------------------------------------------------------------------------------ 
+|                                  M E N U                                    |
+ ------------------------------------------------------------------------------ 
+|Nazwa:                                                   Cena w miedziakach: |
+ ------------------------------------------------------------------------------ 
+|                                  Napoje                                     |
+ ------------------------------------------------------------------------------ 
+|Piwo ciemne                                                              138 |
+|Wino 'Powiew smoczej siarki'                                             133 |
+|Woda z zrodla podziemnego                                                  6 |
+|Sok z lesnych malin                                                        6 |
+|Wodka gornicza                                                           133 |
+ ------------------------------------------------------------------------------ 
+|                                 Potrawy                                     |
+ ------------------------------------------------------------------------------ 
+|Gorace flaki                                                              24 |
+|Przysmak strudzonego gornika                                              53 |
+|Przepyszna owsianka                                                       49 |
+|Udziec z wieprza                                                         138 |
+|Niespodzianka szefa kuchni                                               133 |
+ ------------------------------------------------------------------------------ 
+> Herdonot mowi: Napij sie ze mna przybyszu.
+Pod bekajacym smokiem.
+Jest tutaj jedno widoczne wyjscie: polnocny-zachod.
+Przy barze siedzi podpity krasnoludzki gornik i Herdonot.
+Ladna bialowlosa kobieta i Bango stojacy za barem.
+> Zapach ziela fajkowego wierci cie w nosie.
+Mezczyzna ten swoim wygladem zdaje sie blagac cie o postawienie mu chociaz najmniejszego piwa. Jego wzrok wodzi blednie w poszukiwaniu jakiejkolwiek ilosci alkoholu, badz osoby, z ktora moglby sie napic. Co jakis czas menelik oblizuje spierzchniete wargi, ukazujac przy tym liczne ubytki w zoltych zebach. Twarz czlowieka jest strasznie chuda, zdobi ja, mieniacy sie gnieniegdzie siwizna trzydniowy zarost. Ow zgarbiony i mizerny mezczyzna ubrany jest w podarty stroj gornika strzalowego.
+Zdaje sie byc w swietnej kondycji.
+> W straznicy.
+Sa tutaj dwa widoczne wyjscia: poludniowy-zachod i poludniowy-wschod.
+Niska drobna kobieta, mocarny czarnooki krasnolud, czarnobrody ciemnoskory krasnolud i wytatuowany miedzianobrody krasnolud.
+> Mocarny czarnooki krasnolud wyciera nos w rekaw koszuli.
+Droga w miasteczku.
+Sa tutaj trzy widoczne wyjscia: polnocny-wschod, poludniowy-zachod i zachod.
+> Zaniedbany pokoj.
+Sa tutaj dwa widoczne wyjscia: sypialnia i drzwi.
+Roztargnione chytre dziecko, pajakowaty wiotki mezczyzna i kosciste chore dziecko.
+> Pajakowaty wiotki mezczyzna mowi: No i masz babo placek...
+Droga w miasteczku.
+Sa tutaj trzy widoczne wyjscia: polnocny-wschod, poludniowy-zachod i zachod.
+> Niewielkie skrzyzowanie.
+Sa tutaj cztery widoczne wyjscia: polnocny-wschod, wschod, poludnie i zachod.
+Niska czarnooka kobieta.
+> Przed swiatynia Auril.
+Sa tutaj dwa widoczne wyjscia: zachod i poludnie.
+Opalony mocny krasnolud.
+> Zimna sala swiatynna.
+Jest tutaj jedno widoczne wyjscie: polnoc.
+Wyniosla bialowlosa kobieta.
+> Przedstawiasz sie wszystkim.
+> Zloz rece [na piersi] ? 
+> Pytasz wyniosla bialowlosa kobiete o auril.
+> Wyniosla bialowlosa kobieta mowi: Chcesz wiedziec jak wyglada Auril?
+Wyniosla bialowlosa kobieta wskazuje na posag.
+Wyniosla bialowlosa kobieta delikatnie potrzasa wlosami, z ktorych spadaja drobne platki sniegu.
+Wyniosla bialowlosa kobieta mowi: Auril jest boginia zimna. Jest ma pania, zawsze pozostane jej wierna
+Piekny posag przedstawiajacy naga boginie.
+> Nie widzisz zadnego wyjscia prowadzacego na wschod.
+> Nie widzisz zadnego wyjscia prowadzacego na zachod.
+> Zimna sala swiatynna.
+Jest tutaj jedno widoczne wyjscie: polnoc.
+Wyniosla bialowlosa kobieta.
+> Przed swiatynia Auril.
+Sa tutaj dwa widoczne wyjscia: zachod i poludnie.
+> Nie widzisz zadnego wyjscia prowadzacego na wschod.
+> Niewielkie skrzyzowanie.
+Sa tutaj cztery widoczne wyjscia: polnocny-wschod, wschod, poludnie i zachod.
+Opalony mocny krasnolud.
+> Waska brukowana alejka.
+Sa tutaj dwa widoczne wyjscia: zachod i wschod.
+Niska czarnooka kobieta i otyly mlody krasnolud.
+> Oswietlona sala.
+Sa tutaj trzy widoczne wyjscia: polnoc, wschod i drzwi.
+> Ciemna sala.
+Jest tutaj jedno widoczne wyjscie: poludnie.
+> Oswietlona sala.
+Sa tutaj trzy widoczne wyjscia: polnoc, wschod i drzwi.
+> Maly pokoj.
+Jest tutaj jedno widoczne wyjscie: wyjscie.
+> Oswietlona sala.
+Sa tutaj trzy widoczne wyjscia: polnoc, wschod i drzwi.
+> Zloz rece [na piersi] ? 
+> Waska brukowana alejka.
+Sa tutaj dwa widoczne wyjscia: zachod i wschod.
+Niska czarnooka kobieta i otyly mlody krasnolud.
+> Niewielkie skrzyzowanie.
+Sa tutaj cztery widoczne wyjscia: polnocny-wschod, wschod, poludnie i zachod.
+Opalony mocny krasnolud.
+> Otyly mlody krasnolud przybywa z zachodu.
+Nie widzisz zadnego wyjscia prowadzacego na poludniowy-zachod.
+> Przed swiatynia Auril.
+Sa tutaj dwa widoczne wyjscia: zachod i poludnie.
+> Nie widzisz zadnego wyjscia prowadzacego na wschod.
+> Nie widzisz zadnego wyjscia prowadzacego na polnocny-wschod.
+> Zimna sala swiatynna.
+Jest tutaj jedno widoczne wyjscie: polnoc.
+Wyniosla bialowlosa kobieta.
+> Przed swiatynia Auril.
+Sa tutaj dwa widoczne wyjscia: zachod i poludnie.
+> Niewielkie skrzyzowanie.
+Sa tutaj cztery widoczne wyjscia: polnocny-wschod, wschod, poludnie i zachod.
+Otyly mlody krasnolud i opalony mocny krasnolud.
+> Nie widzisz zadnego wyjscia prowadzacego na poludniowy-zachod.
+> Niewielkie skrzyzowanie.
+Sa tutaj cztery widoczne wyjscia: polnocny-wschod, wschod, poludnie i zachod.
+Otyly mlody krasnolud i opalony mocny krasnolud.
+> Szeroka droga.
+Sa tutaj dwa widoczne wyjscia: poludnie i polnoc.
+> Obszerny plac.
+Jest tutaj piec widocznych wyjsc: polnoc, poludniowy-wschod, kantorek, wschod i zachod.
+Tablica ogloszeniowa i dluga debowa lawka.
+> Ulica kupiecka.
+Jest tutaj piec widocznych wyjsc: poludniowy-wschod, wschod, polnoc, zachod i drzwi.
+> W kuzni.
+Jest tutaj jedno widoczne wyjscie: poludnie.
+Krzepki czerwonobrody mezczyzna.
+> Krzepki czerwonobrody mezczyzna wklada cos do paleniska, z ktorego bucha wysoki plomien.
+Mozesz tu naprawic swoj ekwipunek, badz zamowic nowy.
+Wykonujemy nastepujace uslugi:
+
+        <oczysc nazwa_broni>       - oczyszczenie zardzewialej broni
+        <naostrz nazwa_broni>      - naostrzenie stepionej broni
+        <napraw nazwa_zbroi>       - podreperowanie nadwerezonej zbroi
+        <zamow nazwa_przedmiotu>   - zamowienie czesci ekwipunku
+        <pokaz nazwa_przedmiotu>   - mozliwosc obejrzenia probki towaru
+
+                 Lista wykonywanych przedmiotow:
+
+[*] srebrzysta zdobiona szabla - 15 zlotych, 8 srebrnych i 7 miedzianych monet.
+[*] mala spizowa tarcza - 17 zlotych i 1 srebrna monete.
+[*] mocna folgowa zbroja - 28 zlotych, 5 srebrnych i 9 miedzianych monet.
+[*] lsniaca poreczna glewia - 83 zlote i 9 srebrnych monet.
+[*] para wzmacnianych kolczych spodni - 16 zlotych, 2 srebrne i 6 miedzianych monet.
+[*] masywna czerniona rohatyna - 16 zlotych, 1 srebrna i 5 miedzianych monet.
+[*] para blyszczacych nagolennikow - 19 zlotych, 8 srebrnych i 5 miedzianych monet.
+[*] kruczoczarny zdobiony topor - 17 zlotych, 7 srebrnych i 3 miedziane monety.
+
+Gwarantujemy, ze wszystkie wykonywane na zamowienie przedmioty beda wlascicielowi dlugo sluzyc.
+By dowiedziec sie o cenach pozostalych uslug zapytaj o to personel.
+> Ulica kupiecka.
+Jest tutaj piec widocznych wyjsc: poludniowy-wschod, wschod, polnoc, zachod i drzwi.
+> Nie widzisz zadnego wyjscia prowadzacego na poludnie.
+> Niewielkie skrzyzowanie w zachodniej czesci miasta.
+Sa tutaj cztery widoczne wyjscia: polnoc, poludnie, wschod i zachod.
+> Droga przed ratuszem.
+Sa tutaj cztery widoczne wyjscia: poludniowy-zachod, polnocny-zachod, zachod i wschod.
+> Urzad pocztowy.
+Jest tutaj jedno widoczne wyjscie: wyjscie.
+Niepozorna niebieskooka kobieta.
+> Nie otrzymales zadnych nowych listow.
+Niepozorna niebieskooka kobieta mowi: Przed chwila mialam ten list w rece... jeszcze przed chwila go mialam...
+Do drewnianego, grubego bala podtrzymujacego strop przymocowana jest tabliczka ze zleceniami. Na pewno warto ja przeczytac.
+> Przeczytaj co?
+>  /===========================================================================\ 
+||                           P O C Z T Y L I O N                             ||
+||                             K R A I N O W Y                               ||
+||---------------------------------------------------------------------------|| 
+||                            PACZKI MIEJSCOWE                               ||
+||---------------------------------------------------------------------------|| 
+||1. Dla wojta Nashkel.                                                      ||
+||2. Dla Pridina z Nashkel.                                                  ||
+||---------------------------------------------------------------------------|| 
+||                          PACZKI MIEDZYMIASTOWE                            ||
+||---------------------------------------------------------------------------|| 
+||3. Dla Talthali z Pomocnej Dloni.                                          ||
+||4. Dla Glodriana Hamidjita.                                                ||
+||5. Dla pracownika poczty w Pomocnej Dloni.                                 ||
+||---------------------------------------------------------------------------|| 
+||                          PACZKI MIEDZYKRAINOWE                            ||
+||---------------------------------------------------------------------------|| 
+||6. Dla Kreista Bundlefoe.                                                  ||
+||7. Do Ernesta Berando.                                                     ||
+||8. Do swiatyni Ilmatera.                                                   ||
+\----------------------------------------------------------------------------/ 
+Jesli chcesz wiecej dowiedziec sie o paczkach, pomysl ?paczki.
+> ?paczki
+
+Azeby pobrac jakakolwiek paczke w biurze pocztowcow nalezy po prostu uzyc komendy: 'pobierz paczke <numer>'. W tym przypadku numer oznacza cyfre jaka znajdziemy po lewej stronie tablicy zawierajacej spis wszystkich przesylek. Owa cyfra to oczywiscie numer porzadkowy indywidualnej przesylki. 
+
+Przyklady:
+- pobierz paczke 1
+- pobierz paczke 5
+
+Wazna dla kazdego kuriera jest oczywiscie reputacja pozwalajaca mu roznosic coraz dalsze paczki, jakie dziela sie na:
+
+* miejscowe,
+* miedzymiastowe,
+* miedzykrainowe.
+
+W przypadku niedoniesienia odpowiedniej przesylki nieszczesny pocztowiec bedzie zmuszony odkupic swe winy placac w biurze proporcjonalna sume pieniedzy, badz w przeciwnym razie musial bedzie zrezygnowac z dalszej pracy. Do lask poczmistrza przywracamy sie prosta komenda: '<odkup winy>'. 
+
+W przypadku kiedy nie jestesmy w stanie doniesc paczki najprosciej jest po prostu dac ja poczmistrzowi, ktory przechowa go dla bardziej solidnego kuriera. 
+
+Zyczymy sukcesow oraz owocnej pracy zarobkowej w naszym urzedzie pocztowym!
+EOF
+> Niepozorna niebieskooka kobieta mowi do ciebie: Te zlecenia sa dla mniej doswiadczonych kurierow, sprobuj doniesc jakas miedzymiastowa paczke.
+> Intensywnie zapachnialo inkaustem.
+Niepozorna niebieskooka kobieta zaczyna przegladac i segregowac listy.
+Pytasz niepozorna niebieskooka kobiete o prace.
+> Niepozorna niebieskooka kobieta mowi do ciebie: Postaraj sie, by ten list dotarl do Surona Shieldhope. Pelni on funkcje najwyzszego kaplana Helma we Wrotach Baldura.
+Niepozorna niebieskooka kobieta wrecza ci list.
+Mowisz: bueh
+> Odkladasz niewielki bialy list.
+> Droga przed ratuszem.
+Sa tutaj cztery widoczne wyjscia: poludniowy-zachod, polnocny-zachod, zachod i wschod.
+> Przedsionek.
+Sa tutaj cztery widoczne wyjscia: polnocny-zachod, wyjscie, drzwi i poludnie.
+Debowa stara komoda.
+Smutny czarnooki mezczyzna.
+> Erm... Slucham?
+> Droga przed ratuszem.
+Sa tutaj cztery widoczne wyjscia: poludniowy-zachod, polnocny-zachod, zachod i wschod.
+> Nie widzisz zadnego wyjscia prowadzacego na poludniowy-wschod.
+> Nie widzisz zadnego wyjscia prowadzacego na polnocny-wschod.
+> Porzadny wypucowany dom.
+Sa tutaj trzy widoczne wyjscia: poludniowy-wschod, wschod i zachod.
+> Pachnaca zastawiona kuchnia.
+Jest tutaj jedno widoczne wyjscie: zachod.
+Wychudla usmiechnieta kucharka.
+> Porzadny wypucowany dom.
+Sa tutaj trzy widoczne wyjscia: poludniowy-wschod, wschod i zachod.
+> Duza sypialnia.
+Sa tutaj dwa widoczne wyjscia: polnoc i wschod.
+> Mala sypialenka.
+Jest tutaj jedno widoczne wyjscie: poludnie.
+> Duza sypialnia.
+Sa tutaj dwa widoczne wyjscia: polnoc i wschod.
+> Porzadny wypucowany dom.
+Sa tutaj trzy widoczne wyjscia: poludniowy-wschod, wschod i zachod.
+> Nie widzisz zadnego wyjscia prowadzacego na polnocny-wschod.
+> Nie widzisz zadnego wyjscia prowadzacego na poludniowy-zachod.
+> Droga przed ratuszem.
+Sa tutaj cztery widoczne wyjscia: poludniowy-zachod, polnocny-zachod, zachod i wschod.
+Smutny czarnooki mezczyzna.
+> Niewielkie skrzyzowanie w zachodniej czesci miasta.
+Sa tutaj cztery widoczne wyjscia: polnoc, poludnie, wschod i zachod.
+> W przedsionku.
+Sa tutaj trzy widoczne wyjscia: wschod, poludnie i zachod.
+Chuda czarnooka kobieta.
+> W zakladzie szewskim.
+Jest tutaj jedno widoczne wyjscie: wyjscie.
+Zapracowany przysadzisty gnom.
+> Zapracowany przysadzisty gnom siada na malutkim taborecie.
+Erm... Slucham?
+> Przedstawiasz sie wszystkim.
+> Zapracowany przysadzisty gnom przedstawia sie jako:
+Lirin Bof, Mistrz Szewski, gnom.
+Lirin usmiecha sie przymilnie.
+Nie widzisz zadnego wyjscia prowadzacego na zachod.
+> Nie widzisz zadnego wyjscia prowadzacego na zachod.
+> Nie widzisz zadnego wyjscia prowadzacego na wschod.
+> W zakladzie szewskim.
+Jest tutaj jedno widoczne wyjscie: wyjscie.
+Na malutkim taborecie siedzi Lirin.
+> Lirin tupie cicho.
+W przedsionku.
+Sa tutaj trzy widoczne wyjscia: wschod, poludnie i zachod.
+Chuda czarnooka kobieta.
+> Niestety, drzwi prowadzace na zachod sa zamkniete.
+> Otworz co?
+> Erm... Slucham?
+> Niewielkie skrzyzowanie w zachodniej czesci miasta.
+Sa tutaj cztery widoczne wyjscia: polnoc, poludnie, wschod i zachod.
+> Rozstaje.
+Sa tutaj trzy widoczne wyjscia: polnoc, poludniowy-wschod i poludniowy-zachod.
+> Niewielkie skrzyzowanie w zachodniej czesci miasta.
+Sa tutaj cztery widoczne wyjscia: polnoc, poludnie, wschod i zachod.
+> Ulica kupiecka.
+Jest tutaj piec widocznych wyjsc: poludniowy-wschod, wschod, polnoc, zachod i drzwi.
+> Obszerny plac.
+Jest tutaj piec widocznych wyjsc: polnoc, poludniowy-wschod, kantorek, wschod i zachod.
+Na debowej lawce siedzi Linandil.
+Tablica ogloszeniowa i dluga debowa lawka.
+> Poczyniles owocne postepy, od momentu kiedy wszedles do gry.
+> Sposrod osmiu osob przebywajacych obecnie w swiecie Nightal, znane tobie to:
+Gurgor, krasnolud
+Linandil Mistrz Enklawy Kupcow Calimshanskich, Zwierzchnik Handlu Bronmi i   
+      Zbrojami, niziolek                                                     
+
+Sposrod obecnie przebywajacych niesmiertelnych w swiecie Nightal znani tobie to:
+Puszysty Lurk Thans'fass Mrauk, kocur
+> Linandil piszczy: Zostalem mistrzem kupcow
+Mowisz: widzem, gratulacje
+> Usmiechasz sie wesolo.
+> Gratulujesz z uznaniem Linandilowi.
+> Linandil piszczy: Dzieki
+Linandil piszczy: Chcialbys dolaczyc do straznikow kupieckich?
+Obszerny plac.
+Jest tutaj piec widocznych wyjsc: polnoc, poludniowy-wschod, kantorek, wschod i zachod.
+Na debowej lawce siedzi Linandil.
+Tablica ogloszeniowa i dluga debowa lawka.
+> Siadasz na debowej lawce.
+> Wielka odrapana tablica ogloszeniowa.
+
+Komendy: napisz notke, usun [notke] <numer>, przejrzyj [notki] [<odkad-dokad>],
+         przeczytaj [notke] <numer>, przeczytaj poprzednia/nastepna [notke]
+
+Tablica ogloszeniowa zawiera dwadziescia szesc notek. Oto najnowsze z nich:
+11: Kodeks Prawa Cesarstwa, Czesc I                    Killian      47   7 X   
+12: Kiepskie prawo cesarskie?                          Vaasth       49  30 X   
+13: Odpowiedz.                                         Selith       45   2 XI  
+14: Zaciag do Fortecy Plomienia                        Holger       75   6 XI  
+15: Nabor do Fortecy Plomienia                         Gnerlak      71  18 IX  
+16: Nabor do Teatru!                                   Maeve        81  30 IX  
+17: Smok                                               Ahulneb      21   6 II  
+18: Zakon Promiennego Serca.                           Ulrynd       47  13 II  
+19: Zaciagnij sie do Plomiennej Piesci                 Indira       71  11 III 
+20: Nabor na termin                                    Aven         79  13 III 
+21: Tajemniczy plakat.                                 Maeve        40  15 V   
+22: Odezwa do podroznikow                              Zaurak       12  13 IX  
+23: Podroznicy!                                        Ulrynd        8   5 VI  
+24: ascatla                                            Miraz         1  24 VIII
+25: orki                                               Miraz         1  28 VIII
+26: konie                                              Miraz         1  28 VIII
+> Ruchliwy srebrnoluski smok czarodziej pojawia sie tu nagle.
+Ruchliwy srebrnoluski smok czarodziej wydobywa cos z innego wymiaru.
+Wytrzeszczasz oczy w niemym zdumieniu.
+> Jest to ruchliwy srebrnoluski smok czarodziej.
+Jest wysoki i szczuply jak na smoka.
+Zdaje sie byc w swietnej kondycji.
+> Wytatuowany ciemnoskory mezczyzna zamiera na chwile w bezruchu, przez co przypomina bardziej majestatyczny posag, niz zywego czlowieka.
+Linandil pyta wytatuowanego ciemnoskorego mezczyzne o cos.
+Wytatuowany ciemnoskory mezczyzna mowi: Zboje! Tej holoty pelno paleta sie po traktach i jaskiniach. Mozna ich podzielic wedlug rasy, kasty i wyznania...Ale skupmy sie na tych bardziej oczywisych podzialach. Zboje uzywaja: maczug, miecza, biczy, sztyletu lub kostura. Do maczugi najczesciej dobieraja sobie dobra tarcze, na ktorej moga polegac podczas zbrojnych wypadow, dopiero pozniej probuja zbijac ciosy badz ich unikac. Ci z mieczami raczej skupiaja sie na parowaniu dopiero pozniej polegaja na tarczy a na koncu na unikaniu. Uzytkownikom biczy tak jak uzytkownikom sztyletow najlepiej wychodzi unikanie jednak roznia sie tym, ze bardziej cenia sobie dobra tarcze niz parowanie bronia. Zboje poslugujacy sie kosturami glownie staraja sie wszystko sparowac badz uniknac i dopiero w ostatecznosci siegaja po tarcze.
+Wytatuowany ciemnoskory mezczyzna odpowiada: Obawiam sie, ze nie naucze cie juz nic nowego. Moze jednak uda ci sie znalezc innego mistrza...
+> Przedstawiasz sie wszystkim.
+> Wytatuowany ciemnoskory mezczyzna przedstawia sie jako:
+Esai Alvarez, Lowca Smokow z Calimshanu, mezczyzna.
+Esai zostaje zmieciony z powierzchni ziemi przez ruchliwego srebrnoluskiego smoka czarodzieja.
+Ruchliwy srebrnoluski smok czarodziej wydobywa cos z innego wymiaru.
+Zwinny chudy polelf siada na debowej lawce.
+Linandil pyta zwinnego chudego polelfa o cos.
+Zwinny chudy polelf mowi: Gladiatorzy to dzielni wojownicy. Walcza przeciwko innym ku uciesze tlumu. Na arenie moga liczyc tylko i wylacznie na siebie na siebie. Style walki gladiatorow sa bardzo rozne. Podstawowo dzielimy ich na poslugujacych sie dwoma mieczami jednorecznymi, oburecznym toporem oraz maczuga i tarcza.
+Przedstawiasz sie wszystkim.
+> Zwinny chudy polelf przedstawia sie jako:
+Sileas Warbringer, Nauczyciel sztuk walki, polelf.
+Jestes w swietnej kondycji.
+Sileas jest w swietnej kondycji.
+Ruchliwy srebrnoluski smok czarodziej jest w swietnej kondycji.
+Linandil jest w swietnej kondycji.
+> Sileas zostaje zmieciony z powierzchni ziemi przez ruchliwego srebrnoluskiego smoka czarodzieja.
+Sileas wstaje z lawki.
+Ruchliwy srebrnoluski smok czarodziej wydobywa cos z innego wymiaru.
+Esai mowi: I tym razem nie udalo mi sie go wyprzedzic...
+Ruchliwy srebrnoluski smok czarodziej Nagle znika ci z oczu, odlatujac gdzies w dal.
+Nie ma tu nikogo takiego.
+> Nie ma tu nikogo takiego.
+> Obszerny plac.
+Jest tutaj piec widocznych wyjsc: polnoc, poludniowy-wschod, kantorek, wschod i zachod.
+Siedzisz na debowej lawce, a procz ciebie na lawce siedzi jeszcze Linandil.
+Tablica ogloszeniowa i dluga debowa lawka.
+Esai.
+> Przedstawiasz sie wszystkim.
+> Esai przedstawia sie jako:
+Esai Alvarez, Lowca Smokow z Calimshanu, mezczyzna.
+Nie ma tu nikogo takiego.
+> Pytasz Esaia o profesje.
+> Esai mowi: Zboje! Tej holoty pelno paleta sie po traktach i jaskiniach. Mozna ich podzielic wedlug rasy, kasty i wyznania...Ale skupmy sie na tych bardziej oczywisych podzialach. Zboje uzywaja: maczug, miecza, biczy, sztyletu lub kostura. Do maczugi najczesciej dobieraja sobie dobra tarcze, na ktorej moga polegac podczas zbrojnych wypadow, dopiero pozniej probuja zbijac ciosy badz ich unikac. Ci z mieczami raczej skupiaja sie na parowaniu dopiero pozniej polegaja na tarczy a na koncu na unikaniu. Uzytkownikom biczy tak jak uzytkownikom sztyletow najlepiej wychodzi unikanie jednak roznia sie tym, ze bardziej cenia sobie dobra tarcze niz parowanie bronia. Zboje poslugujacy sie kosturami glownie staraja sie wszystko sparowac badz uniknac i dopiero w ostatecznosci siegaja po tarcze.
+Ruchliwy srebrnoluski smok czarodziej pojawia sie tu nagle.
+Esai zostaje zmieciony z powierzchni ziemi przez ruchliwego srebrnoluskiego smoka czarodzieja.
+Ruchliwy srebrnoluski smok czarodziej wydobywa cos z innego wymiaru.
+Sileas siada na debowej lawce.
+Sileas odpowiada: Obawiam sie, ze nie naucze cie juz nic nowego. Moze jednak uda ci sie znalezc innego mistrza...
+> Sileas zostaje zmieciony z powierzchni ziemi przez ruchliwego srebrnoluskiego smoka czarodzieja.
+Sileas wstaje z lawki.
+Ruchliwy srebrnoluski smok czarodziej daje ci wiele platynowych monet.
+Ruchliwy srebrnoluski smok czarodziej Nagle znika ci z oczu, odlatujac gdzies w dal.
+Obszerny plac.
+Jest tutaj piec widocznych wyjsc: polnoc, poludniowy-wschod, kantorek, wschod i zachod.
+Siedzisz na debowej lawce, a procz ciebie na lawce siedzi jeszcze Linandil.
+Tablica ogloszeniowa i dluga debowa lawka.
+> > 10
+20
+Doliczyles sie 25 platynowych monet.
+Linandil wstaje z lawki.
+Linandil podaza na wschod.
+Miraz przybywa z zachodu.
+Miraz podaza na wschod.
+Wstajesz z lawki.
+> Malutki ciasny kantorek.
+Jest tutaj jedno widoczne wyjscie: wyjscie.
+> Zdeponowac mozesz jedynie miedz, srebro, zloto lub platyny.
+> Zdeponowales 25 platyny.
+> Oto zawartosc twojego konta:
+Miedziane monety:    97
+Srebrne monety:      46
+Zlote monety:        251
+Platynowe monety:    33
+Sposrod siedmiu osob przebywajacych obecnie w swiecie Nightal, znane tobie to:
+Gurgor, krasnolud
+Miraz, jaszczuroczlek
+
+Sposrod obecnie przebywajacych niesmiertelnych w swiecie Nightal znani tobie to:
+Puszysty Lurk Thans'fass Mrauk, kocur
+> Obszerny plac.
+Jest tutaj piec widocznych wyjsc: polnoc, poludniowy-wschod, kantorek, wschod i zachod.
+Tablica ogloszeniowa i dluga debowa lawka.
+> Miraz przybywa z zachodu.
+Miraz podaza na wschod.
+Miraz przybywa ze wschodu.
+Jest niebieskookim dlugobrodym jaszczuroczlekiem, znanym jako:
+Miraz, jaszczuroczlek.
+Wyglada na znanego w gospodach wedrowca.
+Jest niespotykanie wysoki i szczuply jak na jaszczuroczleka.
+Zdaje sie byc w swietnej kondycji.
+Ma on na sobie stalowy zamkniety helm, pare blyszczacych nagolennikow,
+  zelazne rekawice z zatrzaskami, mocna folgowa zbroje i mala spizowa tarcze.
+> Jestes barczystym ognistobrodym krasnoludem, znanym jako:
+Gurgor, krasnolud.
+Wygladasz na chwata badajacego kazdy zakatek swiata.
+Jestes przecietnego wzrostu i przecietnej wagi jak na krasnoluda.
+Jestes w swietnej kondycji.
+Do twojego pasa przytroczona jest prosta olejna lampa.
+Nosisz na plecach zamkniety pojemny plecak.
+Masz wytrzeszczone oczy.
+Masz na sobie mocna folgowa zbroje.
+> Dostepne listy poziomow:
+   brutalnosci, graczy kobiet, graczy mezczyzn, inteligencji, jakosci
+   broni, jakosci zbroi, kaca, kondycji, madrosci, many, odwagi,
+   pijanstwa, porownania sily, porownania wytrzymalosci, porownania
+   zrecznosci, postepow, pragnienia, przeciazenia, sily, strachu,
+   sytosci, umiejetnosci, wytrzymalosci, zardzewienia, zdolnosci,
+   zmeczenia i zrecznosci, sily broni, wywazenia broni i wytrzymalosci zbroi.
+> Miraz podaza na wschod.
+> Dostepne poziomy graczy mezczyzn:
+zagubiony mlokos
+niedorajda stawiajacy pierwsze kroki na traktach
+nieobeznany z drogami wojazer
+ciekawy przygod wedrowiec
+podroznik przebywajacy trakty
+chwat badajacy kazdy zakatek swiata
+znany w gospodach wedrowiec
+obeznany ze swiatem wedrowiec
+podroznik o swiatowej slawie
+weteran przemierzajacy swiat
+bohater zdobywajacy slawe w swiecie
+niedoceniony w swiecie bohater
+wielce doswiadczony bohater
+chwalony w swiecie bohater
+oslawiony w piesniach bohater
+znajacy niemalze kazda tajemnice bohater
+bohater dla ktorego swiat nie ma tajemnic
+taki co w pojedynke moglby pokonac smoka
+
+> Miraz przybywa ze wschodu.
+Miraz podaza na zachod.
+Miraz przybywa z zachodu.
+Miraz podaza na wschod.
+Miraz przybywa ze wschodu.
+Miraz podaza na poludniowy-wschod.
+Poczyniles owocne postepy, od momentu kiedy wszedles do gry.
+> Bez wysilku potrafisz dzwigac nawet naprawde ciezkie przedmioty.
+Bez wiekszych problemow trafiasz kamieniem do celu.
+Jedno uderzenie kuflem nie wystarczy by zwalic cie z nog.
+Mawiaja, ze dorownujesz intelektem bystrosci wioskowych idiotow.
+Samodzielnie dokonujesz zyciowych wyborow.
+Od dawna nie obawiasz sie ciemnosci.
+> Obszerny plac.
+Jest tutaj piec widocznych wyjsc: polnoc, poludniowy-wschod, kantorek, wschod i zachod.
+Tablica ogloszeniowa i dluga debowa lawka.
+> Ulica wiodaca do kopalni.
+Sa tutaj dwa widoczne wyjscia: polnocny-zachod i poludniowy-wschod.
+> U wejscia do kopalni.
+Sa tutaj trzy widoczne wyjscia: poludniowy-zachod, polnocny-zachod i poludnie.
+> Otwierasz pojemny plecak.
+> Wez co?
+> Bierzesz poreczny stalowy oskard z otwartego pojemnego plecaka.
+> Bierzesz ciezki gorniczy kilof z otwartego pojemnego plecaka.
+> U wejscia do kopalni.
+Sa tutaj trzy widoczne wyjscia: poludniowy-zachod, polnocny-zachod i poludnie.
+> Miraz przybywa z polnocnego-zachodu.
+Tak jest.
+> Miraz dolacza do twojej druzyny.
+Zapalasz prosta olejna lampe.
+> Przeciez prosta olejna zapalona lampa jest pelna.
+> Przy wyjsciu z kopalni.
+Sa tutaj dwa widoczne wyjscia: wyjscie i poludnie.
+Miraz przybywa za toba z polnocy.
+> Korytarz prowadzacy do wyjscia.
+Sa tutaj dwa widoczne wyjscia: poludnie i polnoc.
+Miraz przybywa za toba z polnocy.
+> Korytarz prowadzacy do wyjscia.
+Sa tutaj cztery widoczne wyjscia: poludniowy-zachod, polnoc, poludniowy-wschod i wschod.
+Pracowity gornik.
+Miraz przybywa za toba z polnocy.
+> Nie widzisz zadnego wyjscia prowadzacego na poludnie.
+> Pod powierzchnia ziemi.
+Sa tutaj dwa widoczne wyjscia: polnocny-wschod i poludnie.
+Miraz przybywa za toba z polnocnego-wschodu.
+> Podziemny tunel.
+Sa tutaj dwa widoczne wyjscia: polnoc i poludniowy-zachod.
+Zmeczony gornik i wytrzymaly gornik.
+Miraz przybywa za toba z polnocy.
+> W sztolni.
+Jest tutaj jedno widoczne wyjscie: polnocny-wschod.
+Dwie sterty urobku.
+Miraz przybywa za toba z polnocnego-wschodu.
+> Miraz bezskutecznie probuje wziac sterte urobku.
+Miraz syczy: poczekaj
+Miraz wklada mocna folgowa zbroje, wywazony szeroki miecz, mala spizowa tarcze, zelazne rekawice z zatrzaskami, pare blyszczacych nagolennikow, stalowy zamkniety helm, prosta olejna lampe, zwykly drewniany hebel, zwykla drwalska pile, kruczoczarny zdobiony topor, cztery grube ciezkie skory, brudnoszary przezroczysty krysztal, otwarty czarny niewielki mieszek, wiele miedzianych monet, wiele zlotych monet i cztery srebrne monety do otwartego pojemnego plecaka.
+Miraz bierze sterte urobku.
+Miraz podaza na polnocny-wschod.
+Miraz przybywa z polnocnego-wschodu.
+Miraz bierze sterte urobku.
+Wez co?
+> Miraz podaza na polnocny-wschod.
+Otworz co?
+> Miraz przybywa z polnocnego-wschodu.
+Wez co?
+> Wez co?
+> Chwytasz ciezki gorniczy kilof oburacz.
+> Chwytasz ciezki gorniczy kilof mocno za trzonek i zaczynasz kopac na wschod.
+> Sprawnie odlupujesz oskardem podejrzanie wygladajacy fragment skaly.
+Miraz syczy: gdzie morzna kupic kilof bo zapomnialem
+W rownym tempie uderzasz kilofem w skale.
+Miraz podaza na polnocny-wschod.
+Chwytasz mocno kilof i z calej sily uderzasz w skale.
+Odkladasz kilof by na chwile chwycic oskard.
+Udalo ci sie wykopac kawalek tunelu na wschod.
+W sztolni.
+Jest tutaj jedno widoczne wyjscie: polnocny-wschod.
+Sterta urobku.
+> Chwytasz ciezki gorniczy kilof mocno za trzonek i zaczynasz kopac na wschod.
+> Odgarniasz przeszkadzajacy ci gruz.
+Miraz przybywa z polnocnego-wschodu.
+Miraz podaza na polnocny-wschod.
+Opierasz sie na chwile o sciane i ocierasz pot z czola.
+Miraz przybywa z polnocnego-wschodu.
+Miraz bierze sterte urobku.
+Uderzasz kilka razy kilofem w to samo miejsce.
+Miraz podaza na polnocny-wschod.
+Miraz przybywa z polnocnego-wschodu.
+Sprawnie odlupujesz oskardem podejrzanie wygladajacy fragment skaly.
+Udalo ci sie wykopac kawalek tunelu na wschod.
+W sztolni.
+Jest tutaj jedno widoczne wyjscie: polnocny-wschod.
+Sterta urobku.
+Miraz.
+> Miraz bierze sterte urobku.
+Chwytasz ciezki gorniczy kilof mocno za trzonek i zaczynasz kopac na wschod.
+> Zawziecie uderzasz kilofem w jedno miejsce, starajac sie odlupac uciazliwy fragment skaly.
+Miraz podaza na polnocny-wschod.
+Miraz przybywa z polnocnego-wschodu.
+Sprawnie odlupujesz oskardem podejrzanie wygladajacy fragment skaly.
+Odlupujesz kilofem spory kawalek skaly.
+W rownym tempie uderzasz kilofem w skale.
+Podczas kopania wydobywasz nienaruszony brudnoszary przezroczysty krysztal.
+Wydaje ci sie, ze twoja wiedza i umiejetnosci gornicze wzrosly nieznacznie.
+Udalo ci sie wykopac tunel na wschod.
+Miraz bierze sterte urobku.
+Wez co?
+> Miraz podaza na polnocny-wschod.
+W sztolni.
+Sa tutaj dwa widoczne wyjscia: wschod i polnocny-wschod.
+> Miraz przybywa z polnocnego-wschodu.
+Miraz podaza na polnocny-wschod.
+Miraz przybywa z polnocnego-wschodu.
+Podziemny tunel.
+Sa tutaj dwa widoczne wyjscia: polnoc i poludniowy-zachod.
+Nieduza sterta urobku.
+Zmeczony gornik i wytrzymaly gornik.
+Miraz przybywa za toba z poludniowego-zachodu.
+> W sztolni.
+Sa tutaj dwa widoczne wyjscia: wschod i polnocny-wschod.
+Miraz przybywa za toba z polnocnego-wschodu.
+> Oceniasz starannie brudnoszary przezroczysty krysztal.
+Jest to niemal przejrzysty krysztal zawierajacy szare, czarne i matowobiale plamy. Wygladem przypomina troche zabrudzony lod. 
+Wydaje ci sie, ze jak na te rude jest to spory okaz.
+
+Oceniasz, ze brudnoszary przezroczysty krysztal wazy 3000 gramow, zas go objetosc wynosi 1400 mililitrow.
+Wydaje ci sie, ze jest 1 sztuka warta 1900 miedziakow.
+> W sztolni.
+Sa tutaj dwa widoczne wyjscia: wschod i polnocny-wschod.
+Miraz.
+> W ciasnym szybie.
+Jest tutaj jedno widoczne wyjscie: zachod.
+Miraz przybywa za toba z zachodu.
+> Niedokladnie ociosane kilofem sciany otaczaja cie zlowieszczo i chociaz ich przeplatajace sie warstwy skalne mowia ci wiele o czasach, gdy powstaly te krainy, nie mozesz sie pozbyc wrazenia, ze ta kopalnia czyha na twoje zycie. Sklepienie nad twoja glowa zdaje sie wisiec niebezpiecznie nisko, jakby tony skal mialy zaraz przygniesc cie swym ciezarem i wymazac tym samym z kart historii. Kamienny sufit jest tak bliski, ze dobrze widzisz jasniejsze i ciemniejsze smugi. Wszedzie na podlozu, pomiedzy stosikami gruzu i resztkami urobku, zauwazasz swoje slady, odbite wyraznie we wszechobecnym po kopaniu pyle. Grota nie jest ostemplowana.
+Jest tutaj jedno widoczne wyjscie: zachod.
+Miraz.
+> W sztolni.
+Sa tutaj dwa widoczne wyjscia: wschod i polnocny-wschod.
+Miraz przybywa za toba ze wschodu.
+> Chwytasz ciezki gorniczy kilof mocno za trzonek i zaczynasz kopac na zachod.
+> Odrzucasz za siebie duzy kamien przeszkadzajacy ci w pracy.
+Odkladasz kilof by na chwile chwycic oskard.
+Jestes teraz w trakcie kopania! Przerwanie tej czynnosci sprawi, ze wszystkie efekty zostana stracone.
+> Sprawnie odlupujesz oskardem podejrzanie wygladajacy fragment skaly.
+Chwytasz mocno kilof i z calej sily uderzasz w skale.
+Udalo ci sie wykopac kawalek tunelu na zachod.
+Added plugin C:\Users\Radek\Documents\Mush-z\worlds\plugins\Mush\Lazik.xml
+Miraz bierze sterte urobku.
+Oceniasz starannie zachodnia sciane i wydaje ci sie, ze jesli bedziesz kopac w tamtym kierunku mozesz odkryc poklady soli kamiennej.
+> Napelniasz prosta olejna zapalona lampe olejem z butelki.
+> Chwytasz ciezki gorniczy kilof mocno za trzonek i zaczynasz kopac na zachod.
+> Chwytasz mocno kilof i z calej sily uderzasz w skale.
+Zawziecie uderzasz kilofem w jedno miejsce, starajac sie odlupac uciazliwy fragment skaly.
+Sprawnie odlupujesz oskardem podejrzanie wygladajacy fragment skaly.
+Odkladasz kilof by na chwile chwycic oskard.
+Udalo ci sie wykopac kawalek tunelu na zachod.
+Miraz bezskutecznie probuje wziac sterte urobku.
+Miraz podaza na polnocny-wschod.
+W sztolni.
+Sa tutaj dwa widoczne wyjscia: wschod i polnocny-wschod.
+Sterta urobku.
+> Miraz przybywa z polnocnego-wschodu.
+Miraz bierze sterte urobku.
+Miraz podaza na polnocny-wschod.
+Miraz przybywa z polnocnego-wschodu.
+Jestes zbyt zmeczony by zaczac kopac.
+> Napelniasz prosta olejna zapalona lampe olejem z butelki.
+> Ta wykonana z grubego ciemnego szkla butelka sluzy do przechowywania oleju do lamp i palnikow. Jej szyjka jest obwiazana, grubym, brazowym sznurkiem polaczonym z korkiem, ktory  zwisa przy butelce pozostawiajac wylot szyjki pusty.
+ W tej chwili zawiera troche gestej tlustej oliwy, stosowanej glownie do oswietlania.
+> Oto zdolnosci na temat ktorych posiadasz wiedze:
+--------------------------------------------------
+Gornictwo znasz troszke i wyglada na to ze
+potrzebujesz jeszcze bardzo duzo praktyki zanim
+bedziesz mogl odwiedzic jakiegos mistrza.
+--------------------------------------------------
+> Erm... Slucham?
+> Erm... Slucham?
+> Napelniasz prosta olejna zapalona lampe olejem z butelki.
+> Jestes zbyt zmeczony by zaczac kopac.
+> Gasisz prosta olejna zapalona lampe.
+> Przeciez prosta olejna lampa jest pelna.
+> Erm... Slucham?
+> Jestes fizycznie w swietnej kondycji, zas mentalnie w pelni sil.
+Czujesz sie bardzo bezpiecznie i jestes zmeczony.
+Chce ci sie bardzo pic i jestes bardzo najedzony.
+Jestes trzezwy.
+Twoj ekwipunek jest wyjatkowo ciezki.
+Wiek: 1 dzien 23 godziny 55 minut 56 sekund.
+> Zapalasz prosta olejna lampe.
+> Przeciez prosta olejna zapalona lampa jest pelna.
+> W sztolni.
+Sa tutaj dwa widoczne wyjscia: wschod i polnocny-wschod.
+Miraz.
+> Erm... Slucham?
+> W sztolni.
+Sa tutaj dwa widoczne wyjscia: wschod i polnocny-wschod.
+Miraz.
+> W sztolni.
+Sa tutaj dwa widoczne wyjscia: wschod i polnocny-wschod.
+Miraz.
+> Hmmmmm...
+> Gasisz prosta olejna zapalona lampe.
+> Napelniasz prosta olejna lampe olejem z butelki.
+> Hmmmmm...
+> Zapalasz prosta olejna lampe.
+> Erm... Slucham?
+> Erm... Slucham?
+> W sztolni.
+Sa tutaj dwa widoczne wyjscia: wschod i polnocny-wschod.
+Miraz.
+> Otworz co?
+> Puszczasz ciezki gorniczy kilof.
+> Sposrod osmiu osob przebywajacych obecnie w swiecie Nightal, znane tobie to:
+Gurgor, krasnolud
+Miraz, jaszczuroczlek
+
+Sposrod obecnie przebywajacych niesmiertelnych w swiecie Nightal znani tobie to:
+Puszysty Lurk Thans'fass Mrauk, kocur
+> Erm... Slucham?
+> Nie pojdziesz przeciez spac w srodku kopalni?
+> Miraz podaza na polnocny-wschod.
+Nie bedziesz przeciez kopac golymi rekami? Potrzebujesz kilofa!
+> Chwytasz ciezki gorniczy kilof oburacz.
+> Chwytasz ciezki gorniczy kilof mocno za trzonek i zaczynasz kopac na zachod.
+> W rownym tempie uderzasz kilofem w skale.
+Lekko opukujesz oskardem dziwnie wygladajacy fragment skaly.
+Odgarniasz przeszkadzajacy ci gruz.
+Zawziecie uderzasz kilofem w jedno miejsce, starajac sie odlupac uciazliwy fragment skaly.
+Lekko opukujesz oskardem dziwnie wygladajacy fragment skaly.
+Podczas kopania wydobywasz nienaruszony brudnoszary przezroczysty krysztal.
+Wydaje ci sie, ze twoja wiedza i umiejetnosci gornicze wzrosly troche.
+Udalo ci sie wykopac tunel na zachod.
+W sztolni.
+Sa tutaj trzy widoczne wyjscia: polnocny-wschod, wschod i zachod.
+Sterta urobku.
+> Otworz co?
+> Wkladasz dwa brudnoszare przezroczyste krysztaly do otwartego pojemnego plecaka.
+> Jestes zbyt zmeczony by zaczac kopac.
+> Nie zauwazasz na tej powierzchni nic ciekawego. Musisz najpierw wstepnie ja oczyscic, kopiac w tym kierunku.
+> Napelniasz prosta olejna zapalona lampe olejem z butelki.
+> Ta wykonana z grubego ciemnego szkla butelka sluzy do przechowywania oleju do lamp i palnikow. Jej szyjka jest obwiazana, grubym, brazowym sznurkiem polaczonym z korkiem, ktory  zwisa przy butelce pozostawiajac wylot szyjki pusty.
+ W tej chwili zawiera mala ilosc gestej tlustej oliwy, stosowanej glownie do oswietlania.

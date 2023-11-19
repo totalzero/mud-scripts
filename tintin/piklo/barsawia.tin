@@ -1,0 +1,221 @@
+#CONFIG {AUTO TAB} {5000}
+#CONFIG {BUFFER SIZE} {10000}
+#CONFIG {CHARSET} {BIG-5}
+#CONFIG {COLOR MODE} {TRUE}
+#CONFIG {COLOR PATCH} {OFF}
+#CONFIG {COMMAND COLOR} {\e[0;37m}
+#CONFIG {COMMAND ECHO} {ON}
+#CONFIG {CONNECT RETRY} {0.0}
+#CONFIG {HISTORY SIZE} {1000}
+#CONFIG {LOG MODE} {RAW}
+#CONFIG {MOUSE} {OFF}
+#CONFIG {PACKET PATCH} {AUTO OFF}
+#CONFIG {RANDOM SEED} {416488837}
+#CONFIG {REPEAT CHAR} {!}
+#CONFIG {REPEAT ENTER} {OFF}
+#CONFIG {SCREEN READER} {OFF}
+#CONFIG {SCROLL LOCK} {ON}
+#CONFIG {SPEEDWALK} {OFF}
+#CONFIG {TAB WIDTH} {8}
+#CONFIG {TELNET} {ON}
+#CONFIG {TINTIN CHAR} {#}
+#CONFIG {VERBATIM} {OFF}
+#CONFIG {VERBATIM CHAR} {\}
+#CONFIG {VERBOSE} {OFF}
+#CONFIG {WORDWRAP} {ON}
+
+#PATHDIR {d} {u} {32}
+#PATHDIR {e} {w} {2}
+#PATHDIR {n} {s} {1}
+#PATHDIR {ne} {sw} {3}
+#PATHDIR {nw} {se} {9}
+#PATHDIR {s} {n} {4}
+#PATHDIR {se} {nw} {6}
+#PATHDIR {sw} {ne} {12}
+#PATHDIR {u} {d} {16}
+#PATHDIR {w} {e} {8}
+
+#ses barsawia mud.barsawia.pl 23
+
+#format {logFile} {/volumes/appdoc/tintin/logs/barsawia/%t.html} {%Y.%m.%d}
+#log {append} {$logFile}
+
+#SUBSTITUTE {.: %1 :.} {%1} {5}
+
+#alias zio {
+    otworz sloiki;
+    wloz ziola do sloika;
+    wloz ziola do drugiego sloika;
+    wloz ziola do trzeciego sloika;
+    wloz ziola do czwartego sloika;
+    wloz ziola do piatego sloika;
+    wloz ziola do szostego sloika;
+    wloz ziola do siodmego sloika;
+    wloz ziola do osmego sloika;
+    wloz ziola do dziewiatego sloika;
+    wloz ziola do dziesiatego sloika;
+    wloz ziola do jedenastego sloika;
+    wloz ziola do dwunastego sloika;
+    wloz ziola do trzynastego sloika;
+    wloz ziola do czternastego sloika;
+    wloz ziola do pietnastego sloika;
+    wloz ziola do szesnastego sloika;
+    wloz ziola do siedemnastego sloika;
+    wloz ziola do osiemnastego sloika;
+    wloz ziola do dziewietnastego sloika;
+    wloz ziola do dwudziestego sloika;
+    zamknij sloiki;
+    #DELAY {2} {
+    otworz woreczki;
+    wloz ziola do woreczka;
+    wloz ziola do drugiego woreczka;
+    wloz ziola do trzeciego woreczka;
+    wloz ziola do czwartego woreczka;
+    wloz ziola do piatego woreczka;
+    wloz ziola do szostego woreczka;
+    wloz ziola do siodmego woreczka;
+    wloz ziola do osmego woreczka;
+    wloz ziola do dziewiatego woreczka;
+    wloz ziola do dziesiatego woreczka;
+    wloz ziola do jedenastego woreczka;
+    wloz ziola do dwunastego woreczka;
+    wloz ziola do trzynastego woreczka;
+    wloz ziola do czternastego woreczka;
+    wloz ziola do pietnastego woreczka;
+    wloz ziola do szesnastego woreczka;
+    wloz ziola do siedemnastego woreczka;
+    wloz ziola do osiemnastego woreczka;
+    wloz ziola do dziewietnastego woreczka;
+    wloz ziola do dwudziestego woreczka;
+    zamknij woreczki;
+    };
+};
+#ALIAS {§55} {
+    otworz sakiewke;
+    wez monety z sakiewki;
+    zamknij sakiewke;
+
+} {5};
+#ALIAS {55} {
+    otworz sakiewke;
+    wloz monety do sakiewki;
+    zamknij sakiewke;
+} {5};
+#alias zx {§55; kup bilet; wejdz na statek; 55;}
+
+#action {Nagle dostrzegasz, ze zanurzony w wodzie sznurek} {#system afplay -v 2 /volumes/appdoc/tintin/sounds/alarm.wav}
+#action {atakuje} {#system afplay -v 2 /volumes/appdoc/tintin/sounds/resume.wav}
+#action {skupia sie na walce} {#system afplay -v 2 /volumes/appdoc/tintin/sounds/resume.wav}
+#action {przybywa} {#system afplay -v 2 /volumes/appdoc/tintin/sounds/action.wav}
+#action {przybywaja} {#system afplay -v 2 /volumes/appdoc/tintin/sounds/action.wav}
+#action {do brzegu} {#system afplay -v 2 /volumes/appdoc/tintin/sounds/action.wav}
+#action {wskazuje} {#system afplay -v 2 /volumes/appdoc/tintin/sounds/pause.wav}
+
+
+#action {masz nowa poczte} {#system afplay -v 2 /volumes/appdoc/tintin/sounds/upgrade.wav}
+#action {do ciebie} {#system afplay -v 2 /volumes/appdoc/tintin/sounds/message.wav}
+#action {mowi} {#system afplay -v 2 /volumes/appdoc/tintin/sounds/message.wav}
+#action {mruczy} {#system afplay -v 2 /volumes/appdoc/tintin/sounds/message.wav}
+#action {syczy} {#system afplay -v 2 /volumes/appdoc/tintin/sounds/message.wav}
+#action {nuci} {#system afplay -v 2 /volumes/appdoc/tintin/sounds/message.wav}
+#action {mamrocze} {#system afplay -v 2 /volumes/appdoc/tintin/sounds/message.wav}
+#action {bulgota} {#system afplay -v 2 /volumes/appdoc/tintin/sounds/message.wav}
+#action {bulgocze} {#system afplay -v 2 /volumes/appdoc/tintin/sounds/message.wav}
+#action {warczy} {#system afplay -v 2 /volumes/appdoc/tintin/sounds/message.wav}
+#action {wrzeszczy} {#system afplay -v 2 /volumes/appdoc/tintin/sounds/message.wav}
+#action {belkocze} {#system afplay -v 2 /volumes/appdoc/tintin/sounds/message.wav}
+#action {skrzypi} {#system afplay -v 2 /volumes/appdoc/tintin/sounds/message.wav}
+#action {huczy} {#system afplay -v 2 /volumes/appdoc/tintin/sounds/message.wav}
+#action {dudni} {#system afplay -v 2 /volumes/appdoc/tintin/sounds/message.wav}
+
+
+#ALIAS {zniwa-on} {
+    #ALIAS {zbieraj_ziola} {
+        x
+    } {5};
+    #ALIAS {krok_dalej} {
+        idz;
+        zbieraj_ziola;
+    } {5};
+
+#ACTION {Nie udalo ci sie znalezc niczego interesujacego} {
+    krok_dalej;
+} {5};
+
+#ACTION {Jestes tak zmeczony, ze nie mozesz isc w tym kierunku} {
+    przestan;
+    #DELAY {5} {
+        zio;
+    };
+    #DELAY {180} {
+        krok_dalej;
+    }
+} {5};
+
+#ACTION {Szukasz wszedzie, ale nie znajdujesz zadnych ziol} {
+    krok_dalej;
+} {5};
+#ACTION {Dotarles do celu!} {
+    przestan;
+    #DELAY {5} {
+        zio;
+    };
+    zniwa-off;
+} {5};
+#ACTION {Drogi sie tutaj krzyzuja, nie wiesz w ktorym kierunku sie teraz udac} {
+    #DELAY {5} {
+        zio;
+    };
+    zniwa-off;
+} {5};
+#ACTION {sie na walce} {
+    przestan;
+    przestan szukac;
+    przestan szukac ziol;
+    idz;
+    krok_dalej;
+} {5};
+#ACTION {Znajdujesz} {
+    krok_dalej;
+} {5};
+#ACTION {Nie jestes pewny} {
+    
+    #DELAY {5} {
+        zio;
+    };
+    #system afplay -v 2 /volumes/appdoc/tintin/sounds/alarm.wav;
+} {5};
+#ACTION {Droga sie tutaj konczy} {
+przestan;
+    #DELAY {5} {
+        zio;
+    };
+    #system afplay -v 2 /volumes/appdoc/tintin/sounds/alarm.wav;
+} {5};
+#ALIAS {usun_tickery} {
+    #unticker sloiki;
+    #unticker odpoczywanko;
+} {5};
+#ACTION {znajdujesz zadnych ziol} {
+    krok_dalej;
+} {5};
+#ECHo {zaczynamy zniwa};
+} {5};
+
+#ALIAS {zniwa-off} {
+    #UNACTION {znajdujesz zadnych ziol};
+    #UNALIAS {zbieraj_ziola};
+    #UNALIAS {krok_dalej};
+    #UNACTION {Nie udalo ci sie znalezc niczego interesujacego};
+    #UNACTION {Jestes tak zmeczony, ze nie mozesz isc w tym kierunku};
+    #UNTICKER {odpoczywanko};
+    #UNACTION {Szukasz wszedzie, ale nie znajdujesz zadnych ziol};
+#UNACTION {Dotarles do celu!};
+#UNACTION {Drogi sie tutaj krzyzuja, nie wiesz w ktorym kierunku sie teraz udac};
+#UNACTION {sie na walce};
+#UNACTION {Znajdujesz};
+#UNACTION {Nie jestes pewny};
+#UNACTION {Droga sie tutaj konczy};
+usun_tickery;
+    #echo {zniwa zakonczone};
+} {5};

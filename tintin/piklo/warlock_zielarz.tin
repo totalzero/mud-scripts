@@ -1,0 +1,110 @@
+#LIST {dziewanny_sciezka} CREATE {sw;sw;s;s;s;s;s;s;e;e;e;ne;se;ne;se;e;ne;e;e;sw;s;s;se;s;sw;nw;n;nw;ne;w;w;sw;s;e;se;sw;w;se;sw;sw;nw;n;nw;nw;ne;e;n;nw;w;w;sw;s;se;sw;s;sw;e;ne;e;se;sw;se;s;e;s;sw;w;s;w;sw;sw;e;sw;s;s;ne;e;s;e;e;ne;e;se;s;se;sw;nw;sw;s;se;e;ne;e;s;w;s;se;s;se;sw;sw;w;nw;n;e;e;ne;se;sw;sw;se;e;sw;se;s;sw;nw;s;sw;sw;nw;e;ne;nw;ne;n;sw;w;sw;s;w;s;s};
+
+#ALIAS {zielarz-auto} {
+    #ACTION {Nie udalo ci sie znalezc niczego interesujacego.} {
+        krok;
+        z;
+    } {5};
+    #ACTION {Znajdujesz } {
+        z;
+    } {5};
+#ACTION {Szukasz wszedzie, ale nie znajdujesz zadnych ziol.} {
+    zio;
+    krok;
+    z;
+} {5};
+
+    zielarz-on;
+    krok;
+    z;
+} {5};
+
+
+#ALIAS {zielarz-on} {
+    #ECHO {uruchamiam sciezke, wpisz krok aby przejsc nastepny krok};
+    #VARIABLE {dziewanny_index} {1};
+    #LIST {dziewanny_sciezka} SIZE {dziewanny_size};
+    #ALIAS {krok} {
+        #ECHO {krok: $dziewanny_index};
+        $dziewanny_sciezka[$dziewanny_index];
+        #mat {dziewanny_index} {$dziewanny_index + 1};
+
+        #IF {$dziewanny_index > $dziewanny_size} {zielarz-off};
+    } {5};
+    
+} {5};
+
+
+#ALIAS {zielarz-off} {
+    #UNACTION {Szukasz wszedzie, ale nie znajdujesz zadnych ziol.};
+    #UNACTION {Znajdujesz };
+    #UNACTION {Nie udalo ci sie znalezc niczego interesujacego.};
+    #UNALIAS {krok};
+    #echo {zchodzisz ze sciezki zielarzy};
+} {5};
+
+#ALIAS {zniwa-on} {
+    #ECHO {ładuje mape};
+        #map read ./las.mapa;
+    #map goto 1;
+    #VARIABLE {licznik_krokow} {1};
+    #VARIABLE {ostatni_vnum} {251};
+    #VARIABLE {numer_komendy} {1};
+    #VARIABLE {czy_moge} {1};
+    
+    #LIST {komendy} CREATE {szukaj paprotki;szukaj jemioly; szukaj suranii;minotaury_dalej;};
+    #echo {ustawiłem zmienne};
+    
+    #ALIAS {koniec} {
+        przestan szukac;
+        
+            zniwa-off
+    } {5};
+    #ALIAS {nastepna_komenda} {
+            $komendy[$numer_komendy];
+    } {5};
+    #ALIAS {minotaury_dalej} {
+        #echo {ide dalej};
+        #VARIABLE {numer_komendy} {1};
+    #map run {$licznik_krokow};
+    #MATH {licznik_krokow} {$licznik_krokow + 1};
+    #IF {$licznik_krokow == $ostatni_vnum} {koniec};
+        nastepna_komenda;    
+    } {5};
+    
+    #ACTION {Znajdujesz } {
+        nastepna_komenda;
+    } {5};
+    
+    #ACTION {Szukasz wszedzie, ale nie znajdujesz zadnych ziol.} {
+        odloz dlugie lisciaste rosliny;
+        zio;
+        #MATH {numer_komendy} {$numer_komendy + 1};
+        nastepna_komenda;
+    } {5};
+    #ACTION {Nie udalo ci sie znalezc niczego interesujacego.} {
+        #MATH {numer_komendy} {$numer_komendy + 1};
+        nastepna_komenda;
+        
+    };
+    #echo {uruchamiam expienie, czekasz na krok};
+    nastepna_komenda;
+    } {5};
+    
+    #ALIAS {zniwa-off} {
+        #UNALIAS {minotaury_dalej};
+        #UNALIAS {koniec};
+        #UNACTION {Szukasz wszedzie, ale nie znajdujesz zadnych ziol.};
+    #UNACTION {Znajdujesz };
+    #UNACTION {Nie udalo ci sie znalezc niczego interesujacego.};
+    #UNDELAY {czekaj};
+    przestan szukac;
+    przestan szukac;
+    #DELAY {20} {
+        przestan szukac;  
+    #map run {1} {2};
+    #map leave;
+    };
+        #echo {zniwa zakonczone};
+    } {5};
+    

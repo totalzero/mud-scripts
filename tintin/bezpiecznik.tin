@@ -1,0 +1,23 @@
+#ALIAS {uwazaj-on} {
+    #action {Jestes w zlym stanie} {wypij miksture};
+#action {Jestes ciezko ranny} {wypij miksture};
+#action {Jestes ciezko ranna} {wypij miksture};
+#action {Jestes zmasakrowany} {wypij miksture};
+#action {Jestes zmasakrowana} {wypij miksture};
+#action {Jestes ledwo zywy} {wypij miksture;#map run wyjscie};
+#action {Jestes ledwo zywa} {wypij miksture; #map run wyjscie};
+#action {Jestes na skraju smierci} {wypij miksture; #map run wyjscie};
+#TICKER {uwazaj_ticker} {k} {1};
+} {5};
+
+#ALIAS {uwazaj-off} {
+    #unaction {Jestes w zlym stanie} {wypij miksture};
+    #unaction {Jestes ciezko ranny} {wypij miksture};
+    #unaction {Jestes ciezko ranna} {wypij miksture};
+    #unaction {Jestes zmasakrowany} {wypij miksture};
+    #unaction {Jestes zmasakrowana} {wypij miksture};
+    #unaction {Jestes ledwo zywy} {wypij miksture;#map run wyjscie};
+    #unaction {Jestes ledwo zywa} {wypij miksture; #map run wyjscie};
+    #unaction {Jestes na skraju smierci} {wypij miksture; #map run wyjscie};
+    #UNTICKER {uwazaj_ticker};
+} {5};

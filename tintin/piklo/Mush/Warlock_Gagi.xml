@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE muclient>
+<!-- Plugin "Warlock_Gagi" -->
+
+<muclient>
+<plugin
+   name="Warlock_Gagi"
+   author="Mercer"
+   id="1e2340fc0748d1b8032ba92f"
+   language="Lua"
+   date_written="2013-02-22 22:58:29"
+   requires="3.42"
+   version="1.0"
+   >
+</plugin>
+
+<!--  Triggers  -->
+
+<triggers>
+ <trigger
+   enabled="y"
+   name="shield_gag"
+   group="defense"
+   match="^(&gt; )?(.*) wyprowadza (ciecie|uderzenie|pchniecie) (.*), lecz zastawiasz sie (.*)\."
+   omit_from_output="y"
+   regexp="y"
+   sequence="10"
+ >
+ </trigger>
+ <trigger
+   enabled="y"
+   name="dodge1_gag"
+   group="defense"
+   match="^(&gt; )?(Niezgrabnie|Niezdarnie|Nieporadnie|Niepewnie|Niemrawo|Mistrzowsko|Ledwo|Gladko|Dynamicznie|Dokladnie|Blyskawicznie|Bez trudu|Bez problemu|Niezrecznie|Perfekcyjnie|Pewnie|Plynnie|Powolnie|Prosto|Szczesliwie|Udanie|Umiejetnie|Wprawnie|Zgrabnie|Zrecznie|Zwinnie|Z latwoscia|Z mozolem|Z wysilkiem|Z trudem) unikasz (ciecia|uderzenia|pchniecia) (.*)\."
+   omit_from_output="y"
+   regexp="y"
+   sequence="10"
+ >
+ </trigger>
+ <trigger
+   enabled="y"
+   name="dodge2_gag"
+   group="defense"
+   match="^(&gt; )?(.*) nie udaje sie trafic ciebie (.*)\."
+   omit_from_output="y"
+   regexp="y"
+   sequence="10"
+ >
+ </trigger>
+ <trigger
+   enabled="y"
+   name="parry_gag"
+   group="defense"
+   match="^(&gt; )?(.*) wyprowadza (ciecie|uderzenie|pchniecie) (.*), lecz (.*) parujesz je (.*)\."
+   omit_from_output="y"
+   regexp="y"
+   sequence="10"
+ >
+ </trigger>
+ <trigger
+   enabled="y"
+   name="armour_gag"
+   group="defense"
+   match="^(&gt; )?(.*) (tnie|uderza|pcha) cie (.*), lecz (.*), zatrzymuje sie na (.*)\."
+   omit_from_output="y"
+   regexp="y"
+   sequence="10"
+ >
+ </trigger>
+ <trigger
+   enabled="n"
+   name="equipment_gag"
+   match="^(&gt; )?((.*) zdejmuje z siebie (.*)\.|(.*) zdejmuje ze smutkiem (.*)\.|(.*) zaklada (.*) na (.*)\.|(.*) otula sie (.*)\.|(.*) zaklada na dlonie grafitowa skorzana pare rekawiczek, a one pokrywaja sie zimnym niebieskawym poblaskiem\.)$"
+   omit_from_output="y"
+   regexp="y"
+   sequence="10"
+ >
+ </trigger>
+</triggers>
+
+<!--  Aliases  -->
+
+<aliases>
+  <alias
+   enabled="y"
+   script="Gagi_Status"
+   match="gagi-status"
+  >
+  </alias>
+  <alias
+   enabled="y"
+   script="Obrona_Ukryj"
+   match="obrona-ukryj"
+  >
+  </alias>
+  <alias
+   enabled="y"
+   script="Obrona_Pokaz"
+   match="obrona-pokaz"
+  >
+  </alias>
+  <alias
+   enabled="y"
+   script="Tarczownictwo_Ukryj"
+   match="tarczownictwo-ukryj"
+  >
+  </alias>
+  <alias
+   enabled="y"
+   script="Tarczownictwo_Pokaz"
+   match="tarczownictwo-pokaz"
+  >
+  </alias>
+  <alias
+   enabled="y"
+   script="Uniki_Ukryj"
+   match="uniki-ukryj"
+  >
+  </alias>
+  <alias
+   enabled="y"
+   script="Uniki_Pokaz"
+   match="uniki-pokaz"
+  >
+  </alias>
+  <alias
+   enabled="y"
+   script="Parowanie_Ukryj"
+   match="parowanie-ukryj"
+  >
+  </alias>
+  <alias
+   enabled="y"
+   script="Parowanie_Pokaz"
+   match="parowanie-pokaz"
+  >
+  </alias>
+  <alias
+   enabled="y"
+   script="Zbroje_Ukryj"
+   match="zbroje-ukryj"
+  >
+  </alias>
+  <alias
+   enabled="y"
+   script="Zbroje_Pokaz"
+   match="zbroje-pokaz"
+  >
+  </alias>
+  <alias
+   enabled="y"
+   script="Sprzet_Ukryj"
+   match="sprzet-ukryj"
+  >
+  </alias>
+  <alias
+   enabled="y"
+   script="Sprzet_Pokaz"
+   match="sprzet-pokaz"
+  >
+  </alias>
+  <alias
+   enabled="y"
+   script="Gagi_Help"
+   match="gagi-help"
+  >
+  </alias>
+</aliases>
+
+<!--  Script  -->
+
+<script>
+<![CDATA[
+
+function OnPluginInstall ()
+  ColourTell("crimson", "black", "Domyslnie ukrywam wszystkie opisy obrony. Wpisz ")
+  ColourTell("gold", "black", "\"gagi-help\"")
+  ColourNote("crimson", "black", ", aby poznac dostepne komendy.")
+end
+
+function Gagi_Status()
+  Note("")
+  ColourTell("gold", "black", "Tarczownictwo: ")
+  if GetTriggerInfo("shield_gag", 8) == true then
+    ColourNote("crimson", "black", "UKRYWAM")
+  else
+    ColourNote("lime", "black", "POKAZUJE")
+  end
+  ColourTell("gold", "black", "Uniki: ")
+  if GetTriggerInfo("dodge1_gag", 8) == true and GetTriggerInfo("dodge2_gag", 8) == true then
+    ColourNote("crimson", "black", "UKRYWAM")
+  else
+    ColourNote("lime", "black", "POKAZUJE")
+  end
+  ColourTell("gold", "black", "Parowanie: ")
+  if GetTriggerInfo("parry_gag", 8) == true then
+    ColourNote("crimson", "black", "UKRYWAM")
+  else
+    ColourNote("lime", "black", "POKAZUJE")
+  end
+  ColourTell("gold", "black", "Zbroje: ")
+  if GetTriggerInfo("armour_gag", 8) == true then
+    ColourNote("crimson", "black", "UKRYWAM")
+  else
+    ColourNote("lime", "black", "POKAZUJE")
+  end
+  ColourTell("gold", "black", "Sprzet: ")
+  if GetTriggerInfo("equipment_gag", 8) == true then
+    ColourNote("crimson", "black", "UKRYWAM")
+  else
+    ColourNote("lime", "black", "POKAZUJE")
+  end
+end
+
+function Obrona_Ukryj()
+  EnableTriggerGroup("defense", true)
+  ColourNote("crimson", "black", "Ukrywam wszystkie opisy obrony.")
+end
+
+function Obrona_Pokaz()
+  EnableTriggerGroup("defense", false)
+  ColourNote("lime", "black", "Pokazuje wszystkie opisy obrony.")
+end
+
+function Tarczownictwo_Ukryj()
+  if GetTriggerInfo("shield_gag", 8) == false then
+    EnableTrigger("shield_gag", true)
+    ColourNote("crimson", "black", "Ukrywam ciosy zebrane na tarcze.")
+  else
+    ColourNote("gold", "black", "Przeciez juz ukrywam ciosy zebrane na tarcze.")
+  end
+end
+
+function Tarczownictwo_Pokaz()
+  if GetTriggerInfo("shield_gag", 8) == true then
+    EnableTrigger("shield_gag", false)
+    ColourNote("lime", "black", "Pokazuje ciosy zebrane na tarcze.")
+  else
+    ColourNote("gold", "black", "Przeciez juz pokazuje ciosy zebrane na tarcze.")
+  end
+end
+
+function Uniki_Ukryj()
+  if GetTriggerInfo("dodge1_gag", 8) == false and GetTriggerInfo("dodge2_gag", 8) == false then
+    EnableTrigger("dodge1_gag", true)
+    EnableTrigger("dodge2_gag", true)
+    ColourNote("crimson", "black", "Ukrywam unikniete ciosy.")
+  else
+    ColourNote("gold", "black", "Przeciez juz ukrywam unikniete ciosy.")
+  end
+end
+
+function Uniki_Pokaz()
+  if GetTriggerInfo("dodge1_gag", 8) == true and GetTriggerInfo("dodge2_gag", 8) == true then 
+    EnableTrigger("dodge1_gag", false)
+    EnableTrigger("dodge2_gag", false)
+    ColourNote("lime", "black", "Pokazuje unikniete ciosy.")
+  else  
+    ColourNote("gold", "black", "Przeciez juz pokazuje unikniete ciosy.")
+  end
+end
+
+function Parowanie_Ukryj()
+  if GetTriggerInfo("parry_gag", 8) == false then
+    EnableTrigger("parry_gag", true)
+    ColourNote("crimson", "black", "Ukrywam sparowane ciosy.")
+  else
+    ColourNote("gold", "black", "Przeciez juz ukrywam sparowane ciosy.")
+  end
+end
+
+function Parowanie_Pokaz()
+  if GetTriggerInfo("parry_gag", 8) == true then
+    EnableTrigger("parry_gag", false)
+    ColourNote("lime", "black", "Pokazuje sparowane ciosy.")
+  else
+    ColourNote("gold", "black", "Przeciez juz pokazuje sparowane ciosy.")
+  end
+end
+
+function Zbroje_Ukryj()
+  if GetTriggerInfo("armour_gag", 8) == false then
+    EnableTrigger("armour_gag", true)
+    ColourNote("crimson", "black", "Ukrywam ciosy zatrzymane przez zbroje.")
+  else
+    ColourNote("gold", "black", "Przeciez juz ukrywam ciosy zatrzymane przez zbroje.")
+  end
+end
+
+function Zbroje_Pokaz()
+  if GetTriggerInfo("armour_gag", 8) == true then
+    EnableTrigger("armour_gag", false)
+    ColourNote("lime", "black", "Pokazuje ciosy zatrzymane przez zbroje.")
+  else
+    ColourNote("gold", "black", "Przeciez juz pokazuje ciosy zatrzymane przez zbroje.")
+  end  
+end
+
+function Sprzet_Ukryj()
+  if GetTriggerInfo("equipment_gag", 8) == false then
+    EnableTrigger("equipment_gag", true)
+    ColourNote("crimson", "black", "Ukrywam opisy zakladania oraz zdejmowania sprzetu przez innych.")
+  else
+    ColourNote("gold", "black", "Przeciez juz ukrywam opisy zakladania oraz zdejmowania sprzetu przez innych.")
+  end
+end
+
+function Sprzet_Pokaz()
+  if GetTriggerInfo("equipment_gag", 8) == true then
+    EnableTrigger("equipment_gag", false)
+    ColourNote("lime", "black", "Pokazuje opisy zakladania oraz zdejmowania sprzetu przez innych.")
+  else
+    ColourNote("gold", "black", "Przeciez juz pokazuje opisy zakladania oraz zdejmowania sprzetu przez innych.")
+  end
+end
+
+function Gagi_Help()
+  Note("")
+  ColourNote("lime", "black", "DOSTEPNE OPCJE:")
+  ColourTell("lime", "black", "Komenda ")
+  ColourTell("gold", "black", "\"gagi-status\"")
+  ColourNote("lime", "black", " wyswietla aktualny stan poszczegolnych gagow.")
+  ColourTell("lime", "black", "Komenda ")
+  ColourTell("gold", "black", "\"obrona-ukryj\"")
+  ColourNote("lime", "black", " wlacza gagowanie wszystkich opisow obrony.")
+  ColourTell("lime", "black", "Komenda ")
+  ColourTell("gold", "black", "\"obrona-pokaz\"")
+  ColourNote("lime", "black", " wylacza gagowanie wszystkich opisow obrony.")
+  ColourTell("lime", "black", "Komenda ")
+  ColourTell("gold", "black", "\"tarczownictwo-ukryj\"")
+  ColourNote("lime", "black", " wlacza gagowanie ciosow zebranych na tarcze.")
+  ColourTell("lime", "black", "Komenda ")
+  ColourTell("gold", "black", "\"tarczownictwo-pokaz\"")
+  ColourNote("lime", "black", " wylacza gagowanie ciosow zebranych na tarcze.")
+  ColourTell("lime", "black", "Komenda ")
+  ColourTell("gold", "black", "\"uniki-ukryj\"")
+  ColourNote("lime", "black", " wlacza gagowanie uniknietych ciosow.")
+  ColourTell("lime", "black", "Komenda ")
+  ColourTell("gold", "black", "\"uniki-pokaz\"")
+  ColourNote("lime", "black", " wylacza gagowanie uniknietych ciosow.")
+  ColourTell("lime", "black", "Komenda ")
+  ColourTell("gold", "black", "\"parowanie-ukryj\"")
+  ColourNote("lime", "black", " wlacza gagowanie sparowanych ciosow.")
+  ColourTell("lime", "black", "Komenda ")
+  ColourTell("gold", "black", "\"parowanie-pokaz\"")
+  ColourNote("lime", "black", " wylacza gagowanie sparowanych ciosow.")
+  ColourTell("lime", "black", "Komenda ")
+  ColourTell("gold", "black", "\"zbroje-ukryj\"")
+  ColourNote("lime", "black", " wlacza gagowanie ciosow zatrzymanych przez zbroje.")
+  ColourTell("lime", "black", "Komenda ")
+  ColourTell("gold", "black", "\"zbroje-pokaz\"")
+  ColourNote("lime", "black", " wylacza gagowanie ciosow zatrzymanych przez zbroje.")
+  ColourTell("lime", "black", "Komenda ")
+  ColourTell("gold", "black", "\"sprzet-ukryj\"")
+  ColourNote("lime", "black", " wlacza gagowanie opisow zakladania/zdejmowania sprzetu przez innych.")
+  ColourTell("lime", "black", "Komenda ")
+  ColourTell("gold", "black", "\"sprzet-pokaz\"")
+  ColourNote("lime", "black", " wylacza gagowanie opisow zakladania/zdejmowania sprzetu przez innych.")
+end
+
+]]>
+</script>
+
+</muclient>

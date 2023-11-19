@@ -1,0 +1,134 @@
+#ALIAS {ozywienceellearhexp-on} {
+    #ECHO {ładuje mape};
+        #map read ./ozywience.mapa;
+    #map goto 1;
+    #VARIABLE {licznik_krokow} {1};
+    #VARIABLE {ostatni_vnum} {118};
+    #VARIABLE {numer_komendy} {1};
+    #VARIABLE {czy_moge} {1};
+    #VARIABLE {ile_czekac} {125};
+    #VARIABLE {krok_dotylu} {1};
+    #LIST {komendy} CREATE {zabij pajaka; zabij splugawionego ozywienca; zabij ozywienca; minotaury_dalej;};
+    #echo {ustawiłem zmienne};
+    
+    #ALIAS {koniec} {
+        #VARIABLE {czy_moge} {0};
+        #map run {1}; 
+        #VARIABLE {licznik_krokow} {1};        
+        szturchnij ellearha;
+        vv;
+        #DELAY {zabezpieczenie} {
+            #VARIABLE {czy_moge} {1};
+            nastepna_komenda;
+        } 350;
+    } {5};
+
+    #ALIAS {nastepna_komenda} {
+        #IF {$czy_moge == 1} {
+        #DELAY {czekam} {
+            $komendy[$numer_komendy];
+        } 1;
+        };
+    } {5};
+    #ALIAS {minotaury_dalej} {
+        #echo {ide dalej};
+        #VARIABLE {numer_komendy} {1};
+        #echo {krok numer: $licznik_krokow};
+    #map run {$licznik_krokow};
+    #MATH {licznik_krokow} {$licznik_krokow + 1};
+    #IF {$licznik_krokow == $ostatni_vnum} {koniec};
+    nastepna_komenda;
+    } {5};
+    #ACTION {Ellearh wymierza ci siarczysty policzek. Auuu !} {
+        #VARIABLE {czy_moge} {0};
+        #MATH {krok_dotylu} {$licznik_krokow - 2};
+        #map run {$krok_dotylu};
+        #DELAY {5} {
+            szturchnij ellearha;
+        };
+        #echo {"oczekuje na trans"};
+    } {5};
+#ACTION {Cialo Ellearha znow zaczyna nabierac normalnego, zdrowego wygladu.} {
+    #DELAY {nowy_start} {
+        przerwij trans;
+        #VARIABLE {czy_moge} {1};
+        nastepna_komenda;  
+    } $ile_czekac;
+} {5};
+
+#ACTION {Ellearh powoli zamyka oczy i szepcze ostatnie slowa zaklecia. Dostrzegasz jak jego twarz zmienia sie z kazda sekunda przypominajac kamienna maske, ktora przestaje wyrazac jakiekolwiek emocje poza gleboka kontemplacja.} {
+    #UNDELAY {zabezpieczenie};
+} {5};
+
+    #ACTION {agonii} {
+wez kosztownosci z ciala;
+wez mikstury z ciala;
+wloz klarowne mikstury do plecaka;
+        nastepna_komenda;
+    } {5};
+            
+
+#ACTION {palma} {
+    zerwij daktyla;
+    zerwij daktyla;
+    zerwij daktyla;
+    zerwij daktyla;
+    zerwij daktyla;
+    zerwij daktyla;
+    zerwij daktyla;
+    zerwij daktyla;
+    zerwij daktyla;
+zerwij daktyla;
+    lgzjedz daktyle;
+    narozkaz zjedz daktyla;
+    narozkaz zjedz daktyla;
+    narozkaz zjedz daktyla;
+    narozkaz zjedz daktyla;
+    narozkaz zjedz daktyla;
+} {5};
+
+#TICKER {pij} {stan;narozkaz napij sie z beczulki;} {200};
+
+#ACTION {Chce ci sie bardzo pic} {
+    napij sie z beczulki;
+} {5};
+
+#ACTION {jest zupelnie pusta.} {
+    mwypowiedz napelnienie wskazujac beczulke;
+} {5};
+
+#ACTION {roza} {
+    wez roze;
+    wez kamienie;
+} {5};
+
+    #ACTION {Nie widzisz zadnej takiej osoby.} {
+        #MATH {numer_komendy} {$numer_komendy + 1};
+        nastepna_komenda;
+    } {5};
+    #echo {uruchamiam expienie, czekasz na krok};
+    nastepna_komenda;
+    } {5};
+    
+    #ALIAS {ozywienceellearhexp-off} {
+        #UNALIAS {minotaury_dalej};
+        #UNALIAS {koniec};
+        #UNACTION {agonii}; 
+        #UNACTION {Nie widzisz zadnej takiej osoby.};
+        #UNACTION {Cialo Ellearha znow zaczyna nabierac normalnego, zdrowego wygladu.};
+        #UNACTION {Ellearh wymierza ci siarczysty policzek. Auuu !};
+        #UNACTION {Ellearh powoli zamyka oczy i szepcze ostatnie slowa zaklecia. Dostrzegasz jak jego twarz zmienia sie z kazda sekunda przypominajac kamienna maske, ktora przestaje wyrazac jakiekolwiek emocje poza gleboka kontemplacja.}; 
+        #UNACTION {roza};
+        #UNACTION {palma};
+        #UNACTION {kaktus};
+        #UNACTION {jest zupelnie pusta.};
+        #UNACTION {chce ci sie pic};
+        #UNACTION {Chce ci sie bardzo pic};
+        #UNTICKER {pij};
+        #UNDELAY {zabezpieczenie};
+        #UNDELAY {czekam};
+        #UNDELAY {nowy_start};
+        #map run 1;
+        #map leave;
+        #echo {wylaczam expienie};
+    } {5};

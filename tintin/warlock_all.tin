@@ -1,0 +1,398 @@
+#CONFIG {BUFFER SIZE} {10000}
+#CONFIG {CHARSET} {BIG-5}
+#CONFIG {COLOR MODE} {TRUE}
+#CONFIG {COLOR PATCH} {OFF}
+#CONFIG {COMMAND COLOR} {\e[0;37m}
+#CONFIG {COMMAND ECHO} {ON}
+#CONFIG {CONNECT RETRY} {0.0}
+#CONFIG {HISTORY SIZE} {1000}
+#CONFIG {LOG MODE} {RAW}
+#CONFIG {MOUSE} {OFF}
+#CONFIG {PACKET PATCH} {AUTO OFF}
+#CONFIG {RANDOM SEED} {1560907016}
+#CONFIG {REPEAT CHAR} {!}
+#CONFIG {REPEAT ENTER} {OFF}
+#CONFIG {SCREEN READER} {OFF}
+#CONFIG {SCROLL LOCK} {ON}
+#CONFIG {SPEEDWALK} {OFF}
+#CONFIG {TAB WIDTH} {8}
+#CONFIG {TELNET} {ON}
+#CONFIG {TINTIN CHAR} {#}
+#CONFIG {VERBATIM} {OFF}
+#CONFIG {VERBATIM CHAR} {\}
+#CONFIG {VERBOSE} {OFF}
+#CONFIG {WORDWRAP} {ON}
+
+#ses warlock warlock.pl 23
+
+#PATHDIR {d} {u} {32}
+#PATHDIR {e} {w} {2}
+#PATHDIR {n} {s} {1}
+#PATHDIR {ne} {sw} {3}
+#PATHDIR {nw} {se} {9}
+#PATHDIR {s} {n} {4}
+#PATHDIR {se} {nw} {6}
+#PATHDIR {sw} {ne} {12}
+#PATHDIR {u} {d} {16}
+#PATHDIR {w} {e} {8}
+
+
+#format {logFile} {/volumes/appdoc/tintin/logs/warlock/%t.html} {%Y.%m.%d}
+#log {append} {$logFile}
+
+#TICKER {unlog} {kto} {522};
+
+
+#ALIAS {uwazaj-on} {
+    #action {Jestes w zlym stanie} {wypij miksture};
+#action {Jestes ciezko ranny} {wypij miksture};
+#action {Jestes ciezko ranna} {wypij miksture};
+#action {Jestes zmasakrowany} {wypij miksture};
+#action {Jestes zmasakrowana} {wypij miksture};
+#action {Jestes ledwo zywy} {wypij miksture;#map run wyjscie};
+#action {Jestes ledwo zywa} {wypij miksture; #map run wyjscie};
+#action {Jestes na skraju smierci} {wypij miksture; #map run wyjscie};
+
+#echo {uruchamiam bezpieczniki - ale mimo to uwazaj na siebie};
+} {5};
+
+#ALIAS {uwazaj-off} {
+    #unaction {Jestes w zlym stanie} {wypij miksture};
+    #unaction {Jestes ciezko ranny} {wypij miksture};
+    #unaction {Jestes ciezko ranna} {wypij miksture};
+    #unaction {Jestes zmasakrowany} {wypij miksture};
+    #unaction {Jestes zmasakrowana} {wypij miksture};
+    #unaction {Jestes ledwo zywy} {wypij miksture;#map run wyjscie};
+    #unaction {Jestes ledwo zywa} {wypij miksture; #map run wyjscie};
+    #unaction {Jestes na skraju smierci} {wypij miksture; #map run wyjscie};
+    #UNTICKER {uwazaj_ticker};
+    #echo {wylaczam bezpieczniki};
+} {5};
+
+#ALIAS {mikstury-on} {
+    #ACTION {Ciecz w zeliwnym pekatym kotle bulgocze cicho.} {
+        zamieszaj lycha miksture w kotle;
+        zamieszaj lycha miksture w kotle;
+        
+        ob kociol;
+    } {5};
+    #ACTION {Jest oleista } {
+        zdejmij kociol z trojnoga
+    } {5};
+    #echo {rozpoczynam warte przy kotle}
+} {5};
+
+#ALIAS {mikstury-off} {
+    #UNACTION {Ciecz w zeliwnym pekatym kotle bulgocze cicho.};
+    #UNACTION {Jest oleista };
+    #echo {wychodze z trybu gotowania};
+} {5};
+#ALIAS {loadbot} {
+    #read ./bot_minotaury.tin;
+    #read ./bot_wrak.tin;
+#read ./bot_zboje.tin;
+#read ./bot_zbojezarobek.tin;
+#read ./bot_ogryliony.tin;
+    #echo {zaladowano ulepszacze, dostepne komendy: minotauryexp-on, wrakexp-on, zbojezarobek-on, zbojeexp.-on i ogrylionyexp-on};
+} {5};
+
+#ALIAS {exp-on} {
+    #echo {uruchamiam expienie};
+    #ACTION {agonii} {
+        wesprzyj;
+    } {5};
+    #ACTION {atakuje cie!} {
+        #system afplay -v 2 /volumes/appdoc/tintin/sounds/resume.wav;
+        wesprzyj;
+        1;
+    } {1};
+    #ACTION {przebija sie przez twoja obrone} {
+        1;
+    } {5};
+    #ACTION {Przechodzisz do drugiego szeregu druzyny,} {
+        przejdz do przodu;
+    } {5};
+    #ACTION {szepcze do ciebie: a} {
+        przejdz do tylu
+    } {5};
+    #ACTION {szepcze do ciebie: b} {
+        przejdz do przodu;
+    } {5};
+} {5};
+
+#ALIAS {exp-off} {
+    #UNACTION {atakuje cie!};
+    #UNACTION {szepcze do ciebie: b};
+    #UNACTION {szepcze do ciebie: a};
+    #UNACTION {przebija sie przez twoja obrone};
+    #UNACTION {Przechodzisz do drugiego szeregu druzyny,};
+} {5};
+#LIST {dziewanny_sciezka} CREATE {sw;sw;s;s;s;s;s;s;e;e;e;ne;se;ne;se;e;ne;e;e;sw;s;s;se;s;sw;nw;n;nw;ne;w;w;sw;s;e;se;sw;w;se;sw;sw;nw;n;nw;nw;ne;e;n;nw;w;w;sw;s;se;sw;s;sw;e;ne;e;se;sw;se;s;e;s;sw;w;s;w;sw;sw;e;sw;s;s;ne;e;s;e;e;ne;e;se;s;se;sw;nw;sw;s;se;e;ne;e;s;w;s;se;s;se;sw;sw;w;nw;n;e;e;ne;se;sw;sw;se;e;sw;se;s;sw;nw;s;sw;sw;nw;e;ne;nw;ne;n;sw;w;sw;s;w;s;s};
+
+#ALIAS {zielarz-auto} {
+    #ACTION {Nie udalo ci sie znalezc niczego interesujacego.} {
+        krok;
+        z;
+    } {5};
+    #ACTION {Znajdujesz } {
+        z;
+    } {5};
+#ACTION {Szukasz wszedzie, ale nie znajdujesz zadnych ziol.} {
+    zio;
+    krok;
+    z;
+} {5};
+
+    zielarz-on;
+    krok;
+    z;
+} {5};
+
+
+#ALIAS {zielarz-on} {
+    #ECHO {uruchamiam sciezke, wpisz krok aby przejsc nastepny krok};
+    #VARIABLE {dziewanny_index} {1};
+    #LIST {dziewanny_sciezka} SIZE {dziewanny_size};
+    #ALIAS {krok} {
+        #ECHO {krok: $dziewanny_index};
+        $dziewanny_sciezka[$dziewanny_index];
+        #mat {dziewanny_index} {$dziewanny_index + 1};
+
+        #IF {$dziewanny_index > $dziewanny_size} {zielarz-off};
+    } {5};
+    
+} {5};
+
+
+#ALIAS {zielarz-off} {
+    #UNACTION {Szukasz wszedzie, ale nie znajdujesz zadnych ziol.};
+    #UNACTION {Znajdujesz };
+    #UNACTION {Nie udalo ci sie znalezc niczego interesujacego.};
+    #UNALIAS {krok};
+    #echo {zchodzisz ze sciezki zielarzy};
+} {5};
+
+#alias {zbr} {wez kamienie z ciala;
+wez monety z ciala;
+wez kamienie z drugiego ciala;
+wez monety z drugiego ciala;
+wez kamienie z trzeciego ciala;
+wez monety z trzeciego ciala;
+wez kamienie z czwartego ciala;
+wez monety z czwartego ciala;
+wez kamienie z piatego ciala;
+wez monety z piatego ciala;
+wez kamienie z szostego ciala;
+wez monety z szostego ciala;
+odloz granity;
+odloz piaskowce;
+}
+
+#ALIAS {oboz_dalej} {e;
+    se;
+    se;
+    sw;
+    s;
+    se;
+    w;
+    w;
+    sw;
+    sw;
+    w;
+    sw;
+    sw;
+    s;
+    sw;
+    se;
+    s;
+    s;
+    };
+
+#ALIAS {oboz_start} {
+w;
+    sw;
+    w;
+    w;
+    nw;
+    w;
+    nw;
+    w;
+    w;
+    nw;
+    nw;
+    w;
+    w;
+    nw;
+    w;
+    w;
+    w;
+    w;
+    sw;
+    sw;
+    w;
+    w;
+    nw;
+    ne;
+};
+
+#ALIAS {oboz_wyjscie} {
+    n;
+    n;
+    nw;
+    ne;
+    n;
+    ne;
+    ne;
+    e;
+    ne;
+    ne;
+    e;
+    e;
+    nw;
+    n;
+    ne;
+    nw;
+    nw;
+    w       ;
+}
+
+
+#ALIAS {zal} {
+    zaloz wszystkie zbroje;
+    dobadz broni;
+    zaloz pierscien;
+    zaloz sygnet;
+    zaloz pierscienie;
+    zaloz drugi pierscien;
+    zaloz trzeci pierscien;
+    zaloz bransolete;
+    zaloz druga bransolete;
+    otworz plecak;
+    wloz monety do plecaka;
+    otworz sloiki;
+    otworz woreczki;
+    wloz ziola do woreczka;
+    wloz ziola do drugiego woreczka;
+    wloz ziola do trzeciego woreczka;
+    wloz ziola do sloika;
+    wloz ziola do drugiego sloika;
+    wloz ziola do trzeciego sloika;
+    zamknij woreczki;
+    zamknij sloiki;
+    zaloz plecak;
+    napelnij plecak;
+    zamknij plecak;
+};
+
+#ALIAS {zx} {
+    kup bilet;
+    wejdz na statek;
+} {5};
+
+#ALIAS {zio} {
+    otworz sloiki;
+    wloz ziola do sloika;
+    wloz ziola do drugiego sloika;
+    wloz ziola do trzeciego sloika;
+    zamknij sloiki;
+    otworz woreczki;
+    wloz ziola do woreczka;
+    wloz ziola do drugiego woreczka;
+    wloz ziola do trzeciego woreczka;
+    zamknij woreczki;
+    
+} {5};
+
+#action {atakuje} {#system afplay -v 2 /volumes/appdoc/tintin/sounds/resume.wav}
+#action {przybywa} {#system afplay -v 2 /volumes/appdoc/tintin/sounds/action.wav}
+#action {przybywaja} {#system afplay -v 2 /volumes/appdoc/tintin/sounds/action.wav}
+#action {do brzegu} {#system afplay -v 2 /volumes/appdoc/tintin/sounds/action.wav}
+#action {wskazuje} {#system afplay -v 2 /volumes/appdoc/tintin/sounds/pause.wav}
+
+
+#action {masz nowa poczte} {#system afplay -v 2 /volumes/appdoc/tintin/sounds/upgrade.wav}
+#action {do ciebie} {#system afplay -v 2 /volumes/appdoc/tintin/sounds/message.wav}
+#action {mowi} {#system afplay -v 2 /volumes/appdoc/tintin/sounds/message.wav}
+#action {mruczy} {#system afplay -v 2 /volumes/appdoc/tintin/sounds/message.wav}
+#action {syczy} {#system afplay -v 2 /volumes/appdoc/tintin/sounds/message.wav}
+#action {nuci} {#system afplay -v 2 /volumes/appdoc/tintin/sounds/message.wav}
+#action {mamrocze} {#system afplay -v 2 /volumes/appdoc/tintin/sounds/message.wav}
+#action {bulgota} {#system afplay -v 2 /volumes/appdoc/tintin/sounds/message.wav}
+#action {bulgocze} {#system afplay -v 2 /volumes/appdoc/tintin/sounds/message.wav}
+#action {warczy} {#system afplay -v 2 /volumes/appdoc/tintin/sounds/message.wav}
+#action {wrzeszczy} {#system afplay -v 2 /volumes/appdoc/tintin/sounds/message.wav}
+#action {belkocze} {#system afplay -v 2 /volumes/appdoc/tintin/sounds/message.wav}
+#action {skrzypi} {#system afplay -v 2 /volumes/appdoc/tintin/sounds/message.wav}
+#action {huczy} {#system afplay -v 2 /volumes/appdoc/tintin/sounds/message.wav}
+#action {dudni} {#system afplay -v 2 /volumes/appdoc/tintin/sounds/message.wav}
+#ACTION {przebija sie} {
+    l;
+} {5};
+#GAG {unika};
+#GAG {unikasz};
+#GAG {zastawiasz sie};
+#GAG {zastawia sie};
+#GAG {nie udaje sie trafic};
+#GAG {paruje};
+#GAG {parujesz};
+#GAG {zatrzymuje sie na};
+
+
+#substitute {Jestes w pelni zdrow} {ja 14};
+#substitute {Jestes w pelni zdrowa} {ja 14};
+#substitute {Jestes w swietnej kondycji} {ja 13};
+#substitute {Jestes w dobrym stanie} {ja 12};
+#substitute {Jestes poturbowany} {ja 11};
+#substitute {Jestes poturbowana} {ja 11};
+#substitute {Jestes lekko ranny} {ja 10};
+#substitute {Jestes lekko ranna} {ja 10};
+#substitute {Jestes pokiereszowany} {ja 9};
+#substitute {Jestes pokiereszowana} {ja 9};
+#substitute {Jestes poraniony} {ja 8};
+#substitute {Jestes poraniona} {ja 8};
+#substitute {Jestes ranny} {ja 7};
+#substitute {Jestes ranna} {ja 7};
+#substitute {Jestes w zlej kondycji} {ja 6};
+#substitute {Jestes w zlym stanie} {ja 5};
+#substitute {Jestes ciezko ranny} {ja 4};
+#substitute {Jestes ciezko ranna} {ja 4};
+#substitute {Jestes zmasakrowany} {ja 3};
+#substitute {Jestes zmasakrowana} {ja 3};
+#substitute {Jestes ledwo zywy} {ja 2};
+#substitute {Jestes ledwo zywa} {ja 2};
+#substitute {Jestes na skraju smierci} {ja 1};
+
+
+#substitute {%1 jest w pelni zdrow.} {%1 14};
+#substitute {%1 jest w pelni zdrowa.} {%1 14};
+#substitute {%1 jest w pelni zdrowe} {%1 14};
+#substitute {%1 jest w swietnej kondycji} {%1 13};
+#substitute {%1 jest w dobrym stanie} {%1 12};
+#substitute {%1 jest poturbowany} {%1 11};
+#substitute {%1 jest poturbowana} {%1 11};
+#substitute {%1 jest poturbowane} {%1 11};
+#substitute {%1 jest lekko ranny} {%1 10};
+#substitute {%1 jest lekko ranna} {%1 10};
+#substitute {%1 jest lekko ranne} {%1 10};
+#substitute {%1 jest pokiereszowany} {%1 9};
+#substitute {%1 jest pokiereszowana} {%1 9};
+#substitute {%1 jest pokiereszowane} {%1 9};
+#substitute {%1 jest poraniony} {%1 8};
+#substitute {%1 jest poraniona} {%1 8};
+#substitute {%1 jest poranione} {%1 8};
+#substitute {%1 jest ranny} {%1 7};
+#substitute {%1 jest ranna} {%1 7};
+#substitute {%1 jest ranne} {%1 7};
+#substitute {%1 jest w zlej kondycji} {%1 6};
+#substitute {%1 jest w zlym stanie} {%1 5};
+#substitute {%1 jest ciezko ranny} {%1 4};
+#substitute {%1 jest ciezko ranna} {%1 4};
+#substitute {%1 jest ciezko ranne} {%1 4};
+#substitute {%1 jest zmasakrowany} {%1 3};
+#substitute {%1 jest zmasakrowana} {%1 3};
+#substitute {%1 jest zmasakrowane} {%1 3};
+#substitute {%1 jest ledwo zywy} {%1 2};
+#substitute {%1 jest ledwo zywa} {%1 2};
+#substitute {%1 jest ledwo zywe} {%1 2};
+#substitute {%1 jest na skraju smierci} {%1 1};
+

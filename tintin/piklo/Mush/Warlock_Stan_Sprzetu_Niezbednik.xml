@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE muclient>
+<!-- "Warlock_Stan_Sprzetu_Niezbednik" -->
+
+<muclient>
+<plugin
+   name="Warlock_Stan_Sprzetu_Niezbednik"
+   author="Mercer"
+   id="7ed284fed564c8762b159f8d"
+   language="Lua"
+   date_written="2013-02-19 23:16:42"
+   requires="4.37"
+   version="1.0"
+   >
+</plugin>
+
+<!--  Get our standard constants -->
+
+<include name="constants.lua"/>
+
+<!--  Script  -->
+
+<script>
+<![CDATA[
+
+function OnPluginInstall ()
+  EnablePlugin("7ed284fed564c8762b159f8d", false)
+end
+
+function OnPluginPacketReceived (s)
+  return (string.gsub (s, "\n> ", "\n\(SKRYPT\: KONIEC OCENY SPRZETU\)\n"))
+end
+
+]]>
+</script>
+
+</muclient>

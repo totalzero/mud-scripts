@@ -35,6 +35,62 @@
 <triggers>
   <trigger
    enabled="n"
+   group="regen_sekwencja"
+   match="*Nie widzisz zadnej takiej osoby*"
+   send_to="12"
+   sequence="100"
+  >
+  <send>regenerujNastepnyCel()</send>
+  </trigger>
+  <trigger
+   enabled="n"
+   group="regen_sekwencja"
+   match="*Zabiles *"
+   send_to="12"
+   sequence="100"
+  >
+  <send>regenerujNastepnyCel()</send>
+  </trigger>
+    <trigger
+   enabled="n"
+   group="regen_sekwencja"
+   match="* zabila *"
+   send_to="12"
+   sequence="100"
+  >
+  <send>regenerujNastepnyCel()</send>
+  </trigger>
+
+  <trigger
+   enabled="n"
+   group="regen_sekwencja"
+   match="* Zabil *"
+   send_to="12"
+   sequence="100"
+  >
+  <send>regenerujNastepnyCel()</send>
+  </trigger>
+  <trigger
+   enabled="n"
+   group="regen_sekwencja"
+   match="* zabil *"
+   send_to="12"
+   sequence="100"
+  >
+  <send>regenerujNastepnyCel()</send>
+  </trigger>
+  <trigger
+   enabled="n"
+   group="regen_sekwencja"
+   match="* zabiles *"
+   send_to="12"
+   sequence="100"
+  >
+  <send>regenerujNastepnyCel()</send>
+  </trigger>
+
+  <trigger
+   enabled="n"
    group="sekwencja"
    match="*Nie widzisz zadnej takiej osoby*"
    send_to="12"
@@ -106,7 +162,7 @@
    send_to="12"
    sequence="100"
   >
-  <send>regeneruj()</send>
+  <send>regenerujSekwencjaOn()</send>
   </trigger>
   
 <trigger
@@ -116,7 +172,7 @@
    send_to="12"
    sequence="100"
   >
-  <send>regeneruj()</send>
+  <send>regenerujSekwencjaOn()</send>
   </trigger>
 
 
@@ -549,11 +605,25 @@ end
 end
 end
 
+function regenerujSekwencjaOn()
+EnableGroup("sekwencja", false)
+EnableGroup("regen_sekwencja", true)
+Note("uwaga!!! oczekuje na regeneracje")
+end
+
+function regenerujNastepnyCel()
+if ktorycel < 3 then
+ktorycel = ktorycel + 1
+delay()
+else
+regeneruj()
+end
+
 function regeneruj()
     Note("rozpoczynam regeneracje")
-    doTylu()
-doTylu()
 regenerujemy = true
+EnableGroup("regen_sekwencja", false)
+EnableGroup("sekwencja", true)
 DoAfter(180, "zabij marynarza")
 AddTimer ("regen_czar", 0, 0, 10.5, "mwypowiedz odnowienie mocy z ksiegi wskazujac siebie", 
           timer_flag.Enabled + timer_flag.OneShot, "")

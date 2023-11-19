@@ -1,0 +1,140 @@
+#alias {zbr} {wez kamienie z ciala;
+wez monety z ciala;
+wez kamienie z drugiego ciala;
+wez monety z drugiego ciala;
+wez kamienie z trzeciego ciala;
+wez monety z trzeciego ciala;
+wez kamienie z czwartego ciala;
+wez monety z czwartego ciala;
+wez kamienie z piatego ciala;
+wez monety z piatego ciala;
+wez kamienie z szostego ciala;
+wez monety z szostego ciala;
+odloz granity;
+odloz piaskowce;
+}
+
+#ALIAS {mieszaj} {
+    zamieszaj lycha miksture w kotle;
+    zamieszaj lycha miksture w kotle;
+} {5};
+
+#ALIAS {denominuj} {
+    wymien miedziane na srebrne monety;
+    wymien srebrne na zlote monety;
+    wymien zlote na platynowe monety;
+} {5};
+
+#ALIAS {oboz_dalej} {e;
+    se;
+    se;
+    sw;
+    s;
+    se;
+    w;
+    w;
+    sw;
+    sw;
+    w;
+    sw;
+    sw;
+    s;
+    sw;
+    se;
+    s;
+    s;
+    };
+
+#ALIAS {oboz_start} {
+w;
+    sw;
+    w;
+    w;
+    nw;
+    w;
+    nw;
+    w;
+    w;
+    nw;
+    nw;
+    w;
+    w;
+    nw;
+    w;
+    w;
+    w;
+    w;
+    sw;
+    sw;
+    w;
+    w;
+    nw;
+    ne;
+};
+
+#ALIAS {oboz_wyjscie} {
+    n;
+    n;
+    nw;
+    ne;
+    n;
+    ne;
+    ne;
+    e;
+    ne;
+    ne;
+    e;
+    e;
+    nw;
+    n;
+    ne;
+    nw;
+    nw;
+    w       ;
+}
+
+#ALIAS {zx} {
+    otworz plecak;
+    wez monety z plecaka;
+    kup bilet;
+    wejdz na statek;
+} {5};
+
+#ALIAS {zio} {
+    otworz sloiki;
+    wloz ziola do sloika;
+    wloz ziola do drugiego sloika;
+    wloz ziola do trzeciego sloika;
+    zamknij sloiki;
+    otworz woreczki;
+    wloz ziola do woreczka;
+    wloz ziola do drugiego woreczka;
+    wloz ziola do trzeciego woreczka;
+    zamknij woreczki;
+    
+} {5};
+
+#ALIAS {mastah} {
+    #map read ./mastah;
+    #map goto 1;
+
+} {5};
+#ALIAS {harpia_wampirzyca} {
+    #map read ./harpia_wampirzyca;
+    #map goto 1;
+} {5};
+
+#ALIAS {gobory_hobgobory} {
+    #map read ./gobory_hobgobory;
+    #map goto 1;
+} {5};
+
+#ALIAS {minosek} {
+    #map read ./minosek_minotaury;
+    #map goto 1;
+} {5};
+
+#ALIAS {mumia} {
+    #map read ./mumia_kurhan;
+    #map goto 1;
+} {5};

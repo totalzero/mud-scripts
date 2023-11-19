@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE muclient>
+<!-- Plugin "Warlock_Krotkie_Wyjscia" -->
+<!-- Wersja dla osób niewidomych -->
+
+<muclient>
+<plugin
+   name="Warlock_Krotkie_Wyjscia"
+   author="Mercer"
+   id="a7b160fcd9b1f5b308734a2e"
+   language="Lua"
+   date_written="2013-02-23 10:01:23"
+   requires="3.42"
+   version="1.0"
+   >
+</plugin>
+
+<!--  Triggers  -->
+
+<triggers>
+ <trigger
+   enabled="y"
+   match="^Jedyne widoczne wyjscie to\: (.*)\.$"
+   omit_from_output="y"
+   regexp="y"
+   script="Jedno_Wyjscie"
+   sequence="1"
+ >
+ </trigger>
+ <trigger
+   enabled="y"
+   match="^Sa tutaj (.*) widoczne wyjscia\: (.*)\.$"
+   omit_from_output="y"
+   regexp="y"
+   script="Kilka_Wyjsc"
+   sequence="1"
+ >
+ </trigger>
+ <trigger
+   enabled="y"
+   match="^Jest tutaj (.*) widocznych wyjsc\: (.*)\.$"
+   omit_from_output="y"
+   regexp="y"
+   script="Kilka_Wyjsc"
+   sequence="1"
+ >
+ </trigger>
+ <trigger
+   enabled="y"
+   match="^Zdaje ci sie ze nie ma stad wyjscia\.$"
+   omit_from_output="y"
+   regexp="y"
+   script="Brak_Wyjsc_Ciemno"
+   sequence="1"
+ >
+ </trigger>
+ <trigger
+   enabled="y"
+   match="^Wyjsc chyba bedziesz (musial|musiala) szukac po omacku\.$"
+   omit_from_output="y"
+   regexp="y"
+   script="Brak_Wyjsc_Ciemno"
+   sequence="1"
+ >
+ </trigger>
+ <trigger
+   enabled="y"
+   match="^Zdaje ci sie ze jedyne wyjscie stad to (.*)\.$"
+   omit_from_output="y"
+   regexp="y"
+   script="Wyjscia_Ciemno"
+   sequence="1"
+ >
+ </trigger>
+ <trigger
+   enabled="y"
+   match="^Zdaje ci sie ze mozna by stad wyjsc gdzies na (.*)\.$"
+   omit_from_output="y"
+   regexp="y"
+   script="Wyjscia_Ciemno"
+   sequence="1"
+ >
+ </trigger>
+</triggers>
+
+<!--  Script  -->
+
+<script>
+<![CDATA[
+
+function Jedno_Wyjscie(a, b, c)
+  local v_exit = c[1]
+  v_exit = Replace(v_exit, " i ", ", ", false)
+  v_exit = Replace(v_exit, "polnocny-zachod", "nw", false)
+  v_exit = Replace(v_exit, "polnocny-wschod", "ne", false)
+  v_exit = Replace(v_exit, "poludniowy-zachod", "sw", false)
+  v_exit = Replace(v_exit, "poludniowy-wschod", "se", false)
+  v_exit = Replace(v_exit, "zachod", "w", false)
+  v_exit = Replace(v_exit, "wschod", "e", false)
+  v_exit = Replace(v_exit, "polnoc", "n", false)
+  v_exit = Replace(v_exit, "poludnie", "s", false)
+  v_exit = Replace(v_exit, "gora", "u", false)
+  v_exit = Replace(v_exit, "dol", "d", false)
+  Note("# "..string.upper(v_exit))
+end
+
+function Kilka_Wyjsc(a, b, c)
+  local v_exit = c[2]
+  v_exit = Replace(v_exit, " i ", ", ", false)
+  v_exit = Replace(v_exit, "polnocny-zachod", "nw", false)
+  v_exit = Replace(v_exit, "polnocny-wschod", "ne", false)
+  v_exit = Replace(v_exit, "poludniowy-zachod", "sw", false)
+  v_exit = Replace(v_exit, "poludniowy-wschod", "se", false)
+  v_exit = Replace(v_exit, "zachod", "w", false)
+  v_exit = Replace(v_exit, "wschod", "e", false)
+  v_exit = Replace(v_exit, "polnoc", "n", false)
+  v_exit = Replace(v_exit, "poludnie", "s", false)
+  v_exit = Replace(v_exit, "gora", "u", false)
+  v_exit = Replace(v_exit, "dol", "d", false)
+  Note("# "..string.upper(v_exit))
+end
+
+function Brak_Wyjsc_Ciemno()
+  Note("# CIEMNO")
+end
+
+function Wyjscia_Ciemno(a, b, c)
+  local v_exit = c[1]
+  v_exit = Replace(v_exit, " i ", ", ", false)
+  v_exit = Replace(v_exit, "polnocny-zachod", "nw", false)
+  v_exit = Replace(v_exit, "polnocny-wschod", "ne", false)
+  v_exit = Replace(v_exit, "poludniowy-zachod", "sw", false)
+  v_exit = Replace(v_exit, "poludniowy-wschod", "se", false)
+  v_exit = Replace(v_exit, "zachod", "w", false)
+  v_exit = Replace(v_exit, "wschod", "e", false)
+  v_exit = Replace(v_exit, "polnoc", "n", false)
+  v_exit = Replace(v_exit, "poludnie", "s", false)
+  v_exit = Replace(v_exit, "gora", "u", false)
+  v_exit = Replace(v_exit, "dol", "d", false)
+  Note("# "..string.upper(v_exit).." (CIEMNO)")
+end
+
+]]>
+</script>
+
+</muclient>

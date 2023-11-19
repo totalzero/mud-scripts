@@ -1,0 +1,191 @@
+#ALIAS {exp-on} {
+    #echo {statystyki expa gotowe};
+    #ACTION {Jestes ciezko ranny} {
+        #DELAY {3} {
+            #map run safe;
+        }
+    } {5};
+    #ACTION {Jestes ledwo zywy} {
+        #map run 1;
+    } {5};
+    postepy-on;
+    zgony-on;
+} {5};
+
+#ALIAS {exp-off} {
+    #UNACTION {Jestes ciezko ranny};
+    #UNACTION {Jestes ledwo zywy};
+    postepy-off;
+    zgony-off;
+} {5};
+
+#ALIAS {postepy-on} {
+    #VARIABLE {licznik_postepow} {0};
+    #VARIABLE {licznik_minut} {0};
+    #VARIABLE {minut_na_postep} {0};
+
+#ACTION {Poczyniles nieznaczne postepy} {
+    #VARIABLE {licznik_postepow} {1};
+    #VARIABLE {minut_na_postep} {$licznik_minut};
+    #VARIABLE {licznik_minut} {0};
+} {5};
+
+#ACTION {Poczyniles bardzo male postepy} {
+    #VARIABLE {licznik_postepow} {2};
+    #VARIABLE {minut_na_postep} {$licznik_minut};
+    #VARIABLE {licznik_minut} {0};
+
+} {5};
+
+#ACTION {Poczyniles male postepy} {
+    #VARIABLE {licznik_postepow} {3};
+    #VARIABLE {minut_na_postep} {$licznik_minut};
+    #VARIABLE {licznik_minut} {0};
+
+} {5};
+
+#ACTION {Poczyniles nieduze postepy} {
+    #VARIABLE {licznik_postepow} {4};
+    #VARIABLE {minut_na_postep} {$licznik_minut};
+    #VARIABLE {licznik_minut} {0};
+
+} {5};
+
+#ACTION {Poczyniles zadowalajace postepy} {
+    #VARIABLE {licznik_postepow} {5};
+    #VARIABLE {minut_na_postep} {$licznik_minut};
+    #VARIABLE {licznik_minut} {0};
+
+} {5};
+
+#ACTION {Poczyniles spore postepy} {
+    #VARIABLE {licznik_postepow} {6};
+    #VARIABLE {minut_na_postep} {$licznik_minut};
+    #VARIABLE {licznik_minut} {0};
+
+} {5};
+
+#ACTION {Poczyniles dosc duze postepy} {
+    #VARIABLE {licznik_postepow} {7};
+    #VARIABLE {minut_na_postep} {$licznik_minut};
+    #VARIABLE {licznik_minut} {0};
+
+} {5};
+
+#ACTION {Poczyniles znaczne postepy} {
+    #VARIABLE {licznik_postepow} {8};
+    #VARIABLE {minut_na_postep} {$licznik_minut};
+    #VARIABLE {licznik_minut} {0};
+
+} {5};
+
+#ACTION {Poczyniles duze postepy} {
+    #VARIABLE {licznik_postepow} {9};
+    #VARIABLE {minut_na_postep} {$licznik_minut};
+    #VARIABLE {licznik_minut} {0};
+
+} {5};
+
+#ACTION {Poczyniles bardzo duze postepy} {
+    #VARIABLE {licznik_postepow} {10};
+    #VARIABLE {minut_na_postep} {$licznik_minut};
+    #VARIABLE {licznik_minut} {0};
+
+} {5};
+
+#ACTION {Poczyniles ogromne postepy} {
+    #VARIABLE {licznik_postepow} {11};
+    #VARIABLE {minut_na_postep} {$licznik_minut};
+    #VARIABLE {licznik_minut} {0};
+
+} {5};
+
+#ACTION {Poczyniles imponujace postepy} {
+    #VARIABLE {licznik_postepow} {12};
+    #VARIABLE {minut_na_postep} {$licznik_minut};
+    #VARIABLE {licznik_minut} {0};
+
+} {5};
+
+#ACTION {Poczyniles wspaniale postepy} {
+    #VARIABLE {licznik_postepow} {13};
+    #VARIABLE {minut_na_postep} {$licznik_minut};
+    #VARIABLE {licznik_minut} {0};
+
+} {5};
+
+#ACTION {Poczyniles gigantyczne postepy} {
+    #VARIABLE {licznik_postepow} {14};
+    #VARIABLE {minut_na_postep} {$licznik_minut};
+    #VARIABLE {licznik_minut} {0};
+
+} {5};
+
+#ACTION {Poczyniles niebotyczne postepy} {
+    #VARIABLE {licznik_postepow} {15};
+    #VARIABLE {minut_na_postep} {$licznik_minut};
+    #VARIABLE {licznik_minut} {0};
+
+} {5};
+
+} {5};
+
+#ALIAS {postepy-off} {
+        #UNACTION {Poczyniles nieznaczne postepy};
+    #UNACTION {Poczyniles bardzo male postepy};
+    #UNACTION {Poczyniles male postepy};
+    #UNACTION {Poczyniles nieduze postepy};
+    #UNACTION {Poczyniles zadowalajace postepy};
+    #UNACTION {Poczyniles spore postepy};
+    #UNACTION {Poczyniles dosc duze postepy};
+    #UNACTION {Poczyniles znaczne postepy};
+    #UNACTION {Poczyniles duze postepy};
+    #UNACTION {Poczyniles bardzo duze postepy};
+    #UNACTION {Poczyniles ogromne postepy};
+    #UNACTION {Poczyniles imponujace postepy};
+    #UNACTION {Poczyniles wspaniale postepy};
+    #UNACTION {Poczyniles gigantyczne postepy};
+    #UNACTION {Poczyniles niebotyczne postepy};
+} {5};
+
+#ALIAS {zgony-on} {
+    #VARIABLE {licznik_zgonow} {0};
+    #VARIABLE {licznik_zabojstw} {0};
+    #ACTION { zabil } {
+        #MATH {licznik_zgonow} {$licznik_zgonow + 1};
+    } {5};
+    #ACTION {Zabiles } {
+        #MATH {licznik_zabojstw} {$licznik_zabojstw + 1};
+        #MATH {licznik_zgonow} {$licznik_zgonow + 1};
+    } {5};
+} {5};
+
+#ALIAS {zgony-off} {
+    #UNACTION {Zabiles };
+    #UNACTION { zabil };
+} {5};
+#ALIAS {staty} {
+    #echo {ilosc postepow: $licznik_postepow};
+        #echo {ilosc zabitych przeciwnikow: $licznik_zgonow};
+    #echo {z czego ty dobiles: $licznik_zabojstw};
+    #MATH {zgony_na_postep} {$licznik_zgonow / $licznik_postepow};
+    #echo {zgony na postep: $zgony_na_postep};
+
+} {5};
+
+#ALIAS {lazik-on} {
+    #VARIABLE {licznik_krokow} {0};
+    #ALIAS {doprzodu} {
+        commands
+    } {5};
+
+#ALIAS {dotylu} {
+    commands
+} {5};
+
+} {5};
+
+#ALIAS {lazik-off} {
+    #UNALIAS {doprzodu};
+    #UNALIAS {dotylu};
+} {5};

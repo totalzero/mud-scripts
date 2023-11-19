@@ -1,0 +1,25 @@
+#action {atakuje} {#system afplay -v 2 /volumes/appdoc/tintin/sounds/resume.wav}
+#action {przybywa} {#system afplay -v 2 /volumes/appdoc/tintin/sounds/action.wav}
+#action {przybywaja} {#system afplay -v 2 /volumes/appdoc/tintin/sounds/action.wav}
+#action {do brzegu} {#system afplay -v 2 /volumes/appdoc/tintin/sounds/action.wav}
+#action {wskazuje} {#system afplay -v 2 /volumes/appdoc/tintin/sounds/pause.wav}
+
+
+#action {masz nowa poczte} {#system afplay -v 2 /volumes/appdoc/tintin/sounds/upgrade.wav}
+#action {do ciebie} {#system afplay -v 2 /volumes/appdoc/tintin/sounds/message.wav}
+#action {mowi} {#system afplay -v 2 /volumes/appdoc/tintin/sounds/message.wav}
+#action {mruczy} {#system afplay -v 2 /volumes/appdoc/tintin/sounds/message.wav}
+#action {syczy} {#system afplay -v 2 /volumes/appdoc/tintin/sounds/message.wav}
+#action {nuci} {#system afplay -v 2 /volumes/appdoc/tintin/sounds/message.wav}
+#action {mamrocze} {#system afplay -v 2 /volumes/appdoc/tintin/sounds/message.wav}
+#action {bulgota} {#system afplay -v 2 /volumes/appdoc/tintin/sounds/message.wav}
+#action {bulgocze} {#system afplay -v 2 /volumes/appdoc/tintin/sounds/message.wav}
+#action {warczy} {#system afplay -v 2 /volumes/appdoc/tintin/sounds/message.wav}
+#action {wrzeszczy} {#system afplay -v 2 /volumes/appdoc/tintin/sounds/message.wav}
+#action {belkocze} {#system afplay -v 2 /volumes/appdoc/tintin/sounds/message.wav}
+#action {skrzypi} {#system afplay -v 2 /volumes/appdoc/tintin/sounds/message.wav}
+#action {huczy} {#system afplay -v 2 /volumes/appdoc/tintin/sounds/message.wav}
+#action {dudni} {#system afplay -v 2 /volumes/appdoc/tintin/sounds/message.wav}
+#ACTION {przebija sie} {
+    l;
+} {5};
