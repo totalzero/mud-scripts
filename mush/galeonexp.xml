@@ -618,6 +618,7 @@ delay()
 else
 regeneruj()
 end
+end
 
 function regeneruj()
     Note("rozpoczynam regeneracje")
