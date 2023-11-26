@@ -613,8 +613,8 @@ end
 
 function regenerujNastepnyCel()
 if ktorycel < 3 then
-ktorycel = ktorycel + 1
 delay()
+ktorycel = ktorycel + 1
 else
 regeneruj()
 ktorycel = 1
