@@ -40,7 +40,7 @@
    send_to="12"
    sequence="100"
   >
-  <send>regenerujNastepnyCel()</send>
+  <send>regenerujNastepnaSekwencja()</send>
   </trigger>
   <trigger
    enabled="n"
@@ -611,10 +611,14 @@ EnableGroup("regen_sekwencja", true)
 Note("uwaga!!! oczekuje na regeneracje")
 end
 
+function regenerujNastepnaSekwencja()
+ktorycel = ktorycel + 1
+regenerujNastepnyCel
+end
+
 function regenerujNastepnyCel()
 if ktorycel < 3 then
 delay()
-ktorycel = ktorycel + 1
 else
 regeneruj()
 ktorycel = 1
