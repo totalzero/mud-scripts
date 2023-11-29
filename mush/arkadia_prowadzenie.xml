@@ -19,7 +19,7 @@
    >
 <description trim="y">
 <![CDATA[
-"skrypt arkadia_prowadzenie na prosbe k"
+"skrypt arkadia_prowadzenie na prosbe przyjaciela KR"
 ]]>
 </description>
 
@@ -57,6 +57,17 @@
   >
   <send></send>
   </alias>
+
+  <alias
+   match="cel2 *"
+   enabled="y"
+   script="ustawCel2"
+   send_to="12"
+   sequence="100"
+  >
+  <send></send>
+  </alias>
+
   <alias
    match="\ *"
    enabled="y"
@@ -74,6 +85,15 @@
    sequence="100"
   >
   <send>odpalCel()</send>
+  </alias>
+
+  <alias
+   match="zcc"
+   enabled="y"
+   send_to="12"
+   sequence="100"
+  >
+  <send>odpalCel2()</send>
   </alias>
 
   <alias
@@ -131,6 +151,7 @@
 <script>
 <![CDATA[
 cel = ""
+cel2 = ""
 rozkazy = false
 zaslona = ""
 puszczanie = false
@@ -140,8 +161,21 @@ cel = table.concat(w)
 Note("ustawiono cel:"..cel)
 end
 
+function ustawCel2(n, l, w)
+    cel2 = table.concat(w)
+    Note("ustawiono cel:"..cel)
+    end
+    
 function odpalCel()
     Send("wskaz "..cel.." jako cel ataku")
+    Send("zabij cel ataku")
+    if rozkazy == true then
+        Send("rozkaz druzynie zaatakowac cel ataku")
+    end
+end
+
+function odpalCel2()
+    Send("wskaz "..cel2.." jako cel ataku")
     Send("zabij cel ataku")
     if rozkazy == true then
         Send("rozkaz druzynie zaatakowac cel ataku")
@@ -192,6 +226,7 @@ function przestanZaslaniac()
 Send("przestan zaslaniac")
     end
 end
+
 ]]>
 </script> 
 
