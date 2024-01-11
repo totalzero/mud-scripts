@@ -1,4 +1,5 @@
 cel = ""
+cel2 = ""
 rozkazy = false
 zaslona = ""
 puszczanie = false
@@ -8,8 +9,21 @@ cel = table.concat(w)
 Note("ustawiono cel:"..cel)
 end
 
+function ustawCel2(n, l, w)
+    cel2 = table.concat(w)
+    Note("ustawiono cel:"..cel)
+    end
+    
 function odpalCel()
     Send("wskaz "..cel.." jako cel ataku")
+    Send("zabij cel ataku")
+    if rozkazy == true then
+        Send("rozkaz druzynie zaatakowac cel ataku")
+    end
+end
+
+function odpalCel2()
+    Send("wskaz "..cel2.." jako cel ataku")
     Send("zabij cel ataku")
     if rozkazy == true then
         Send("rozkaz druzynie zaatakowac cel ataku")
@@ -54,6 +68,7 @@ else
     puszczanieOff()
 end
 end
+
 function przestanZaslaniac()
     if puszczanie == true then
 Send("przestan zaslaniac")

@@ -613,7 +613,7 @@ end
 
 function regenerujNastepnaSekwencja()
 ktorycel = ktorycel + 1
-regenerujNastepnyCel
+regenerujNastepnyCel()
 end
 
 function regenerujNastepnyCel()

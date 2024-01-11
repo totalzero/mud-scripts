@@ -1,3 +1,5 @@
+
+<script>
 <![CDATA[
 sciezka = {
     "w",
@@ -154,11 +156,31 @@ end
 end
 end
 
+function regenerujSekwencjaOn()
+EnableGroup("sekwencja", false)
+EnableGroup("regen_sekwencja", true)
+Note("uwaga!!! oczekuje na regeneracje")
+end
+
+function regenerujNastepnaSekwencja()
+ktorycel = ktorycel + 1
+regenerujNastepnyCel()
+end
+
+function regenerujNastepnyCel()
+if ktorycel < 3 then
+delay()
+else
+regeneruj()
+ktorycel = 1
+end
+end
+
 function regeneruj()
     Note("rozpoczynam regeneracje")
-    doTylu()
-doTylu()
 regenerujemy = true
+EnableGroup("regen_sekwencja", false)
+EnableGroup("sekwencja", true)
 DoAfter(180, "zabij marynarza")
 AddTimer ("regen_czar", 0, 0, 10.5, "mwypowiedz odnowienie mocy z ksiegi wskazujac siebie", 
           timer_flag.Enabled + timer_flag.OneShot, "")
@@ -205,7 +227,7 @@ function start()
 Note("rozpoczynam expy")
 licznik = 1
 koleczko = false
-
+EnableGroup("ucieczka", false) 
 EnableGroup("sekwencja", true)
 delay()
 end
@@ -275,12 +297,22 @@ EnableGroup("koniecexpa", false)
 Note("uwaga!!! za 300 sekund nastapi wylogowanie")
 end
 
+function pomijanie()
+doPrzodu()
+nastepnaSekwencja()
+end
+
 function pomin(n, l, w)
 w = table.concat(w)
 if w == "off" then
 DeleteTrigger("pomijacz")
 Note("wylaczam pomijanie")
 end
-AddTrigger("pomijacz", w, "", trigger_flag.Enabled , custom_colour.Custom15, 0, "", "doPrzodu")
+AddTrigger("pomijacz", w, "", trigger_flag.Enabled , custom_colour.Custom15, 0, "", "pomijanie")
 Note("pomijam: "..w)
 end
+
+]]>
+</script> 
+
+</muclient>
